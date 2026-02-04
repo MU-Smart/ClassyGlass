@@ -73,6 +73,13 @@ ClassyGlass/
 
 All sensor data are stored in **CSV format** with header rows. Each row corresponds to a single timestamped observation.
 
+### Filename Format
+
+Each data file follows a structured naming convention that encodes metadata about
+the device, recording time, sensor type, and sampling configuration.
+
+<experiment*id>*<device>_<timestamp>_<device*id>*<sensor*type>*<sampling*rate>Hz*<firmware_version>.csv
+
 Typical columns include:
 
 - `timestamp` — Time of measurement (ISO 8601 or Unix epoch in milliseconds)
