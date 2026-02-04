@@ -78,7 +78,9 @@ All sensor data are stored in **CSV format** with header rows. Each row correspo
 Each data file follows a structured naming convention that encodes metadata about
 the device, recording time, sensor type, and sampling configuration.
 
-<experiment*id>*<device>_<timestamp>_<device*id>*<sensor*type>*<sampling*rate>Hz*<firmware_version>.csv
+```text
+<experiment_id>_<device>_<timestamp>_<device_id>_<sensor_type>_<sampling rate>Hz_<firmware_version>.csv
+```
 
 Typical columns include:
 
