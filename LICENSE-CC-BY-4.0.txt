@@ -1,6 +1,6 @@
 # Dataset License – CC BY 4.0
 
-The datasets provided in this repository (under the `data/` directory) are released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+The datasets provided in this repository (under the `datasets/` directory) are released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
 You are free to:
 

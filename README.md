@@ -24,6 +24,13 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
   <em>The ClassyGlass hardware setup with MetaMotionC sensor attached to the right temple.</em>
 </p>
 
+<br>
+<br>
+<p align="center">
+  <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
+  <em>Visualization of different sensores timeseries data</em>
+</p>
+
 ## Motivation and Research Use
 
 The ClassyGlass Dataset was collected to support research in wearable computing, human activity recognition, and multimodal sensor fusion using head-mounted devices. Unlike wrist or phone-based datasets, this dataset captures motion and environmental signals from smart glasses, enabling analysis of head dynamics, fine-grained user behavior.
@@ -99,12 +106,6 @@ the device, recording time, sensor type, and sampling configuration. <br> `<expe
 - `x-axis`, `y-axis`, `z-axis` — 6-axis Gyroscope sensore, Angular velocity (deg/s)
 - `x-axis`, `y-axis`, `z-axis` — 3-axis Magnetometer sensore, Magnetic field strength (T)
 - `pressure` — Barometer/Pressure/Altimeter, Atmospheric pressure (hPa)
-<br>
-<br>
-<p align="center">
-  <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
-  <em>Visualization of different sensores timeseries data</em>
-</p>
 
 ---
 
@@ -158,5 +159,5 @@ print("Mapped experiment:", experiment)
 
 ## License
 
-- 🧑‍💻 The **code** in this repository is licensed under the [MIT License](./LICENSE).
+- 🧑‍💻 The **code** in this repository is licensed under the [MIT License](./LICENSE.txt).
 - 📊 The **datasets** in the `data/` directory are released under the [CC BY 4.0 License](./LICENSE-CC-BY-4.0.txt).
