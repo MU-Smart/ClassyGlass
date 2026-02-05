@@ -91,9 +91,7 @@ ClassyGlass/
 **File name:** Each data file follows a structured naming convention that encodes metadata about
 the device, recording time, sensor type, and sampling configuration. <br> `<experiment_id>_<device>_<timestamp>_<device_id>_<sensor_type>_<sampling rate>Hz_<firmware_version>.csv`
 
-**Column names:** All sensor data are stored in **CSV format**. Each row corresponds to a single timestamped observation.
-
-Columns include:
+**Columns include:**
 
 - `timestamp` — Time of measurement (ISO 8601 or Unix epoch in milliseconds)
 - `elapsed` - Time relative to starting time
@@ -101,6 +99,12 @@ Columns include:
 - `x-axis`, `y-axis`, `z-axis` — Gyroscope sensore, Angular velocity ( deg/s)
 - `x-axis`, `y-axis`, `z-axis` — Magnetometer sensore, Magnetic field strength (T)
 - `pressure` — Pressure sensore, Atmospheric pressure (hPa)
+<br>
+<br>
+<p align="center">
+  <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
+  <em>Visualization of different sensores timeseries data</em>
+</p>
 
 ---
 
@@ -123,11 +127,31 @@ Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit
 
 ## Usage Notes
 
-- Example usage in Python:
+- Example usage in Python for experiment matching:
 
 ```python
+from pathlib import Path
 import pandas as pd
-df = pd.read_csv("data/subject_01/session_01.csv")
+
+file_path = "Datasets/Dataset_1A/User1/1_MetaWear_2019-09-14T13.41.43.335_F1E55E2FE95F_Accelerometer_100.000Hz_1.4.5.csv"
+
+# Load CSV
+df = pd.read_csv(file_path)
+
+# Extract filename
+filename = Path(file_path).name
+
+# Parse first number before underscore
+raw_exp_num = int(filename.split("_")[0])
+
+# Mod with 11 (map 1 -> 11)
+experiment_number = raw_exp_num % 11 or 11
+
+if experiment_number == 1:
+    experiment = "Reading a book"
+
+print("Raw experiment number:", experiment_number)
+print("Mapped experiment:", experiment)
 ```
 
 ---
