@@ -1,6 +1,6 @@
 # ClassyGlass Dataset
 
-The **ClassyGlass Dataset** contains multimodal time-series data collected from wearable smart glasses used by real participants. The dataset includes synchronized measurements from multiple onboard sensors, including an accelerometer, gyroscope, magnetometer, and pressure sensor. The data are organized by subject and recording session to support reproducible research and machine learning workflows.
+The **ClassyGlass Dataset** contains multimodal time-series data collected from wearable smart glasses used by real participants. The dataset includes measurements from multiple onboard sensors, including an accelerometer, gyroscope, magnetometer, and pressure sensor. The data are organized by subject and recording session to support reproducible research and machine learning workflows.
 
 ## Index
 
@@ -10,26 +10,23 @@ The **ClassyGlass Dataset** contains multimodal time-series data collected from 
 - [Directory Structure](#directory-structure)
 - [File Format](#file-format)
 - [Sensor Specifications](#sensor-specifications)
-- [Data Collection Protocol](#data-collection-protocol)
-- [Preprocessing](#preprocessing)
-  - [Time Synchronization](#time-synchronization)
-  - [Recommended Data Splits](#recommended-data-splits)
 - [Usage Notes](#usage-notes)
-  - [Metadata Description](#metadata-description)
-- [Ethics and Consent](#ethics-and-consent)
 - [License and Citation](#license-and-citation)
 
 ---
 
 ## Overview
 
-ClassyGlass is a comprehensive wearable sensing dataset designed for activity recognition, behavioral analysis, and multimodal sensor fusion research. It provides temporally aligned sensor streams recorded during controlled and semi-naturalistic sessions.
+ClassyGlass is a comprehensive wearable sensing dataset designed for activity recognition and behavioral analysis research. It provides temporally aligned sensor streams recorded during controlled and semi-naturalistic sessions.
 
-This README describes the dataset structure, file formats, sensor specifications, and recommended usage practices.
+<p align="center">
+  <img src="Assests/glass_with_sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
+  <em>The ClassyGlass hardware setup with MetaMotionC sensor attached to the right temple.</em>
+</p>
 
 ## Motivation and Research Use
 
-The ClassyGlass Dataset was collected to support research in wearable computing, human activity recognition, and multimodal sensor fusion using head-mounted devices. Unlike wrist- or phone-based datasets, this dataset captures motion and environmental signals from smart glasses, enabling analysis of head dynamics, fine-grained user behavior, and context-aware inference.
+The ClassyGlass Dataset was collected to support research in wearable computing, human activity recognition, and multimodal sensor fusion using head-mounted devices. Unlike wrist or phone-based datasets, this dataset captures motion and environmental signals from smart glasses, enabling analysis of head dynamics, fine-grained user behavior.
 
 The dataset is suitable for tasks such as:
 
@@ -54,131 +51,84 @@ The dataset is suitable for tasks such as:
 
 ## Directory Structure
 
+Each dataset contains its own data description sheet. Follow that for dataset specific information
+
 ```
 ClassyGlass/
 ├── Datasets/
-│   ├── Dataset_1A
-│   │   └── *.csv
-│   ├── Dataset_1B
-│   │   └── *.csv
-│   └── Dataset_2
-│       └── *.csv
-├── README.md
+│   ├── Dataset_1A (12 users with 11 activities each)
+│   │   ├── Data description sheet.pdf
+│   │   └── UserX
+│   │       └── *.csv
+│   ├── Dataset_1B (15 users with 15 activities each)
+│   │   ├── Data description sheet.pdf
+│   │   └── UserX
+│   │       └── *.csv
+│   └── Dataset_2 (35 users with 6 activities each)
+│       ├── Data description sheet.pdf
+│       └── UserX
+│           └── *.csv
+└── README.md
 
 ```
+
+### Metadata directory: (Data collection procedure) <br>
+
+**ClassyGlass/**
+
+- **Datasets/**
+  - **[Dataset_1A](Datasets/Dataset_1A/)** (12 users with 11 activities each)
+    - [Data Description 1A](Datasets/Dataset_1A/Data%20description%20sheet%201A.pdf)
+  - **[Dataset_1B](Datasets/Dataset_1B/)** (15 users with 15 activities each)
+    - [Data Description 1B](Datasets/Dataset_1B/Data%20description%20sheet%201B.pdf)
+  - **[Dataset_2](Datasets/Dataset_2/)** (35 users with 6 activities each)
+    - [Data Description 2](Datasets/Dataset_2/Data%20description%20sheet%20Updated.pdf)
 
 ---
 
 ## File Format
 
-All sensor data are stored in **CSV format** with header rows. Each row corresponds to a single timestamped observation.
+**File name:** Each data file follows a structured naming convention that encodes metadata about
+the device, recording time, sensor type, and sampling configuration. <br> `<experiment_id>_<device>_<timestamp>_<device_id>_<sensor_type>_<sampling rate>Hz_<firmware_version>.csv`
 
-### Filename Format
+**Column names:** All sensor data are stored in **CSV format**. Each row corresponds to a single timestamped observation.
 
-Each data file follows a structured naming convention that encodes metadata about
-the device, recording time, sensor type, and sampling configuration.
-
-```text
-<experiment_id>_<device>_<timestamp>_<device_id>_<sensor_type>_<sampling rate>Hz_<firmware_version>.csv
-```
-
-Typical columns include:
+Columns include:
 
 - `timestamp` — Time of measurement (ISO 8601 or Unix epoch in milliseconds)
-- `acc_x`, `acc_y`, `acc_z` — Linear acceleration (m/s²)
-- `gyr_x`, `gyr_y`, `gyr_z` — Angular velocity (rad/s or deg/s)
-- `mag_x`, `mag_y`, `mag_z` — Magnetic field strength (µT)
-- `pressure` — Atmospheric pressure (hPa)
-
-> **Note:** Please verify and update units or timestamp formats if they differ from those listed above.
+- `elapsed` - Time relative to starting time
+- `x-axis`, `y-axis`, `z-axis` — Accelerometer sensore, Linear acceleration (m/s²)
+- `x-axis`, `y-axis`, `z-axis` — Gyroscope sensore, Angular velocity ( deg/s)
+- `x-axis`, `y-axis`, `z-axis` — Magnetometer sensore, Magnetic field strength (T)
+- `pressure` — Pressure sensore, Atmospheric pressure (hPa)
 
 ---
 
 ## Sensor Specifications
 
-- **Accelerometer**  
-   Model: `<MODEL>`  
-   Resolution: `<RESOLUTION>`  
-   Sampling rate: `<SAMPLING_RATE>` Hz
+### Wearable IMU Sensor
 
-- **Gyroscope**  
-   Model: `<MODEL>`  
-   Resolution: `<RESOLUTION>`  
-   Sampling rate: `<SAMPLING_RATE>` Hz
+Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor (MbientLab). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
-- **Magnetometer**  
-   Model: `<MODEL>`  
-   Resolution: `<RESOLUTION>`  
-   Sampling rate: `<SAMPLING_RATE>` Hz
+#### Sensor Specifications
 
-- **Pressure Sensor**  
-   Model: `<MODEL>`  
-   Resolution: `<RESOLUTION>`  
-   Sampling rate: `<SAMPLING_RATE>` Hz
-
----
-
-## Data Collection Protocol
-
-- **Number of Participants**: `<N_SUBJECTS>`
-- **Sessions per Participant**: `<N_SESSIONS>`
-- **Recording Duration**: `<MIN–MAX_DURATION>`
-- **Device Placement**: Smart glasses worn on the face (describe exact sensor placement if relevant)
-- **Activities**: `<LIST_OF_ACTIVITIES_OR_TASKS>`
-
----
-
-## Preprocessing
-
-### Time Synchronization
-
-All sensor streams were synchronized using a common system clock on the wearable device. Timestamps were recorded at the time of acquisition in Unix epoch milliseconds. Sensor streams were aligned post-collection using linear interpolation to the highest sampling-rate sensor.
-
-- **Filtering / Calibration**: `<LOW-PASS / HIGH-PASS / SENSOR CALIBRATION DETAILS>`
-
-### Recommended Data Splits
-
-For fair evaluation and subject-independent analysis, we recommend:
-
-- **Subject-independent splits**, where subjects in the test set do not appear in training.
-- A typical split of 70% train, 15% validation, and 15% test by subject.
-
-Session-level splits are also possible for within-subject modeling.
+| Sensor          | Measurement Range                  | Resolution | Sampling Rate                             |
+| --------------- | ---------------------------------- | ---------- | ----------------------------------------- |
+| Accelerometer   | ±2, ±4, ±8, ±16 g                  | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
+| Gyroscope       | ±125, ±250, ±500, ±1000, ±2000 °/s | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
+| Magnetometer    | ±1300 µT (x,y), ±2500 µT (z)       | 0.3 µT     | 0.001–25 Hz                               |
+| Pressure Sensor | 300–1100 hPa                       | 0.01 hPa   | 0.001–50 Hz                               |
 
 ---
 
 ## Usage Notes
 
-- Ensure all timestamps are converted to a consistent format and time zone before analysis.
-- When resampling or downsampling, preserve temporal alignment across sensor modalities.
 - Example usage in Python:
 
 ```python
 import pandas as pd
 df = pd.read_csv("data/subject_01/session_01.csv")
 ```
-
-### Metadata Description
-
-- **participants.csv**
-  - `subject_id`
-  - `age`
-  - `sex`
-  - `handedness`
-  - `consent`
-- **sessions.csv**
-  - `session_id`
-  - `subject_id`
-  - `activity`
-  - `start_time`
-  - `end_time`
-  - `notes`
-
----
-
-## Ethics and Consent
-
-All participants provided informed consent prior to data collection. The study was conducted under the protocol `<PROTOCOL_ID_OR_DESCRIPTION>`. No personally identifiable information (PII) is included in this dataset.
 
 ---
 
