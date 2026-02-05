@@ -156,10 +156,7 @@ print("Mapped experiment:", experiment)
 
 ---
 
-## License and Citation
+## License
 
-- **License**: `<LICENSE_NAME or URL>`
-
-If you use this dataset in your research, please cite:
-
-`<CITATION_TEXT or BIBTEX>`
+- 🧑‍💻 The **code** in this repository is licensed under the [MIT License](./LICENSE).
+- 📊 The **datasets** in the `data/` directory are released under the [CC BY 4.0 License](./LICENSE-CC-BY-4.0.txt).
