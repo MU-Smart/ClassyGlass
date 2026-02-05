@@ -40,10 +40,10 @@ The dataset is suitable for tasks such as:
 ## Dataset Contents
 
 - **Multimodal sensor data:**
-  - Accelerometer
-  - Gyroscope
-  - Magnetometer
-  - Pressure sensor
+  - Accelerometer (100 Hz)
+  - Gyroscope (100 Hz)
+  - Magnetometer (20 Hz)
+  - Pressure sensor (7.33 Hz)
 - **Per-session CSV files** with columns (epoch, time, elapsed, x-axis, y-axis, z-axis)
 - **Metadata** describing participants and recording sessions
 
@@ -95,10 +95,10 @@ the device, recording time, sensor type, and sampling configuration. <br> `<expe
 
 - `timestamp` — Time of measurement (ISO 8601 or Unix epoch in milliseconds)
 - `elapsed` - Time relative to starting time
-- `x-axis`, `y-axis`, `z-axis` — Accelerometer sensore, Linear acceleration (m/s²)
-- `x-axis`, `y-axis`, `z-axis` — Gyroscope sensore, Angular velocity ( deg/s)
-- `x-axis`, `y-axis`, `z-axis` — Magnetometer sensore, Magnetic field strength (T)
-- `pressure` — Pressure sensore, Atmospheric pressure (hPa)
+- `x-axis`, `y-axis`, `z-axis` — 6-axis Accelerometer sensore, Linear acceleration (m/s²)
+- `x-axis`, `y-axis`, `z-axis` — 6-axis Gyroscope sensore, Angular velocity (deg/s)
+- `x-axis`, `y-axis`, `z-axis` — 3-axis Magnetometer sensore, Magnetic field strength (T)
+- `pressure` — Barometer/Pressure/Altimeter, Atmospheric pressure (hPa)
 <br>
 <br>
 <p align="center">
@@ -112,16 +112,16 @@ the device, recording time, sensor type, and sampling configuration. <br> `<expe
 
 ### Wearable IMU Sensor
 
-Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor (MbientLab). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
+Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensore Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
 #### Sensor Specifications
 
-| Sensor          | Measurement Range                  | Resolution | Sampling Rate                             |
-| --------------- | ---------------------------------- | ---------- | ----------------------------------------- |
-| Accelerometer   | ±2, ±4, ±8, ±16 g                  | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
-| Gyroscope       | ±125, ±250, ±500, ±1000, ±2000 °/s | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
-| Magnetometer    | ±1300 µT (x,y), ±2500 µT (z)       | 0.3 µT     | 0.001–25 Hz                               |
-| Pressure Sensor | 300–1100 hPa                       | 0.01 hPa   | 0.001–50 Hz                               |
+| Sensor                       | Measurement Range                  | Resolution | Sampling Rate                             |
+| ---------------------------- | ---------------------------------- | ---------- | ----------------------------------------- |
+| Accelerometer                | ±2, ±4, ±8, ±16 g                  | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
+| Gyroscope                    | ±125, ±250, ±500, ±1000, ±2000 °/s | 16-bit     | 0.001–100 Hz (stream), up to 800 Hz (log) |
+| Magnetometer                 | ±1300 µT (x,y), ±2500 µT (z)       | 0.3 µT     | 0.001–25 Hz                               |
+| Barometer/Pressure/Altimeter | 300–1100 hPa                       | 0.01 hPa   | 0.001–50 Hz                               |
 
 ---
 
