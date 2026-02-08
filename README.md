@@ -21,7 +21,7 @@ The **ClassyGlass Dataset** contains multimodal time-series data collected from 
 ClassyGlass is a comprehensive wearable sensing dataset designed for activity recognition and behavioral analysis research. It provides temporally aligned sensor streams recorded during controlled and semi-naturalistic sessions.
 
 <p align="center">
-  <img src="Assets/glass_with_sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
+  <img src="./Assets/glass_with_sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
   <strong>Figure 1:</strong>  <em>The ClassyGlass hardware setup with MetaMotionC sensor attached to the right temple.</em>
 </p>
 
@@ -30,7 +30,7 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
 Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensore Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
 <p align="center">
-  <img src="Assets/chap4-Sensor.jpeg?raw=true" alt="ClassyGlass Device" width="800"> <br>
+  <img src="./Assets/chap4-Sensor.jpeg?raw=true" alt="ClassyGlass Device" width="800"> <br>
   <strong>Figure 2:</strong> <em>The ClassyGlass hardware setup, showing the internal view of the MetaMotionC 10-axis IMU.</em> 
 </p>
 
@@ -110,7 +110,7 @@ The following table provides a comparative overview of the frame counts and tota
 <br>
 
 <p align="center">
-  <img src="Assets/chap4-TUG.jpeg?raw=true" alt="TUG test" width="800"> <br>
+  <img src="./Assets/chap4-TUG.jpeg?raw=true" alt="TUG test" width="800"> <br>
   <strong>Figure 3:</strong> <em>Schematic of the Timed Up and Go (TUG) test. The TUG path and the four activities performed during a TUG. These transitions are: 1) sitting, 2) sit-to-stand 2) walking- out - turning - walking-in, 4) stand-to-sit. The continuous sequence challenges models to detect transitional boundaries e.g., the exact moment of ’Turn’) within a continuous stream.</em> 
 </p>
 
@@ -121,17 +121,17 @@ The following table provides a comparative overview of the frame counts and tota
   <em>Visualization of different sensores timeseries data</em>
 </p> -->
 
-<table style="width: 100%; border-collapse: collapse; border: none;"> <tr> <td align="center" style="width: 33%; border: none;"> <img src="Assets/Chap5-SensorGraphs-1.png" width="100%">
+<table style="width: 100%; border-collapse: collapse; border: none;"> <tr> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-1.png" width="100%">
 
-<sub>(a) Sitting and Reading</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="Assets/Chap5-SensorGraphs-2.png" width="100%">
+<sub>(a) Sitting and Reading</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-2.png" width="100%">
 
-<sub>(b) Working on Computer</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="Assets/Chap5-SensorGraphs-3.png" width="100%">
+<sub>(b) Working on Computer</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-3.png" width="100%">
 
-<sub>(c) Sit-to-Stand Transition</sub> </td> </tr> <tr> <td align="center" style="width: 33%; border: none;"> <img src="Assets/Chap5-SensorGraphs-4.png" width="100%">
+<sub>(c) Sit-to-Stand Transition</sub> </td> </tr> <tr> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-4.png" width="100%">
 
-<sub>(d) Walking</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="Assets/Chap5-SensorGraphs-5.png" width="100%">
+<sub>(d) Walking</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-5.png" width="100%">
 
-<sub>(e) Picking Up Items</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="Assets/video_label1.png" width="100%">
+<sub>(e) Picking Up Items</sub> </td> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/video_label1.png" width="100%">
 
 <sub>(f) Video Labeling (Ground Truth)</sub> </td> </tr> </table>
 
