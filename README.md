@@ -30,7 +30,7 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
 Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensore Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
 <p align="center">
-  <img src="./Assets/chap4-Sensor.jpeg?raw=true" alt="ClassyGlass Device" width="800"> <br>
+  <img src="./Assets/Chap4_Sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
   <strong>Figure 2:</strong> <em>The ClassyGlass hardware setup, showing the internal view of the MetaMotionC 10-axis IMU.</em> 
 </p>
 
