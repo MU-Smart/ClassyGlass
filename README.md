@@ -56,6 +56,21 @@ The dataset is suitable for tasks such as:
 
 ---
 
+## Dataset Summary
+
+The following table provides a comparative overview of the frame counts and total durations for both data subsets.
+
+| Sensor Type       | Discrete Data (18h 11m 54s) | Continuous TUG (52m 40s) |
+| :---------------- | :-------------------------- | :----------------------- |
+| **Accelerometer** | 6,544,168                   | 315,682                  |
+| **Gyroscope**     | 6,534,622                   | 315,820                  |
+| **Magnetometer**  | 1,299,560                   | 62,994                   |
+| **Pressure**      | 480,152                     | 22,892                   |
+
+---
+
+---
+
 ## Directory Structure
 
 Each dataset contains its own data description sheet. Follow that for dataset specific information
