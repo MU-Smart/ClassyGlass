@@ -5,13 +5,16 @@ The **ClassyGlass Dataset** contains multimodal time-series data collected from 
 ## Index
 
 - [Overview](#overview)
+  - [Wearable IMU Sensor](#wearable-imu-sensor)
+  - [Sensor Specifications](#sensor-specifications)
 - [Directory Structure](#directory-structure)
 - [Dataset Contents](#dataset-contents)
 - [File Format](#file-format)
-- [Sensor Specifications](#sensor-specifications)
+  - [Dataset Summary](#dataset-summary)
+  - [Activity Summary](#activity-summary)
+  - [Visualization of different activities](#visualization-of-different-activities)
 - [Usage Notes](#usage-notes)
-- [Visualization](#visualization)
-- [License and Citation](#license-and-citation)
+- [License](#license)
 
 ## Overview
 
@@ -27,7 +30,7 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
 Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensore Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
 <p align="center">
-  <img src="Assets/chap4-Sensor.png" alt="ClassyGlass Device" width="800"> <br>
+  <img src="Assets/chap4-Sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
   <strong>Figure 2:</strong> <em>The ClassyGlass hardware setup, showing the internal view of the MetaMotionC 10-axis IMU.</em> 
 </p>
 
@@ -107,11 +110,11 @@ The following table provides a comparative overview of the frame counts and tota
 <br>
 
 <p align="center">
-  <img src="Assets/chap4-TUG.png" alt="TUG test" width="800"> <br>
+  <img src="Assets/chap4-TUG.jpeg" alt="TUG test" width="800"> <br>
   <strong>Figure 3:</strong> <em>Schematic of the Timed Up and Go (TUG) test. The TUG path and the four activities performed during a TUG. These transitions are: 1) sitting, 2) sit-to-stand 2) walking- out - turning - walking-in, 4) stand-to-sit. The continuous sequence challenges models to detect transitional boundaries e.g., the exact moment of ’Turn’) within a continuous stream.</em> 
 </p>
 
-**Visualization of different activities**
+### Visualization of different activities
 
 <!-- <p align="center">
   <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
