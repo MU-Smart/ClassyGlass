@@ -110,7 +110,7 @@ The following table provides a comparative overview of the frame counts and tota
 <br>
 
 <p align="center">
-  <img src="./Assets/chap4-TUG.png" alt="TUG test" width="800"> <br>
+  <img src="./Assets/Chap4_tug.png" alt="TUG test" width="800"> <br>
   <strong>Figure 3:</strong> <em>Schematic of the Timed Up and Go (TUG) test. The TUG path and the four activities performed during a TUG. These transitions are: 1) sitting, 2) sit-to-stand 2) walking- out - turning - walking-in, 4) stand-to-sit. The continuous sequence challenges models to detect transitional boundaries e.g., the exact moment of ’Turn’) within a continuous stream.</em> 
 </p>
 
