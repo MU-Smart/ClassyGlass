@@ -5,9 +5,8 @@ The **ClassyGlass Dataset** contains multimodal time-series data collected from 
 ## Index
 
 - [Overview](#overview)
-- [Motivation and Research Use](#motivation-and-research-use)
-- [Dataset Contents](#dataset-contents)
 - [Directory Structure](#directory-structure)
+- [Dataset Contents](#dataset-contents)
 - [File Format](#file-format)
 - [Sensor Specifications](#sensor-specifications)
 - [Usage Notes](#usage-notes)
@@ -24,30 +23,6 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
   <img src="Assests/glass_with_sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
   <em>The ClassyGlass hardware setup with MetaMotionC sensor attached to the right temple.</em>
 </p>
-
-## Dataset Contents
-
-- **Multimodal sensor data:**
-  - Accelerometer (100 Hz)
-  - Gyroscope (100 Hz)
-  - Magnetometer (20 Hz)
-  - Pressure sensor (7.33 Hz)
-- **Per-session CSV files** with columns (epoch, time, elapsed, x-axis, y-axis, z-axis)
-- **Metadata** describing participants and recording sessions
-
----
-
-### Dataset Summary
-
-The following table provides a comparative overview of the frame counts and total durations for both data subsets.
-
-| Sensor Type        | Dataset_1A (4h 10m) | Dataset_1B (8h 18m) | Dataset_2 (Discrete) (5h 42m) | Dataset_2 (Continuous TUG) (52m) |
-| :----------------- | :------------------ | :------------------ | :---------------------------- | :------------------------------- |
-| **Accelerometer**  | 1,504,164           | 2,982,352           | 2,057,652                     | 315,682                          |
-| **Gyroscope**      | 1,504,592           | 2,971,744           | 2,058,286                     | 315,820                          |
-| **Magnetometer**   | 296,744             | 592,144             | 410,672                       | 62,994                           |
-| **Pressure**       | 109,450             | 219,583             | 151,119                       | 22,892                           |
-| **Total Duration** | 04:10:40.34         | 08:18:19.37         | 05:42:54.80                   | 00:52:40.00                      |
 
 ---
 
@@ -85,6 +60,30 @@ ClassyGlass/
     - [Data Description 1B](Datasets/Dataset_1B/Data%20description%20sheet%201B.pdf)
   - **[Dataset_2](Datasets/Dataset_2/)** (35 users with 6 activities each)
     - [Data Description 2](Datasets/Dataset_2/Data%20description%20sheet%20Updated.pdf)
+
+---
+
+## Dataset Contents
+
+- **Multimodal sensor data:**
+  - Accelerometer (100 Hz)
+  - Gyroscope (100 Hz)
+  - Magnetometer (20 Hz)
+  - Pressure sensor (7.33 Hz)
+- **Per-session CSV files** with columns (epoch, time, elapsed, x-axis, y-axis, z-axis)
+- **Metadata** describing participants and recording sessions
+
+### Dataset Summary
+
+The following table provides a comparative overview of the frame counts and total durations for both data subsets.
+
+| Sensor Type        | Dataset_1A (4h 10m) | Dataset_1B (8h 18m) | Dataset_2 (Discrete) (5h 42m) | Dataset_2 (Continuous TUG) (52m) |
+| :----------------- | :------------------ | :------------------ | :---------------------------- | :------------------------------- |
+| **Accelerometer**  | 1,504,164           | 2,982,352           | 2,057,652                     | 315,682                          |
+| **Gyroscope**      | 1,504,592           | 2,971,744           | 2,058,286                     | 315,820                          |
+| **Magnetometer**   | 296,744             | 592,144             | 410,672                       | 62,994                           |
+| **Pressure**       | 109,450             | 219,583             | 151,119                       | 22,892                           |
+| **Total Duration** | 04:10:40.34         | 08:18:19.37         | 05:42:54.80                   | 00:52:40.00                      |
 
 ---
 
