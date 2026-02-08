@@ -11,6 +11,7 @@ The **ClassyGlass Dataset** contains multimodal time-series data collected from 
 - [File Format](#file-format)
 - [Sensor Specifications](#sensor-specifications)
 - [Usage Notes](#usage-notes)
+- [Visualization](#visualization)
 - [License and Citation](#license-and-citation)
 
 ---
@@ -24,26 +25,6 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
   <em>The ClassyGlass hardware setup with MetaMotionC sensor attached to the right temple.</em>
 </p>
 
-<br>
-<br>
-<p align="center">
-  <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
-  <em>Visualization of different sensores timeseries data</em>
-</p>
-
-## Motivation and Research Use
-
-The ClassyGlass Dataset was collected to support research in wearable computing, human activity recognition, and multimodal sensor fusion using head-mounted devices. Unlike wrist or phone-based datasets, this dataset captures motion and environmental signals from smart glasses, enabling analysis of head dynamics, fine-grained user behavior.
-
-The dataset is suitable for tasks such as:
-
-- Activity and gesture recognition
-- Time-series classification and segmentation
-- Multimodal sensor fusion
-- Representation learning on wearable sensor data
-
----
-
 ## Dataset Contents
 
 - **Multimodal sensor data:**
@@ -56,18 +37,17 @@ The dataset is suitable for tasks such as:
 
 ---
 
-## Dataset Summary
+### Dataset Summary
 
 The following table provides a comparative overview of the frame counts and total durations for both data subsets.
 
-| Sensor Type       | Discrete Data (18h 11m 54s) | Continuous TUG (52m 40s) |
-| :---------------- | :-------------------------- | :----------------------- |
-| **Accelerometer** | 6,544,168                   | 315,682                  |
-| **Gyroscope**     | 6,534,622                   | 315,820                  |
-| **Magnetometer**  | 1,299,560                   | 62,994                   |
-| **Pressure**      | 480,152                     | 22,892                   |
-
----
+| Sensor Type        | Dataset_1A (4h 10m) | Dataset_1B (8h 18m) | Dataset_2 (Discrete) (5h 42m) | Dataset_2 (Continuous TUG) (52m) |
+| :----------------- | :------------------ | :------------------ | :---------------------------- | :------------------------------- |
+| **Accelerometer**  | 1,504,164           | 2,982,352           | 2,057,652                     | 315,682                          |
+| **Gyroscope**      | 1,504,592           | 2,971,744           | 2,058,286                     | 315,820                          |
+| **Magnetometer**   | 296,744             | 592,144             | 410,672                       | 62,994                           |
+| **Pressure**       | 109,450             | 219,583             | 151,119                       | 22,892                           |
+| **Total Duration** | 04:10:40.34         | 08:18:19.37         | 05:42:54.80                   | 00:52:40.00                      |
 
 ---
 
@@ -169,6 +149,13 @@ if experiment_number == 1:
 print("Raw experiment number:", experiment_number)
 print("Mapped experiment:", experiment)
 ```
+
+## Visualization
+
+<p align="center">
+  <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
+  <em>Visualization of different sensores timeseries data</em>
+</p>
 
 ---
 
