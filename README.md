@@ -85,6 +85,15 @@ The following table provides a comparative overview of the frame counts and tota
 | **Pressure (7.33Hz)**     | 109,450    | 219,583    | 151,119              | 22,892                     | **503,044**     |
 | **Duration**              | 4h 10m 40s | 8h 18m 19s | 5h 42m 54s           | 0h 52m 40s                 | **19h 04m 33s** |
 
+Following table contains demographic informations
+
+| Characteristic      | Dataset 1 | Dataset 2 |   Total   |
+| :------------------ | :-------: | :-------: | :-------: |
+| **Count (N)**       |    27     |    35     |    62     |
+| **Gender**          | 18M / 9F  | 25M / 10F | 43M / 19F |
+| **Age Range**       |   21–61   |   21–65   |   21–65   |
+| **Glasses Wearers** |    60%    |   ~62%    |   ~61%    |
+
 ### Activity Summary
 
 | Category                       | Activity Description                                                     |
