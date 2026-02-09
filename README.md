@@ -166,7 +166,7 @@ print("Raw experiment number:", experiment_number)
 print("Mapped experiment:", experiment)
 ```
 
-### Scripts for data visualization, feature extraction and basic classifications
+### Scripts for data visualization, feature extraction and classifications
 
 - Visualizations and feature extraction
   - [scripts/Dataset_1A_VIsualizer_and_Feature_Extractor.ipynb](scripts/Dataset_1A_VIsualizer_and_Feature_Extractor.ipynb)
