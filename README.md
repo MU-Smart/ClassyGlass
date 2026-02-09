@@ -139,7 +139,7 @@ The following table provides a comparative overview of the frame counts and tota
 
 ## Usage Notes
 
-- Example usage in Python for experiment matching:
+Category matching using mod of number ot the experiments
 
 ```python
 from pathlib import Path
@@ -165,6 +165,17 @@ if experiment_number == 1:
 print("Raw experiment number:", experiment_number)
 print("Mapped experiment:", experiment)
 ```
+
+### Scripts for data visualization, feature extraction and basic classifications
+
+- Visualizations and feature extraction
+  - [scripts/Dataset_1A_VIsualizer_and_Feature_Extractor.ipynb](scripts/Dataset_1A_VIsualizer_and_Feature_Extractor.ipynb)
+  - [scripts/Dataset_1B_VIsualizer_and_Feature_Extractor.ipynb](scripts/Dataset_1B_VIsualizer_and_Feature_Extractor.ipynb)
+  - [scripts/Dataset_2_VIsualizer_and_Feature_Extractor.ipynb](scripts/Dataset_2_VIsualizer_and_Feature_Extractor.ipynb)
+- Classifications
+  - [scripts/Dataset_1A_Classifier.ipynb](scripts/Dataset_1A_Classifier.ipynb)
+  - [scripts/Dataset_1B_Classifier.ipynb](scripts/Dataset_1B_Classifier.ipynb)
+  - [scripts/Dataset_2_Classifier.ipynb](scripts/Dataset_2_Classifier.ipynb)
 
 ---
 
