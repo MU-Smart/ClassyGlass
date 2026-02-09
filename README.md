@@ -27,7 +27,7 @@ ClassyGlass is a comprehensive wearable sensing dataset designed for activity re
 
 ### Wearable IMU Sensor
 
-Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensore Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
+Data were collected using the **MetaMotionC** wearable Inertial Measurement Unit (IMU) sensor [Sensor Link](https://mbientlab.com/store/metamotionc/). The device provides real-time and continuous motion and environmental sensing through an integrated 9-axis IMU and a pressure sensor. Data are transmitted via Bluetooth Low Energy (BLE) using an open-source API. Onboard Kalman filter–based sensor fusion is applied to improve signal quality and reduce noise. All sensor data are timestamped to enable precise synchronization across data streams.
 
 <p align="center">
   <img src="./Assets/Chap4_Sensor.jpeg" alt="ClassyGlass Device" width="800"> <br>
@@ -69,9 +69,9 @@ the device, recording time, sensor type, and sampling configuration. <br> `<expe
 
 - `timestamp` — Time of measurement (ISO 8601 or Unix epoch in milliseconds)
 - `elapsed` - Time relative to starting time
-- `x-axis`, `y-axis`, `z-axis` — 6-axis Accelerometer sensore, Linear acceleration (m/s²)
-- `x-axis`, `y-axis`, `z-axis` — 6-axis Gyroscope sensore, Angular velocity (deg/s)
-- `x-axis`, `y-axis`, `z-axis` — 3-axis Magnetometer sensore, Magnetic field strength (T)
+- `x-axis`, `y-axis`, `z-axis` — 6-axis Accelerometer sensor, Linear acceleration (m/s²)
+- `x-axis`, `y-axis`, `z-axis` — 6-axis Gyroscope sensor, Angular velocity (deg/s)
+- `x-axis`, `y-axis`, `z-axis` — 3-axis Magnetometer sensor, Magnetic field strength (T)
 - `pressure` — Barometer/Pressure/Altimeter, Atmospheric pressure (hPa)
 
 ### Dataset Summary
@@ -128,7 +128,7 @@ Following table contains demographic informations
 
 <!-- <p align="center">
   <img src="Assests/visualization.png" alt="ClassyGlass Device" width="800"> <br>
-  <em>Visualization of different sensores timeseries data</em>
+  <em>Visualization of different sensors timeseries data</em>
 </p> -->
 
 <table style="width: 100%; border-collapse: collapse; border: none;"> <tr> <td align="center" style="width: 33%; border: none;"> <img src="./Assets/Chap5-SensorGraphs-1.png" width="100%">
