@@ -56,6 +56,7 @@ Each dataset contains its own data description sheet. Follow that for dataset sp
     - [Data description 1B](Datasets/Dataset_1B/Data%20description%20sheet%201B.pdf)
   - **[Dataset_2](Datasets/Dataset_2/)** (35 users with 6 activities each)
     - [Data description 2](Datasets/Dataset_2/Data%20description%20sheet%20Updated.pdf)
+    - [TUG_Annotations](Datasets/Dataset_2/TUG_annotations) (These videos can be used to annotate the TUG task. We provide example annotations for User 22 and User 23)
 
 ## Dataset Contents
 
