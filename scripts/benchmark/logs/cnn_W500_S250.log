@@ -1,15 +1,73 @@
-2026-04-06 23:23:40  ============================================================
-2026-04-06 23:23:40  CNN + LOSO (PyTorch)  |  window=500  step=250
-2026-04-06 23:23:40  Device : mps
-2026-04-06 23:23:40  Log    : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/cnn_W500_S250.log
-2026-04-06 23:23:40  Model  : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/best_model_W500_S250.pth
-2026-04-06 23:23:40  Figures: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/figures
-2026-04-06 23:23:40  ============================================================
-2026-04-06 23:23:41  Loaded 5744 windows | window=500  step=250 | 129 experiments | 12 subjects | 0 experiments skipped
-2026-04-06 23:23:41  ────────────────────────────────────────────────────────────
-2026-04-06 23:23:41  LOSO fold — held-out: User1 (328 test windows, 5416 train windows)
-2026-04-06 23:23:51    epoch   1  loss 2.0739  acc 0.2285  val_loss 1.7271  val_acc 0.3309
-2026-04-06 23:23:56    epoch   2  loss 1.6574  acc 0.3251  val_loss 1.3971  val_acc 0.4251
-2026-04-06 23:24:00    epoch   3  loss 1.5254  acc 0.3692  val_loss 1.5407  val_acc 0.3457
-2026-04-06 23:24:04    epoch   4  loss 1.4827  acc 0.3692  val_loss 1.2954  val_acc 0.4861
-2026-04-06 23:24:08    epoch   5  loss 1.4316  acc 0.3984  val_loss 1.2823  val_acc 0.4603
+2026-04-07 00:11:56  ============================================================
+2026-04-07 00:11:56  CNN + LOSO (PyTorch)  |  window=500  step=250
+2026-04-07 00:11:56  Device : mps
+2026-04-07 00:11:56  Log    : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/cnn_W500_S250.log
+2026-04-07 00:11:56  Model  : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/best_model_W500_S250.pth
+2026-04-07 00:11:56  Figures: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/figures
+2026-04-07 00:11:56  ============================================================
+2026-04-07 00:11:57  Loaded 5744 windows | window=500  step=250 | 129 experiments | 12 subjects | 0 experiments skipped
+2026-04-07 00:11:57  ────────────────────────────────────────────────────────────
+2026-04-07 00:11:57  LOSO fold — held-out: User1 (328 test windows, 5416 train windows)
+2026-04-07 00:12:03    epoch   1  loss 1.9286  acc 0.2341  val_loss 1.5376  val_acc 0.3678
+2026-04-07 00:12:07    epoch   2  loss 1.6893  acc 0.2779  val_loss 1.4667  val_acc 0.3660
+2026-04-07 00:12:11    epoch   3  loss 1.6455  acc 0.2950  val_loss 1.4703  val_acc 0.3808
+2026-04-07 00:12:16    epoch   4  loss 1.6297  acc 0.2989  val_loss 1.4222  val_acc 0.4270
+2026-04-07 00:12:20    epoch   5  loss 1.6106  acc 0.3108  val_loss 1.4181  val_acc 0.4085
+2026-04-07 00:12:24    epoch   6  loss 1.5796  acc 0.3218  val_loss 1.3853  val_acc 0.4104
+2026-04-07 00:12:29    epoch   7  loss 1.5811  acc 0.3221  val_loss 1.3833  val_acc 0.4067
+2026-04-07 00:12:33    epoch   8  loss 1.5891  acc 0.3198  val_loss 1.4633  val_acc 0.3475
+2026-04-07 00:12:37    epoch   9  loss 1.5702  acc 0.3360  val_loss 1.4079  val_acc 0.4085
+2026-04-07 00:12:41    epoch  10  loss 1.5513  acc 0.3387  val_loss 1.3663  val_acc 0.4307
+2026-04-07 00:12:46    epoch  11  loss 1.5397  acc 0.3356  val_loss 1.3865  val_acc 0.4177
+2026-04-07 00:12:50    epoch  12  loss 1.5430  acc 0.3426  val_loss 1.4151  val_acc 0.3863
+2026-04-07 00:12:54    epoch  13  loss 1.5533  acc 0.3362  val_loss 1.3749  val_acc 0.4362
+2026-04-07 00:12:59    epoch  14  loss 1.5346  acc 0.3502  val_loss 1.3930  val_acc 0.4140
+2026-04-07 00:13:03    epoch  15  loss 1.5294  acc 0.3504  val_loss 1.3639  val_acc 0.4048
+2026-04-07 00:13:07    epoch  16  loss 1.5152  acc 0.3518  val_loss 1.3912  val_acc 0.3993
+2026-04-07 00:13:11    epoch  17  loss 1.5349  acc 0.3499  val_loss 1.3761  val_acc 0.4307
+2026-04-07 00:13:16    epoch  18  loss 1.5375  acc 0.3481  val_loss 1.3476  val_acc 0.4251
+2026-04-07 00:13:20    epoch  19  loss 1.5176  acc 0.3483  val_loss 1.4127  val_acc 0.4214
+2026-04-07 00:13:24    epoch  20  loss 1.5320  acc 0.3592  val_loss 1.3776  val_acc 0.4196
+2026-04-07 00:13:29    epoch  21  loss 1.5110  acc 0.3506  val_loss 1.3626  val_acc 0.4214
+2026-04-07 00:13:33    epoch  22  loss 1.5113  acc 0.3604  val_loss 1.3382  val_acc 0.4640
+2026-04-07 00:13:37    epoch  23  loss 1.5030  acc 0.3633  val_loss 1.3454  val_acc 0.4085
+2026-04-07 00:13:42    epoch  24  loss 1.5267  acc 0.3561  val_loss 1.4397  val_acc 0.4030
+2026-04-07 00:13:46    epoch  25  loss 1.4806  acc 0.3703  val_loss 1.3520  val_acc 0.4233
+2026-04-07 00:13:50    epoch  26  loss 1.4864  acc 0.3729  val_loss 1.3188  val_acc 0.4455
+2026-04-07 00:13:54    epoch  27  loss 1.4945  acc 0.3746  val_loss 1.3332  val_acc 0.4399
+2026-04-07 00:13:59    epoch  28  loss 1.4782  acc 0.3746  val_loss 1.3637  val_acc 0.4399
+2026-04-07 00:14:03    epoch  29  loss 1.4855  acc 0.3865  val_loss 1.3160  val_acc 0.4732
+2026-04-07 00:14:07    epoch  30  loss 1.4564  acc 0.3846  val_loss 1.3134  val_acc 0.4399
+2026-04-07 00:14:12    epoch  31  loss 1.4847  acc 0.3795  val_loss 1.3062  val_acc 0.4769
+2026-04-07 00:14:16    epoch  32  loss 1.4678  acc 0.3852  val_loss 1.4400  val_acc 0.4214
+2026-04-07 00:14:21    epoch  33  loss 1.4873  acc 0.3758  val_loss 1.3085  val_acc 0.4529
+2026-04-07 00:14:25    epoch  34  loss 1.4514  acc 0.3881  val_loss 1.3462  val_acc 0.4399
+2026-04-07 00:14:29    epoch  35  loss 1.4602  acc 0.3982  val_loss 1.3738  val_acc 0.4381
+2026-04-07 00:14:34    epoch  36  loss 1.4486  acc 0.3953  val_loss 1.3184  val_acc 0.4769
+2026-04-07 00:14:38    epoch  37  loss 1.4249  acc 0.4000  val_loss 1.3888  val_acc 0.4381
+2026-04-07 00:14:42    epoch  38  loss 1.4400  acc 0.4074  val_loss 1.2670  val_acc 0.4787
+2026-04-07 00:14:47    epoch  39  loss 1.4224  acc 0.3961  val_loss 1.2661  val_acc 0.4787
+2026-04-07 00:14:52    epoch  40  loss 1.4154  acc 0.4121  val_loss 1.3045  val_acc 0.4695
+2026-04-07 00:14:57    epoch  41  loss 1.4045  acc 0.4076  val_loss 1.3920  val_acc 0.4233
+2026-04-07 00:15:02    epoch  42  loss 1.4170  acc 0.4113  val_loss 1.3179  val_acc 0.4510
+2026-04-07 00:15:07    epoch  43  loss 1.4113  acc 0.4154  val_loss 1.2410  val_acc 0.5157
+2026-04-07 00:15:13    epoch  44  loss 1.4189  acc 0.4023  val_loss 1.2755  val_acc 0.4898
+2026-04-07 00:15:19    epoch  45  loss 1.4170  acc 0.4041  val_loss 1.2856  val_acc 0.4640
+2026-04-07 00:15:24    epoch  46  loss 1.4011  acc 0.4170  val_loss 1.2708  val_acc 0.4824
+2026-04-07 00:15:30    epoch  47  loss 1.3898  acc 0.4226  val_loss 1.3043  val_acc 0.4713
+2026-04-07 00:15:36    epoch  48  loss 1.3882  acc 0.4092  val_loss 1.2911  val_acc 0.4787
+2026-04-07 00:15:41    epoch  49  loss 1.3843  acc 0.4178  val_loss 1.2332  val_acc 0.5213
+2026-04-07 00:15:47    epoch  50  loss 1.3742  acc 0.4189  val_loss 1.2180  val_acc 0.5102
+2026-04-07 00:15:48    User1 accuracy: 0.2896
+2026-04-07 00:15:48    ✓ New best model saved (User1 held out, acc=0.2896)
+2026-04-07 00:15:48  ────────────────────────────────────────────────────────────
+2026-04-07 00:15:48  LOSO fold — held-out: User2 (301 test windows, 5443 train windows)
+2026-04-07 00:15:55    epoch   1  loss 1.9499  acc 0.2292  val_loss 1.6571  val_acc 0.3217
+2026-04-07 00:16:01    epoch   2  loss 1.7364  acc 0.2805  val_loss 1.5916  val_acc 0.3272
+2026-04-07 00:16:07    epoch   3  loss 1.6997  acc 0.2890  val_loss 1.5599  val_acc 0.3474
+2026-04-07 00:16:13    epoch   4  loss 1.6750  acc 0.2990  val_loss 1.5852  val_acc 0.3272
+2026-04-07 00:16:20    epoch   5  loss 1.6401  acc 0.3105  val_loss 1.5154  val_acc 0.3585
+2026-04-07 00:16:26    epoch   6  loss 1.6230  acc 0.3164  val_loss 1.5270  val_acc 0.3382
+2026-04-07 00:16:32    epoch   7  loss 1.6049  acc 0.3164  val_loss 1.5030  val_acc 0.3438
+2026-04-07 00:16:38    epoch   8  loss 1.6119  acc 0.3199  val_loss 1.4817  val_acc 0.3585
+2026-04-07 00:16:44    epoch   9  loss 1.5850  acc 0.3323  val_loss 1.4779  val_acc 0.3787
