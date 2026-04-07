@@ -233,7 +233,7 @@ def _fit(model, X_train: np.ndarray, y_train: np.ndarray,
     trn_loader = DataLoader(trn_set, batch_size=BATCH_SIZE, shuffle=True)
     val_loader = DataLoader(val_set, batch_size=BATCH_SIZE)
 
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss(reduction="mean")
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, factor=LR_FACTOR, patience=LR_PATIENCE
