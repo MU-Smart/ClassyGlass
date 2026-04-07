@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/nadim/MyFiles/Datasets/Dataset_2/**)",
+      "Read(//Users/nadim/**)"
+    ]
+  }
+}

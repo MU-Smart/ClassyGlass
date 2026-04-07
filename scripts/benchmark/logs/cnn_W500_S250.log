@@ -1,0 +1,15 @@
+2026-04-06 23:23:40  ============================================================
+2026-04-06 23:23:40  CNN + LOSO (PyTorch)  |  window=500  step=250
+2026-04-06 23:23:40  Device : mps
+2026-04-06 23:23:40  Log    : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/cnn_W500_S250.log
+2026-04-06 23:23:40  Model  : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/best_model_W500_S250.pth
+2026-04-06 23:23:40  Figures: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/figures
+2026-04-06 23:23:40  ============================================================
+2026-04-06 23:23:41  Loaded 5744 windows | window=500  step=250 | 129 experiments | 12 subjects | 0 experiments skipped
+2026-04-06 23:23:41  ────────────────────────────────────────────────────────────
+2026-04-06 23:23:41  LOSO fold — held-out: User1 (328 test windows, 5416 train windows)
+2026-04-06 23:23:51    epoch   1  loss 2.0739  acc 0.2285  val_loss 1.7271  val_acc 0.3309
+2026-04-06 23:23:56    epoch   2  loss 1.6574  acc 0.3251  val_loss 1.3971  val_acc 0.4251
+2026-04-06 23:24:00    epoch   3  loss 1.5254  acc 0.3692  val_loss 1.5407  val_acc 0.3457
+2026-04-06 23:24:04    epoch   4  loss 1.4827  acc 0.3692  val_loss 1.2954  val_acc 0.4861
+2026-04-06 23:24:08    epoch   5  loss 1.4316  acc 0.3984  val_loss 1.2823  val_acc 0.4603
