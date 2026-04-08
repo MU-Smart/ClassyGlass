@@ -39,6 +39,7 @@ from torch.utils.data import DataLoader, Dataset, random_split
 MODELS: dict[str, str] = {
     "cnn":            "cnn",
     "deep_conv_lstm": "deep_conv_lstm",
+    "lstm":           "lstm",
 }
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
