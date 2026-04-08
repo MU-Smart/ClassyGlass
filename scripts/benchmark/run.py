@@ -56,10 +56,8 @@ for _d in (LOGS_DIR, MODELS_DIR, FIGURES_DIR):
 
 logger = logging.getLogger("runner")
 logger.setLevel(logging.DEBUG)
+logger.propagate = False
 _fmt = logging.Formatter("%(asctime)s  %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
-_console_handler = logging.StreamHandler(sys.stdout)
-_console_handler.setFormatter(_fmt)
-logger.addHandler(_console_handler)
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -424,7 +422,12 @@ def parse_args():
 
 
 def main():
-    
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)  # type: ignore[union-attr]
+    _console_handler = logging.StreamHandler(sys.stdout)
+    _console_handler.setFormatter(_fmt)
+    logger.addHandler(_console_handler)
+
     args   = parse_args()
     device = get_device(args.gpu)
     tag    = f"W{args.window}_S{args.step}"
