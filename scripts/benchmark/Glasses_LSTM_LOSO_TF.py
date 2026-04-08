@@ -1,6 +1,7 @@
-"""LSTM LOSO training script for Dataset 1A.
+"""LSTM LOSO training script – TensorFlow/Keras version.
 
-Converted from Glasses_LSTM_LOSO.ipynb.
+Converted from Copy_of_Glasses_LSTM_80_20.ipynb.
+Data loading and LOSO strategy mirror Glasses_LSTM_LOSO.py (PyTorch).
 All stdout/stderr output is redirected to a run-specific .log file.
 """
 
@@ -15,13 +16,18 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import torch
-import torch.nn as nn
+from scipy import stats
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from torch.utils.data import DataLoader, Dataset, random_split
 
 warnings.filterwarnings("ignore")
+
+import tensorflow as tf
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import LSTM, Dense, Dropout
+from keras.callbacks import ModelCheckpoint, Callback
+from tensorflow.keras.optimizers import Adam
 
 
 # ── Tee: write to log file AND terminal simultaneously ─────────────────────────
@@ -40,10 +46,12 @@ class _Tee:
         self._file.flush()
         self._term.flush()
 
+    # Make it behave as a proper stream
     def fileno(self):
         return self._term.fileno()
 
 
+# ── Logging helpers ────────────────────────────────────────────────────────────
 def log(msg: str = "") -> None:
     """Print a timestamped line to current stdout (tee'd to log file + terminal)."""
     if msg == "":
@@ -53,12 +61,27 @@ def log(msg: str = "") -> None:
     print(f"[{ts}] {msg}", flush=True)
 
 
-# Paths
+class EpochLogger(Callback):
+    """Replaces Keras verbose=1 progress bars with clean timestamped lines."""
+
+    def __init__(self, log_every: int = 10):
+        super().__init__()
+        self.log_every = log_every
+
+    def on_epoch_end(self, epoch: int, logs=None):
+        logs = logs or {}
+        if (epoch + 1) % self.log_every == 0 or epoch == 0:
+            log(
+                f"  epoch {epoch + 1:4d} | "
+                f"loss {logs.get('loss', 0):.4f}  acc {logs.get('accuracy', 0):.4f} | "
+                f"val_loss {logs.get('val_loss', 0):.4f}  val_acc {logs.get('val_accuracy', 0):.4f}"
+            )
+
+# ── Paths ──────────────────────────────────────────────────────────────────────
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 def _find_project_root(start_dir: str) -> str:
-    """Find project root by locating Processed-DataSets/Dataset_1A."""
     cur = os.path.abspath(start_dir)
     for _ in range(6):
         probe = os.path.join(cur, "Processed-DataSets", "Dataset_1A")
@@ -84,18 +107,13 @@ LOGS_DIR = os.path.join(_BENCHMARK_DIR, "logs")
 for _d in (FIGURES_DIR, MODELS_DIR, LOGS_DIR):
     os.makedirs(_d, exist_ok=True)
 
-# Hyper-parameters
-N_CHANNELS = 6
-N_CLASSES = 11
-BATCH_SIZE = 32
+# ── Hyper-parameters (kept from notebook) ─────────────────────────────────────
 RANDOM_SEED = 42
-VAL_SPLIT = 0.1
-LR = 1e-3
-LR_FACTOR = 0.5
-LR_PATIENCE = 4
-ES_PATIENCE = 8
-
-torch.manual_seed(RANDOM_SEED)
+N_FEATURES = 6
+N_CLASSES = 11
+N_EPOCHS = 400
+BATCH_SIZE = 128
+LEARNING_RATE = 0.01
 
 ACTIVITY_NAMES = {
     1: "Sitting - Reading",
@@ -111,7 +129,11 @@ ACTIVITY_NAMES = {
     11: "Taking stairs",
 }
 
+tf.random.set_seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
 
+
+# ── Data loading ───────────────────────────────────────────────────────────────
 def _exp_no(exp_id: int) -> int:
     """Map raw experiment number to activity label 1-11."""
     return exp_id % 11 or 11
@@ -121,7 +143,7 @@ def load_windows(window_size: int, step_size: int, dataset_path: str = DATASET_P
     """
     Returns
     -------
-    X           : (n_windows, window_size, N_CHANNELS) float32
+    X           : (n_windows, window_size, N_FEATURES) float32
     y           : (n_windows,) int - activity labels 1-11
     subject_ids : (n_windows,) int
     """
@@ -188,140 +210,35 @@ def load_windows(window_size: int, step_size: int, dataset_path: str = DATASET_P
     return X, y, subject_ids
 
 
-class WindowDataset(Dataset):
-    """Wraps (n, W, C) windows as sequences - no flattening for LSTM."""
-
-    def __init__(self, X: np.ndarray, y: np.ndarray):
-        self.X = torch.from_numpy(X).float()
-        self.y = torch.from_numpy(y).long()
-
-    def __len__(self):
-        return len(self.X)
-
-    def __getitem__(self, idx):
-        return self.X[idx], self.y[idx]
-
-
-class LSTMClassifier(nn.Module):
-    """3-layer stacked LSTM classifier."""
-
-    def __init__(self, n_channels: int = 6, n_classes: int = 11, hidden: int = 128, dropout: float = 0.5):
-        super().__init__()
-        self.lstm = nn.LSTM(
-            input_size=n_channels,
-            hidden_size=hidden,
-            num_layers=3,
-            batch_first=True,
-            dropout=dropout,
-        )
-        self.drop = nn.Dropout(dropout)
-        self.fc1 = nn.Linear(hidden, 64)
-        self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(64, n_classes)
-
-    def forward(self, x):
-        _, (h_n, _) = self.lstm(x)
-        out = self.drop(h_n[-1])
-        out = self.relu(self.fc1(out))
-        return self.fc2(out)
-
-
-def build_model(n_channels: int, n_classes: int) -> nn.Module:
-    return LSTMClassifier(n_channels=n_channels, n_classes=n_classes)
-
-
-def _train_one_epoch(model, loader, criterion, optimizer, device):
-    model.train()
-    total_loss, correct, n = 0.0, 0, 0
-    for x_batch, y_batch in loader:
-        x_batch, y_batch = x_batch.to(device), y_batch.to(device)
-        optimizer.zero_grad()
-        logits = model(x_batch)
-        loss = criterion(logits, y_batch)
-        loss.backward()
-        optimizer.step()
-        total_loss += loss.item() * len(y_batch)
-        correct += (logits.argmax(1) == y_batch).sum().item()
-        n += len(y_batch)
-    return total_loss / n, correct / n
-
-
-@torch.no_grad()
-def _evaluate(model, loader, criterion, device):
-    model.eval()
-    total_loss, correct, n = 0.0, 0, 0
-    for x_batch, y_batch in loader:
-        x_batch, y_batch = x_batch.to(device), y_batch.to(device)
-        logits = model(x_batch)
-        total_loss += criterion(logits, y_batch).item() * len(y_batch)
-        correct += (logits.argmax(1) == y_batch).sum().item()
-        n += len(y_batch)
-    return total_loss / n, correct / n
-
-
-def fit(model, x_train: np.ndarray, y_train: np.ndarray, device: torch.device, model_path: str, epochs: int):
-    """Train with validation split, early stopping, and LR scheduling."""
-    dataset = WindowDataset(x_train, y_train)
-    val_len = max(1, int(len(dataset) * VAL_SPLIT))
-    trn_len = len(dataset) - val_len
-    trn_set, val_set = random_split(
-        dataset,
-        [trn_len, val_len],
-        generator=torch.Generator().manual_seed(RANDOM_SEED),
+# ── Model (kept from notebook) ─────────────────────────────────────────────────
+def build_model(window_size: int, n_features: int, n_classes: int) -> Sequential:
+    model = Sequential()
+    model.add(LSTM(128, return_sequences=True, input_shape=(window_size, n_features)))
+    model.add(Dropout(0.2))
+    model.add(LSTM(128, return_sequences=True))
+    model.add(Dropout(0.2))
+    model.add(LSTM(128))
+    model.add(Dropout(0.5))
+    model.add(Dense(units=64, activation="relu"))
+    model.add(Dense(n_classes, activation="softmax"))
+    model.compile(
+        loss="categorical_crossentropy",
+        optimizer=Adam(learning_rate=LEARNING_RATE),
+        metrics=["accuracy"],
     )
-    trn_loader = DataLoader(trn_set, batch_size=BATCH_SIZE, shuffle=True)
-    val_loader = DataLoader(val_set, batch_size=BATCH_SIZE)
-
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=LR)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer,
-        factor=LR_FACTOR,
-        patience=LR_PATIENCE,
-    )
-
-    best_val_loss = float("inf")
-    no_improve = 0
-
-    for epoch in range(1, epochs + 1):
-        trn_loss, trn_acc = _train_one_epoch(model, trn_loader, criterion, optimizer, device)
-        val_loss, val_acc = _evaluate(model, val_loader, criterion, device)
-        scheduler.step(val_loss)
-
-        if epoch % 10 == 0 or epoch == 1:
-            log(
-                f"  epoch {epoch:3d} | "
-                f"loss {trn_loss:.4f}  acc {trn_acc:.4f} | "
-                f"val_loss {val_loss:.4f}  val_acc {val_acc:.4f}"
-            )
-
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            torch.save(model.state_dict(), model_path + ".tmp")
-            no_improve = 0
-        else:
-            no_improve += 1
-            if no_improve >= ES_PATIENCE:
-                log(f"  Early stopping at epoch {epoch}")
-                break
-
-    model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+    return model
 
 
+# ── LOSO run ───────────────────────────────────────────────────────────────────
 def run(window_size: int, step_size: int, epochs: int):
-    if torch.cuda.is_available():
-        device = torch.device("cuda:0")
-    elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-        device = torch.device("mps")
-    else:
-        device = torch.device("cpu")
-    log(f"Device: {device}")
+    log(f"TF GPU devices: {tf.config.list_physical_devices('GPU')}")
 
-    x, y, subject_ids = load_windows(window_size, step_size)
-    log(f"X: {x.shape}  y: {y.shape}  subjects: {np.unique(subject_ids)}")
+    X, y, subject_ids = load_windows(window_size, step_size)
+    log(f"X: {X.shape}  y: {y.shape}  subjects: {np.unique(subject_ids)}")
 
     le = LabelEncoder()
     y_enc = le.fit_transform(y)
+    n_classes = len(le.classes_)
 
     unique_subjects = np.unique(subject_ids)
     fold_accuracies = []
@@ -330,23 +247,27 @@ def run(window_size: int, step_size: int, epochs: int):
     best_acc = -1.0
 
     tag = f"W{window_size}_S{step_size}"
-    model_path = os.path.join(MODELS_DIR, f"glasses_lstm_loso_best_{tag}.pth")
+    model_path = os.path.join(MODELS_DIR, f"glasses_lstm_loso_tf_best_{tag}.keras")
 
-    _, w, c = x.shape
+    _, W, C = X.shape
 
     for subject in unique_subjects:
         test_mask = subject_ids == subject
         train_mask = ~test_mask
 
-        x_train_raw = x[train_mask]
-        x_test_raw = x[test_mask]
-        y_train = y_enc[train_mask]
-        y_test = y_enc[test_mask]
+        X_train_raw = X[train_mask]
+        X_test_raw = X[test_mask]
+        y_train_enc = y_enc[train_mask]
+        y_test_enc = y_enc[test_mask]
 
         scaler = StandardScaler()
-        n_tr = x_train_raw.shape[0]
-        x_train_sc = scaler.fit_transform(x_train_raw.reshape(-1, c)).reshape(n_tr, w, c).astype(np.float32)
-        x_test_sc = scaler.transform(x_test_raw.reshape(-1, c)).reshape(x_test_raw.shape[0], w, c).astype(np.float32)
+        n_tr = X_train_raw.shape[0]
+        X_train_sc = scaler.fit_transform(X_train_raw.reshape(-1, C)).reshape(n_tr, W, C).astype(np.float32)
+        X_test_sc = scaler.transform(X_test_raw.reshape(-1, C)).reshape(X_test_raw.shape[0], W, C).astype(np.float32)
+
+        # One-hot encode labels
+        y_train_oh = np.asarray(pd.get_dummies(y_train_enc), dtype=np.float32)
+        y_test_oh = np.asarray(pd.get_dummies(y_test_enc), dtype=np.float32)
 
         log("-" * 60)
         log(
@@ -354,28 +275,55 @@ def run(window_size: int, step_size: int, epochs: int):
             f"(test={test_mask.sum()} train={train_mask.sum()})"
         )
 
-        model = build_model(c, N_CLASSES).to(device)
-        fit(model, x_train_sc, y_train, device, model_path, epochs)
+        model = build_model(W, C, n_classes)
 
-        model.eval()
-        with torch.no_grad():
-            inp = torch.from_numpy(x_test_sc).float().to(device)
-            y_pred = model(inp).argmax(1).cpu().numpy()
+        fold_ckpt = os.path.join(MODELS_DIR, f"glasses_lstm_loso_tf_fold{subject}_{tag}.keras")
+        mc = ModelCheckpoint(fold_ckpt, monitor="val_accuracy", mode="max", save_best_only=True, verbose=0)
 
-        acc = accuracy_score(y_test, y_pred)
+        history = model.fit(
+            X_train_sc, y_train_oh,
+            epochs=epochs,
+            validation_data=(X_test_sc, y_test_oh),
+            batch_size=BATCH_SIZE,
+            callbacks=[mc, EpochLogger(log_every=10)],
+            verbose=0,
+        )
+
+        model = keras.models.load_model(fold_ckpt)
+        predictions = model.predict(X_test_sc, batch_size=BATCH_SIZE, verbose=0)
+        y_pred = np.argmax(predictions, axis=1)
+
+        acc = accuracy_score(y_test_enc, y_pred)
         fold_accuracies.append(acc)
-        all_y_true.extend(y_test.tolist())
+        all_y_true.extend(y_test_enc.tolist())
         all_y_pred.extend(y_pred.tolist())
         log(f"  User{subject} accuracy: {acc:.4f}")
 
         if acc > best_acc:
             best_acc = acc
-            torch.save(model.state_dict(), model_path)
+            model.save(model_path)
             log(f"  New best model saved (acc={acc:.4f}) -> {model_path}")
 
-    tmp_path = model_path + ".tmp"
-    if os.path.exists(tmp_path):
-        os.remove(tmp_path)
+        # Loss/accuracy curves per fold
+        fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+        axes[0].plot(history.history["loss"], "r--", label="Train loss")
+        axes[0].plot(history.history["val_loss"], "g-", label="Val loss")
+        axes[0].set_title(f"Loss - User{subject}")
+        axes[0].set_xlabel("Epoch")
+        axes[0].legend()
+        axes[0].set_ylim(0)
+
+        axes[1].plot(history.history["accuracy"], "r--", label="Train acc")
+        axes[1].plot(history.history["val_accuracy"], "g-", label="Val acc")
+        axes[1].set_title(f"Accuracy - User{subject}")
+        axes[1].set_xlabel("Epoch")
+        axes[1].legend()
+        axes[1].set_ylim(0)
+
+        plt.tight_layout()
+        fold_fig = os.path.join(FIGURES_DIR, f"lstm_tf_history_user{subject}_{tag}.png")
+        plt.savefig(fold_fig, dpi=150)
+        plt.close()
 
     all_y_true = np.array(all_y_true)
     all_y_pred = np.array(all_y_pred)
@@ -405,14 +353,14 @@ def run(window_size: int, step_size: int, epochs: int):
         xticklabels=class_names,
         yticklabels=class_names,
     )
-    plt.title(f"LSTM - Confusion Matrix (LOSO) [{tag}]", fontsize=14)
+    plt.title(f"LSTM TF - Confusion Matrix (LOSO) [{tag}]", fontsize=14)
     plt.ylabel("True label")
     plt.xlabel("Predicted label")
     plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
-    cm_path = os.path.join(FIGURES_DIR, f"lstm_confusion_matrix_{tag}.png")
+    cm_path = os.path.join(FIGURES_DIR, f"lstm_tf_confusion_matrix_{tag}.png")
     plt.savefig(cm_path, dpi=150)
-    plt.show()
+    plt.close()
     log(f"Saved: {cm_path}")
 
     plt.figure(figsize=(10, 5))
@@ -430,29 +378,30 @@ def run(window_size: int, step_size: int, epochs: int):
         label=f"Mean {np.mean(fold_accuracies):.3f}",
     )
     plt.ylabel("Accuracy")
-    plt.title(f"LSTM - Per-subject LOSO Accuracy [{tag}]")
+    plt.title(f"LSTM TF - Per-subject LOSO Accuracy [{tag}]")
     plt.xticks(rotation=45, ha="right")
     plt.ylim(0, 1)
     plt.legend()
     plt.tight_layout()
-    bar_path = os.path.join(FIGURES_DIR, f"lstm_per_subject_accuracy_{tag}.png")
+    bar_path = os.path.join(FIGURES_DIR, f"lstm_tf_per_subject_accuracy_{tag}.png")
     plt.savefig(bar_path, dpi=150)
-    plt.show()
+    plt.close()
     log(f"Saved: {bar_path}")
 
 
+# ── Entry point ────────────────────────────────────────────────────────────────
 def parse_args():
-    parser = argparse.ArgumentParser(description="LSTM LOSO runner for Dataset_1A")
+    parser = argparse.ArgumentParser(description="LSTM LOSO TF runner for Dataset_1A")
     parser.add_argument("--window", type=int, default=500, help="Sliding window size")
     parser.add_argument("--step", type=int, default=250, help="Sliding window step")
-    parser.add_argument("--epochs", type=int, default=100, help="Training epochs")
+    parser.add_argument("--epochs", type=int, default=N_EPOCHS, help="Training epochs per fold")
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
     tag = f"W{args.window}_S{args.step}"
-    log_path = os.path.join(LOGS_DIR, f"glasses_lstm_loso_{tag}.log")
+    log_path = os.path.join(LOGS_DIR, f"glasses_lstm_loso_tf_{tag}.log")
 
     with open(log_path, "w", encoding="utf-8") as log_file:
         tee_out = _Tee(log_file, sys.__stdout__)

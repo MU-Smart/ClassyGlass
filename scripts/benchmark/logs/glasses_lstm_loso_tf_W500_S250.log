@@ -1,0 +1,11 @@
+[2026-04-07 22:47:31] Starting run
+[2026-04-07 22:47:31] Log file: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/glasses_lstm_loso_tf_W500_S250.log
+[2026-04-07 22:47:31] Model directory: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models
+[2026-04-07 22:47:31] TF GPU devices: []
+[2026-04-07 22:47:32] Loaded 5744 windows | window=500 step=250
+[2026-04-07 22:47:32] Experiments: 129 | Subjects: 12
+[2026-04-07 22:47:32] Skipped (missing sensor): 0
+[2026-04-07 22:47:32] X: (5744, 500, 6)  y: (5744,)  subjects: [ 1  2  3  4  5  6  7  8  9 10 11 12]
+[2026-04-07 22:47:32] ------------------------------------------------------------
+[2026-04-07 22:47:32] LOSO fold - held-out: User1 (test=328 train=5416)
+[2026-04-07 22:48:50]   epoch    1 | loss 2.1782  acc 0.1747 | val_loss 2.2292  val_acc 0.1677

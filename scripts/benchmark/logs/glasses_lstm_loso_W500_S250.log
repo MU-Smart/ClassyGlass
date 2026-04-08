@@ -1,0 +1,12 @@
+Starting run
+Log file: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/glasses_lstm_loso_W500_S250.log
+Model directory: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models
+Device: mps
+Loaded 5744 windows | window=500 step=250
+Experiments: 129 | Subjects: 12
+Skipped (missing sensor): 0
+X: (5744, 500, 6)  y: (5744,)  subjects: [ 1  2  3  4  5  6  7  8  9 10 11 12]
+------------------------------------------------------------
+LOSO fold - held-out: User1 (test=328 train=5416)
+  epoch   1 loss 2.2775 acc 0.1424 val_loss 2.3730 val_acc 0.1386
+  epoch  10 loss 1.8293 acc 0.2482 val_loss 1.7480 val_acc 0.3105
