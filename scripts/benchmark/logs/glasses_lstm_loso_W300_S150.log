@@ -1,0 +1,180 @@
+[2026-04-07 23:33:53] Starting run
+[2026-04-07 23:33:53] Log file: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/glasses_lstm_loso_W300_S150.log
+[2026-04-07 23:33:53] Model directory: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models
+[2026-04-07 23:33:53] Device: cuda:0
+[2026-04-07 23:33:56] Loaded 9704 windows | window=300 step=150
+[2026-04-07 23:33:56] Experiments: 129 | Subjects: 12
+[2026-04-07 23:33:56] Skipped (missing sensor): 0
+[2026-04-07 23:33:56] X: (9704, 300, 6)  y: (9704,)  subjects: [ 1  2  3  4  5  6  7  8  9 10 11 12]
+[2026-04-07 23:33:56] ------------------------------------------------------------
+[2026-04-07 23:33:56] LOSO fold - held-out: User1 (test=557 train=9147)
+[2026-04-07 23:34:02]   epoch   1 | loss 2.1040  acc 0.1880 | val_loss 1.8364  val_acc 0.2571
+[2026-04-07 23:34:27]   epoch  10 | loss 1.4569  acc 0.3805 | val_loss 1.3700  val_acc 0.3972
+[2026-04-07 23:34:54]   epoch  20 | loss 1.4105  acc 0.4018 | val_loss 1.3054  val_acc 0.4223
+[2026-04-07 23:35:22]   epoch  30 | loss 1.1429  acc 0.5094 | val_loss 1.1605  val_acc 0.5164
+[2026-04-07 23:35:49]   epoch  40 | loss 1.0632  acc 0.5444 | val_loss 1.0772  val_acc 0.5306
+[2026-04-07 23:36:16]   epoch  50 | loss 0.9152  acc 0.6168 | val_loss 1.0512  val_acc 0.5842
+[2026-04-07 23:36:43]   epoch  60 | loss 0.7434  acc 0.7011 | val_loss 0.8491  val_acc 0.6685
+[2026-04-07 23:37:10]   epoch  70 | loss 0.5701  acc 0.7854 | val_loss 0.7813  val_acc 0.7473
+[2026-04-07 23:37:38]   epoch  80 | loss 0.4167  acc 0.8524 | val_loss 0.7121  val_acc 0.7921
+[2026-04-07 23:38:05]   epoch  90 | loss 0.2525  acc 0.9162 | val_loss 0.7211  val_acc 0.8009
+[2026-04-07 23:38:07]   Early stopping at epoch 91
+[2026-04-07 23:38:07]   User1 accuracy: 0.4740
+[2026-04-07 23:38:07]   New best model saved (acc=0.4740) -> /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/glasses_lstm_loso_best_W300_S150.pth
+[2026-04-07 23:38:08] ------------------------------------------------------------
+[2026-04-07 23:38:08] LOSO fold - held-out: User2 (test=513 train=9191)
+[2026-04-07 23:38:11]   epoch   1 | loss 2.1128  acc 0.1805 | val_loss 2.0110  val_acc 0.2067
+[2026-04-07 23:38:36]   epoch  10 | loss 1.4938  acc 0.3821 | val_loss 1.5151  val_acc 0.3678
+[2026-04-07 23:39:03]   epoch  20 | loss 1.2674  acc 0.4697 | val_loss 1.2539  val_acc 0.4679
+[2026-04-07 23:39:30]   epoch  30 | loss 1.1303  acc 0.5237 | val_loss 1.1800  val_acc 0.5082
+[2026-04-07 23:39:58]   epoch  40 | loss 1.0389  acc 0.5539 | val_loss 1.1474  val_acc 0.5136
+[2026-04-07 23:40:25]   epoch  50 | loss 0.9845  acc 0.5699 | val_loss 1.1083  val_acc 0.5375
+[2026-04-07 23:40:52]   epoch  60 | loss 0.9248  acc 0.6030 | val_loss 1.0953  val_acc 0.5550
+[2026-04-07 23:41:03]   Early stopping at epoch 64
+[2026-04-07 23:41:03]   User2 accuracy: 0.5088
+[2026-04-07 23:41:03]   New best model saved (acc=0.5088) -> /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/glasses_lstm_loso_best_W300_S150.pth
+[2026-04-07 23:41:04] ------------------------------------------------------------
+[2026-04-07 23:41:04] LOSO fold - held-out: User3 (test=512 train=9192)
+[2026-04-07 23:41:07]   epoch   1 | loss 2.2201  acc 0.1531 | val_loss 2.1302  val_acc 0.1621
+[2026-04-07 23:41:31]   epoch  10 | loss 2.1665  acc 0.1970 | val_loss 1.8507  val_acc 0.2688
+[2026-04-07 23:41:59]   epoch  20 | loss 1.3976  acc 0.4203 | val_loss 1.3496  val_acc 0.4505
+[2026-04-07 23:42:26]   epoch  30 | loss 1.2266  acc 0.4791 | val_loss 1.2001  val_acc 0.4897
+[2026-04-07 23:42:53]   epoch  40 | loss 1.0739  acc 0.5373 | val_loss 1.1643  val_acc 0.5038
+[2026-04-07 23:43:20]   epoch  50 | loss 0.9374  acc 0.5966 | val_loss 1.0875  val_acc 0.5397
+[2026-04-07 23:43:37]   Early stopping at epoch 56
+[2026-04-07 23:43:37]   User3 accuracy: 0.4434
+[2026-04-07 23:43:37] ------------------------------------------------------------
+[2026-04-07 23:43:37] LOSO fold - held-out: User4 (test=542 train=9162)
+[2026-04-07 23:43:40]   epoch   1 | loss 2.3115  acc 0.1347 | val_loss 2.3615  val_acc 0.1255
+[2026-04-07 23:44:04]   epoch  10 | loss 1.6894  acc 0.3012 | val_loss 1.6576  val_acc 0.3133
+[2026-04-07 23:44:31]   epoch  20 | loss 1.4184  acc 0.4015 | val_loss 1.4009  val_acc 0.4127
+[2026-04-07 23:44:59]   epoch  30 | loss 1.1701  acc 0.5006 | val_loss 1.1881  val_acc 0.4902
+[2026-04-07 23:45:26]   epoch  40 | loss 1.0735  acc 0.5349 | val_loss 1.1612  val_acc 0.5295
+[2026-04-07 23:45:52]   epoch  50 | loss 0.8817  acc 0.6228 | val_loss 1.0043  val_acc 0.6048
+[2026-04-07 23:46:19]   epoch  60 | loss 0.7742  acc 0.6795 | val_loss 0.9517  val_acc 0.6332
+[2026-04-07 23:46:46]   epoch  70 | loss 0.6237  acc 0.7543 | val_loss 0.9574  val_acc 0.6900
+[2026-04-07 23:47:13]   epoch  80 | loss 0.5294  acc 0.7997 | val_loss 0.9666  val_acc 0.7227
+[2026-04-07 23:47:40]   epoch  90 | loss 0.4286  acc 0.8489 | val_loss 0.9408  val_acc 0.7413
+[2026-04-07 23:47:50]   Early stopping at epoch 94
+[2026-04-07 23:47:51]   User4 accuracy: 0.6181
+[2026-04-07 23:47:51]   New best model saved (acc=0.6181) -> /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/glasses_lstm_loso_best_W300_S150.pth
+[2026-04-07 23:47:51] ------------------------------------------------------------
+[2026-04-07 23:47:51] LOSO fold - held-out: User5 (test=534 train=9170)
+[2026-04-07 23:47:54]   epoch   1 | loss 2.1444  acc 0.1765 | val_loss 2.1954  val_acc 0.2050
+[2026-04-07 23:48:18]   epoch  10 | loss 1.8270  acc 0.2719 | val_loss 1.9508  val_acc 0.2323
+[2026-04-07 23:48:45]   epoch  20 | loss 1.3620  acc 0.4154 | val_loss 1.3859  val_acc 0.4231
+[2026-04-07 23:49:12]   epoch  30 | loss 1.1391  acc 0.5087 | val_loss 1.1418  val_acc 0.5136
+[2026-04-07 23:49:39]   epoch  40 | loss 0.9620  acc 0.5914 | val_loss 1.1089  val_acc 0.5551
+[2026-04-07 23:50:06]   epoch  50 | loss 0.8611  acc 0.6285 | val_loss 1.0320  val_acc 0.5889
+[2026-04-07 23:50:34]   epoch  60 | loss 0.7864  acc 0.6498 | val_loss 1.0549  val_acc 0.5987
+[2026-04-07 23:50:39]   Early stopping at epoch 62
+[2026-04-07 23:50:39]   User5 accuracy: 0.5618
+[2026-04-07 23:50:40] ------------------------------------------------------------
+[2026-04-07 23:50:40] LOSO fold - held-out: User6 (test=518 train=9186)
+[2026-04-07 23:50:43]   epoch   1 | loss 2.3641  acc 0.1143 | val_loss 2.3565  val_acc 0.1307
+[2026-04-07 23:51:08]   epoch  10 | loss 2.3330  acc 0.1397 | val_loss 2.3487  val_acc 0.1307
+[2026-04-07 23:51:35]   epoch  20 | loss 1.4988  acc 0.3748 | val_loss 1.5348  val_acc 0.3584
+[2026-04-07 23:52:03]   epoch  30 | loss 1.3073  acc 0.4331 | val_loss 1.3073  val_acc 0.4303
+[2026-04-07 23:52:30]   epoch  40 | loss 1.2122  acc 0.4875 | val_loss 1.3084  val_acc 0.4651
+[2026-04-07 23:52:58]   epoch  50 | loss 1.0533  acc 0.5435 | val_loss 1.1556  val_acc 0.5120
+[2026-04-07 23:53:25]   epoch  60 | loss 0.9638  acc 0.5818 | val_loss 1.0925  val_acc 0.5577
+[2026-04-07 23:53:52]   epoch  70 | loss 0.8460  acc 0.6291 | val_loss 1.1219  val_acc 0.5523
+[2026-04-07 23:53:57]   Early stopping at epoch 72
+[2026-04-07 23:53:57]   User6 accuracy: 0.4421
+[2026-04-07 23:53:58] ------------------------------------------------------------
+[2026-04-07 23:53:58] LOSO fold - held-out: User7 (test=1128 train=8576)
+[2026-04-07 23:54:00]   epoch   1 | loss 2.2484  acc 0.1627 | val_loss 2.1387  val_acc 0.1890
+[2026-04-07 23:54:23]   epoch  10 | loss 1.5430  acc 0.3506 | val_loss 1.4549  val_acc 0.4014
+[2026-04-07 23:54:48]   epoch  20 | loss 1.2760  acc 0.4639 | val_loss 1.3095  val_acc 0.4434
+[2026-04-07 23:55:14]   epoch  30 | loss 1.1330  acc 0.5173 | val_loss 1.1659  val_acc 0.4924
+[2026-04-07 23:55:39]   epoch  40 | loss 1.0426  acc 0.5507 | val_loss 1.1156  val_acc 0.5309
+[2026-04-07 23:56:04]   epoch  50 | loss 0.9432  acc 0.5924 | val_loss 1.0800  val_acc 0.5496
+[2026-04-07 23:56:04]   Early stopping at epoch 50
+[2026-04-07 23:56:04]   User7 accuracy: 0.4193
+[2026-04-07 23:56:05] ------------------------------------------------------------
+[2026-04-07 23:56:05] LOSO fold - held-out: User8 (test=1014 train=8690)
+[2026-04-07 23:56:08]   epoch   1 | loss 2.2818  acc 0.1473 | val_loss 2.3596  val_acc 0.1277
+[2026-04-07 23:56:31]   epoch  10 | loss 2.3585  acc 0.1253 | val_loss 2.3590  val_acc 0.1277
+[2026-04-07 23:56:38]   Early stopping at epoch 13
+[2026-04-07 23:56:38]   User8 accuracy: 0.1213
+[2026-04-07 23:56:39] ------------------------------------------------------------
+[2026-04-07 23:56:39] LOSO fold - held-out: User9 (test=1121 train=8583)
+[2026-04-07 23:56:41]   epoch   1 | loss 2.1162  acc 0.1830 | val_loss 1.9264  val_acc 0.2494
+[2026-04-07 23:57:04]   epoch  10 | loss 1.4831  acc 0.3847 | val_loss 1.4173  val_acc 0.4277
+[2026-04-07 23:57:30]   epoch  20 | loss 1.4024  acc 0.4291 | val_loss 1.4283  val_acc 0.4277
+[2026-04-07 23:57:55]   epoch  30 | loss 1.1963  acc 0.4915 | val_loss 1.1974  val_acc 0.5082
+[2026-04-07 23:58:21]   epoch  40 | loss 1.0514  acc 0.5516 | val_loss 1.1256  val_acc 0.5233
+[2026-04-07 23:58:46]   epoch  50 | loss 0.9692  acc 0.5739 | val_loss 1.1080  val_acc 0.5420
+[2026-04-07 23:58:46]   Early stopping at epoch 50
+[2026-04-07 23:58:46]   User9 accuracy: 0.4746
+[2026-04-07 23:58:47] ------------------------------------------------------------
+[2026-04-07 23:58:47] LOSO fold - held-out: User10 (test=1115 train=8589)
+[2026-04-07 23:58:49]   epoch   1 | loss 2.1536  acc 0.1613 | val_loss 2.0155  val_acc 0.2121
+[2026-04-07 23:59:12]   epoch  10 | loss 1.7021  acc 0.3060 | val_loss 1.6242  val_acc 0.3240
+[2026-04-07 23:59:37]   epoch  20 | loss 1.3864  acc 0.4272 | val_loss 1.3160  val_acc 0.4464
+[2026-04-08 00:00:02]   epoch  30 | loss 1.1306  acc 0.5224 | val_loss 1.1452  val_acc 0.5152
+[2026-04-08 00:00:27]   epoch  40 | loss 0.9894  acc 0.5694 | val_loss 1.1617  val_acc 0.5128
+[2026-04-08 00:00:52]   epoch  50 | loss 0.8273  acc 0.6385 | val_loss 1.0596  val_acc 0.5991
+[2026-04-08 00:01:18]   epoch  60 | loss 0.7295  acc 0.6751 | val_loss 0.9841  val_acc 0.6410
+[2026-04-08 00:01:43]   epoch  70 | loss 0.6497  acc 0.7154 | val_loss 0.9954  val_acc 0.6667
+[2026-04-08 00:02:08]   epoch  80 | loss 0.5179  acc 0.7813 | val_loss 1.0106  val_acc 0.7005
+[2026-04-08 00:02:10]   Early stopping at epoch 81
+[2026-04-08 00:02:10]   User10 accuracy: 0.5318
+[2026-04-08 00:02:11] ------------------------------------------------------------
+[2026-04-08 00:02:11] LOSO fold - held-out: User11 (test=1175 train=8529)
+[2026-04-08 00:02:13]   epoch   1 | loss 2.2530  acc 0.1614 | val_loss 2.1182  val_acc 0.1854
+[2026-04-08 00:02:36]   epoch  10 | loss 1.7555  acc 0.2933 | val_loss 1.7560  val_acc 0.2664
+[2026-04-08 00:02:58]   Early stopping at epoch 19
+[2026-04-08 00:02:59]   User11 accuracy: 0.2868
+[2026-04-08 00:02:59] ------------------------------------------------------------
+[2026-04-08 00:02:59] LOSO fold - held-out: User12 (test=975 train=8729)
+[2026-04-08 00:03:02]   epoch   1 | loss 2.3545  acc 0.1222 | val_loss 2.3517  val_acc 0.1491
+[2026-04-08 00:03:25]   epoch  10 | loss 1.7300  acc 0.2949 | val_loss 1.5967  val_acc 0.3234
+[2026-04-08 00:03:50]   epoch  20 | loss 1.3656  acc 0.4201 | val_loss 1.3232  val_acc 0.4472
+[2026-04-08 00:04:16]   epoch  30 | loss 1.1933  acc 0.4948 | val_loss 1.0987  val_acc 0.5459
+[2026-04-08 00:04:41]   epoch  40 | loss 0.9992  acc 0.5730 | val_loss 1.0014  val_acc 0.5883
+[2026-04-08 00:05:07]   epoch  50 | loss 0.8709  acc 0.6244 | val_loss 0.9951  val_acc 0.6021
+[2026-04-08 00:05:12]   Early stopping at epoch 52
+[2026-04-08 00:05:12]   User12 accuracy: 0.3374
+[2026-04-08 00:05:12] ============================================================
+[2026-04-08 00:05:12] LOSO SUMMARY
+[2026-04-08 00:05:12] ============================================================
+[2026-04-08 00:05:12]   User1: 0.4740
+[2026-04-08 00:05:12]   User2: 0.5088
+[2026-04-08 00:05:12]   User3: 0.4434
+[2026-04-08 00:05:12]   User4: 0.6181
+[2026-04-08 00:05:12]   User5: 0.5618
+[2026-04-08 00:05:12]   User6: 0.4421
+[2026-04-08 00:05:12]   User7: 0.4193
+[2026-04-08 00:05:12]   User8: 0.1213
+[2026-04-08 00:05:12]   User9: 0.4746
+[2026-04-08 00:05:12]   User10: 0.5318
+[2026-04-08 00:05:12]   User11: 0.2868
+[2026-04-08 00:05:12]   User12: 0.3374
+[2026-04-08 00:05:12]   Mean accuracy : 0.4349
+[2026-04-08 00:05:12]   Std  accuracy : 0.1284
+
+[2026-04-08 00:05:12] ============================================================
+[2026-04-08 00:05:12] CLASSIFICATION REPORT (all folds combined)
+[2026-04-08 00:05:12] ============================================================
+[2026-04-08 00:05:12]                             precision    recall  f1-score   support
+
+         Sitting - Reading       0.34      0.30      0.32       926
+         Sitting - Writing       0.29      0.19      0.23      1022
+         Computer - Typing       0.28      0.48      0.36      1022
+       Computer - Browsing       0.30      0.14      0.19      1040
+Sitting - Moving head/body       0.32      0.44      0.37       896
+    Sitting - Moving chair       0.49      0.42      0.45      1023
+     Stand up from sitting       0.40      0.63      0.49      1213
+                  Standing       0.45      0.16      0.24       679
+                   Walking       0.78      0.62      0.69       804
+                   Running       0.88      0.72      0.79       786
+             Taking stairs       0.32      0.44      0.37       293
+
+                  accuracy                           0.41      9704
+                 macro avg       0.44      0.41      0.41      9704
+              weighted avg       0.43      0.41      0.40      9704
+
+[2026-04-08 00:05:13] Saved: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures/lstm_confusion_matrix_W300_S150.png
+[2026-04-08 00:05:13] Saved: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures/lstm_per_subject_accuracy_W300_S150.png
+[2026-04-08 00:05:13] Run finished
