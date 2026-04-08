@@ -25,8 +25,26 @@ warnings.filterwarnings("ignore")
 
 # Paths
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_BENCHMARK_DIR = os.path.dirname(_HERE)
-_PROJECT_ROOT = os.path.abspath(os.path.join(_BENCHMARK_DIR, "..", ".."))
+
+
+def _find_project_root(start_dir: str) -> str:
+    """Find project root by locating Processed-DataSets/Dataset_1A."""
+    cur = os.path.abspath(start_dir)
+    for _ in range(6):
+        probe = os.path.join(cur, "Processed-DataSets", "Dataset_1A")
+        if os.path.isdir(probe):
+            return cur
+        parent = os.path.dirname(cur)
+        if parent == cur:
+            break
+        cur = parent
+    raise FileNotFoundError(
+        "Could not locate project root containing Processed-DataSets/Dataset_1A"
+    )
+
+
+_PROJECT_ROOT = _find_project_root(_HERE)
+_BENCHMARK_DIR = os.path.join(_PROJECT_ROOT, "scripts", "benchmark")
 
 DATASET_PATH = os.path.join(_PROJECT_ROOT, "Processed-DataSets", "Dataset_1A")
 FIGURES_DIR = os.path.join(_BENCHMARK_DIR, "figures")
