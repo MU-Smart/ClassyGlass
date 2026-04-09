@@ -1,0 +1,783 @@
+2026-04-08 19:33:10  ============================================================
+2026-04-08 19:33:10  cnn  |  window=400  step=400
+2026-04-08 19:33:10  Device  : cuda:4
+2026-04-08 19:33:10  Flatten : True
+2026-04-08 19:33:10  Log     : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/cnn_W400_S400.log
+2026-04-08 19:33:10  Model   : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/cnn_best_W400_S400.pth
+2026-04-08 19:33:10  Figures : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures
+2026-04-08 19:33:10  ============================================================
+2026-04-08 19:33:14  Loaded 3644 windows | window=400  step=400 | 129 experiments | 12 subjects | 0 experiments skipped
+2026-04-08 19:33:15  ────────────────────────────────────────────────────────────
+2026-04-08 19:33:15  LOSO fold — held-out: User1 (210 test windows, 3434 train windows)
+2026-04-08 19:33:18    epoch   1  loss 2.0090  acc 0.2184  val_loss 1.7228  val_acc 0.2682
+2026-04-08 19:33:19    epoch   2  loss 1.7609  acc 0.2805  val_loss 1.6448  val_acc 0.2624
+2026-04-08 19:33:20    epoch   3  loss 1.7004  acc 0.2954  val_loss 1.6441  val_acc 0.2799
+2026-04-08 19:33:21    epoch   4  loss 1.6641  acc 0.2889  val_loss 1.6117  val_acc 0.3003
+2026-04-08 19:33:21    epoch   5  loss 1.6654  acc 0.3025  val_loss 1.6034  val_acc 0.2974
+2026-04-08 19:33:22    epoch   6  loss 1.6604  acc 0.2870  val_loss 1.5989  val_acc 0.3090
+2026-04-08 19:33:23    epoch   7  loss 1.6356  acc 0.3005  val_loss 1.5864  val_acc 0.3149
+2026-04-08 19:33:24    epoch   8  loss 1.6151  acc 0.3073  val_loss 1.6337  val_acc 0.3061
+2026-04-08 19:33:25    epoch   9  loss 1.6284  acc 0.3122  val_loss 1.5758  val_acc 0.3265
+2026-04-08 19:33:25    epoch  10  loss 1.5997  acc 0.3151  val_loss 1.5757  val_acc 0.3353
+2026-04-08 19:33:26    epoch  11  loss 1.5896  acc 0.3177  val_loss 1.5999  val_acc 0.3120
+2026-04-08 19:33:27    epoch  12  loss 1.6216  acc 0.3077  val_loss 1.5670  val_acc 0.3178
+2026-04-08 19:33:28    epoch  13  loss 1.5603  acc 0.3345  val_loss 1.5720  val_acc 0.3149
+2026-04-08 19:33:29    epoch  14  loss 1.5763  acc 0.3290  val_loss 1.5314  val_acc 0.3528
+2026-04-08 19:33:29    epoch  15  loss 1.5774  acc 0.3332  val_loss 1.5300  val_acc 0.3440
+2026-04-08 19:33:30    epoch  16  loss 1.5820  acc 0.3306  val_loss 1.6268  val_acc 0.3236
+2026-04-08 19:33:31    epoch  17  loss 1.5713  acc 0.3323  val_loss 1.5243  val_acc 0.3499
+2026-04-08 19:33:32    epoch  18  loss 1.5566  acc 0.3384  val_loss 1.5238  val_acc 0.3440
+2026-04-08 19:33:33    epoch  19  loss 1.5541  acc 0.3445  val_loss 1.5222  val_acc 0.3382
+2026-04-08 19:33:33    epoch  20  loss 1.5716  acc 0.3384  val_loss 1.5320  val_acc 0.3440
+2026-04-08 19:33:34    epoch  21  loss 1.5526  acc 0.3413  val_loss 1.5390  val_acc 0.3353
+2026-04-08 19:33:35    epoch  22  loss 1.5664  acc 0.3504  val_loss 1.5399  val_acc 0.3382
+2026-04-08 19:33:36    epoch  23  loss 1.5507  acc 0.3368  val_loss 1.5073  val_acc 0.3615
+2026-04-08 19:33:37    epoch  24  loss 1.5613  acc 0.3452  val_loss 1.5493  val_acc 0.3294
+2026-04-08 19:33:37    epoch  25  loss 1.5474  acc 0.3433  val_loss 1.5385  val_acc 0.3149
+2026-04-08 19:33:38    epoch  26  loss 1.5295  acc 0.3481  val_loss 1.5554  val_acc 0.3528
+2026-04-08 19:33:39    epoch  27  loss 1.5222  acc 0.3562  val_loss 1.5045  val_acc 0.3528
+2026-04-08 19:33:40    epoch  28  loss 1.5394  acc 0.3513  val_loss 1.5345  val_acc 0.3382
+2026-04-08 19:33:41    epoch  29  loss 1.5534  acc 0.3500  val_loss 1.5077  val_acc 0.3440
+2026-04-08 19:33:41    epoch  30  loss 1.5273  acc 0.3465  val_loss 1.5013  val_acc 0.3761
+2026-04-08 19:33:42    epoch  31  loss 1.5455  acc 0.3394  val_loss 1.5569  val_acc 0.3469
+2026-04-08 19:33:43    epoch  32  loss 1.5276  acc 0.3598  val_loss 1.4917  val_acc 0.3673
+2026-04-08 19:33:44    epoch  33  loss 1.5559  acc 0.3445  val_loss 1.4972  val_acc 0.3499
+2026-04-08 19:33:45    epoch  34  loss 1.5204  acc 0.3523  val_loss 1.4823  val_acc 0.3761
+2026-04-08 19:33:45    epoch  35  loss 1.5299  acc 0.3575  val_loss 1.4909  val_acc 0.3557
+2026-04-08 19:33:46    epoch  36  loss 1.5333  acc 0.3507  val_loss 1.5060  val_acc 0.3761
+2026-04-08 19:33:47    epoch  37  loss 1.5283  acc 0.3627  val_loss 1.4898  val_acc 0.3703
+2026-04-08 19:33:48    epoch  38  loss 1.5160  acc 0.3594  val_loss 1.5161  val_acc 0.3469
+2026-04-08 19:33:49    epoch  39  loss 1.5190  acc 0.3617  val_loss 1.4839  val_acc 0.3673
+2026-04-08 19:33:49    epoch  40  loss 1.5106  acc 0.3591  val_loss 1.4751  val_acc 0.3848
+2026-04-08 19:33:50    epoch  41  loss 1.5084  acc 0.3698  val_loss 1.4724  val_acc 0.3878
+2026-04-08 19:33:51    epoch  42  loss 1.4889  acc 0.3720  val_loss 1.4700  val_acc 0.3936
+2026-04-08 19:33:52    epoch  43  loss 1.5299  acc 0.3633  val_loss 1.4917  val_acc 0.3936
+2026-04-08 19:33:52    epoch  44  loss 1.4939  acc 0.3795  val_loss 1.5586  val_acc 0.3499
+2026-04-08 19:33:53    epoch  45  loss 1.4990  acc 0.3720  val_loss 1.4877  val_acc 0.3703
+2026-04-08 19:33:54    epoch  46  loss 1.4770  acc 0.3733  val_loss 1.4773  val_acc 0.3848
+2026-04-08 19:33:55    epoch  47  loss 1.4891  acc 0.3714  val_loss 1.4801  val_acc 0.4140
+2026-04-08 19:33:56    epoch  48  loss 1.4764  acc 0.3750  val_loss 1.4946  val_acc 0.3761
+2026-04-08 19:33:56    epoch  49  loss 1.4885  acc 0.3724  val_loss 1.4834  val_acc 0.3878
+2026-04-08 19:33:57    epoch  50  loss 1.4604  acc 0.3869  val_loss 1.4643  val_acc 0.3907
+2026-04-08 19:33:58    epoch  51  loss 1.4785  acc 0.3750  val_loss 1.4574  val_acc 0.4169
+2026-04-08 19:33:59    epoch  52  loss 1.4838  acc 0.3743  val_loss 1.4704  val_acc 0.3848
+2026-04-08 19:34:00    epoch  53  loss 1.4739  acc 0.3847  val_loss 1.4602  val_acc 0.4023
+2026-04-08 19:34:00    epoch  54  loss 1.4689  acc 0.3821  val_loss 1.4668  val_acc 0.3848
+2026-04-08 19:34:01    epoch  55  loss 1.4851  acc 0.3733  val_loss 1.4733  val_acc 0.3994
+2026-04-08 19:34:02    epoch  56  loss 1.4891  acc 0.3769  val_loss 1.4820  val_acc 0.3907
+2026-04-08 19:34:02    epoch  57  loss 1.4753  acc 0.3733  val_loss 1.4553  val_acc 0.3936
+2026-04-08 19:34:03    epoch  58  loss 1.4657  acc 0.3782  val_loss 1.4544  val_acc 0.3965
+2026-04-08 19:34:04    epoch  59  loss 1.4660  acc 0.3905  val_loss 1.4541  val_acc 0.3965
+2026-04-08 19:34:05    epoch  60  loss 1.4581  acc 0.3746  val_loss 1.4605  val_acc 0.4052
+2026-04-08 19:34:06    epoch  61  loss 1.4682  acc 0.3808  val_loss 1.4586  val_acc 0.4052
+2026-04-08 19:34:06    epoch  62  loss 1.4641  acc 0.3850  val_loss 1.4559  val_acc 0.3819
+2026-04-08 19:34:07    epoch  63  loss 1.4670  acc 0.3915  val_loss 1.4560  val_acc 0.3907
+2026-04-08 19:34:08    epoch  64  loss 1.4572  acc 0.3963  val_loss 1.4620  val_acc 0.3994
+2026-04-08 19:34:09    epoch  65  loss 1.4650  acc 0.3850  val_loss 1.4544  val_acc 0.4052
+2026-04-08 19:34:10    epoch  66  loss 1.4674  acc 0.3885  val_loss 1.4580  val_acc 0.4052
+2026-04-08 19:34:10    epoch  67  loss 1.4732  acc 0.3866  val_loss 1.4593  val_acc 0.3907
+2026-04-08 19:34:10    Early stopping at epoch 67
+2026-04-08 19:34:10    User1 accuracy: 0.3048
+2026-04-08 19:34:10    ✓ New best model saved (User1 held out, acc=0.3048)
+2026-04-08 19:34:11  ────────────────────────────────────────────────────────────
+2026-04-08 19:34:11  LOSO fold — held-out: User2 (192 test windows, 3452 train windows)
+2026-04-08 19:34:12    epoch   1  loss 2.0251  acc 0.2227  val_loss 1.7810  val_acc 0.2667
+2026-04-08 19:34:12    epoch   2  loss 1.7850  acc 0.2697  val_loss 1.6919  val_acc 0.2638
+2026-04-08 19:34:13    epoch   3  loss 1.7361  acc 0.2861  val_loss 1.6664  val_acc 0.2609
+2026-04-08 19:34:14    epoch   4  loss 1.7041  acc 0.2942  val_loss 1.6401  val_acc 0.2522
+2026-04-08 19:34:15    epoch   5  loss 1.6938  acc 0.2890  val_loss 1.6299  val_acc 0.2870
+2026-04-08 19:34:16    epoch   6  loss 1.6952  acc 0.2871  val_loss 1.6086  val_acc 0.3304
+2026-04-08 19:34:17    epoch   7  loss 1.6773  acc 0.3077  val_loss 1.5962  val_acc 0.3333
+2026-04-08 19:34:17    epoch   8  loss 1.6760  acc 0.2971  val_loss 1.6630  val_acc 0.3014
+2026-04-08 19:34:18    epoch   9  loss 1.6485  acc 0.3138  val_loss 1.5611  val_acc 0.3275
+2026-04-08 19:34:19    epoch  10  loss 1.6276  acc 0.3215  val_loss 1.5712  val_acc 0.3043
+2026-04-08 19:34:20    epoch  11  loss 1.6238  acc 0.3183  val_loss 1.6592  val_acc 0.3101
+2026-04-08 19:34:21    epoch  12  loss 1.6055  acc 0.3276  val_loss 1.5324  val_acc 0.3275
+2026-04-08 19:34:22    epoch  13  loss 1.6348  acc 0.3202  val_loss 1.5821  val_acc 0.3333
+2026-04-08 19:34:22    epoch  14  loss 1.6262  acc 0.3293  val_loss 1.5064  val_acc 0.3623
+2026-04-08 19:34:23    epoch  15  loss 1.5958  acc 0.3276  val_loss 1.5481  val_acc 0.3072
+2026-04-08 19:34:24    epoch  16  loss 1.6022  acc 0.3315  val_loss 1.5080  val_acc 0.3623
+2026-04-08 19:34:25    epoch  17  loss 1.5856  acc 0.3276  val_loss 1.5240  val_acc 0.3391
+2026-04-08 19:34:26    epoch  18  loss 1.5878  acc 0.3305  val_loss 1.4964  val_acc 0.3391
+2026-04-08 19:34:26    epoch  19  loss 1.6278  acc 0.3254  val_loss 1.5256  val_acc 0.3710
+2026-04-08 19:34:27    epoch  20  loss 1.6181  acc 0.3309  val_loss 1.5096  val_acc 0.3449
+2026-04-08 19:34:28    epoch  21  loss 1.6080  acc 0.3248  val_loss 1.5251  val_acc 0.3652
+2026-04-08 19:34:29    epoch  22  loss 1.5977  acc 0.3418  val_loss 1.4955  val_acc 0.3768
+2026-04-08 19:34:30    epoch  23  loss 1.5893  acc 0.3425  val_loss 1.5024  val_acc 0.3739
+2026-04-08 19:34:31    epoch  24  loss 1.5746  acc 0.3386  val_loss 1.4983  val_acc 0.3652
+2026-04-08 19:34:31    epoch  25  loss 1.6027  acc 0.3408  val_loss 1.5614  val_acc 0.3275
+2026-04-08 19:34:32    epoch  26  loss 1.5723  acc 0.3444  val_loss 1.5078  val_acc 0.3594
+2026-04-08 19:34:33    epoch  27  loss 1.5698  acc 0.3499  val_loss 1.4982  val_acc 0.3275
+2026-04-08 19:34:34    epoch  28  loss 1.5600  acc 0.3598  val_loss 1.4749  val_acc 0.3420
+2026-04-08 19:34:35    epoch  29  loss 1.5666  acc 0.3605  val_loss 1.4806  val_acc 0.3942
+2026-04-08 19:34:35    epoch  30  loss 1.5416  acc 0.3582  val_loss 1.4617  val_acc 0.3652
+2026-04-08 19:34:36    epoch  31  loss 1.5676  acc 0.3540  val_loss 1.4713  val_acc 0.3681
+2026-04-08 19:34:37    epoch  32  loss 1.5602  acc 0.3547  val_loss 1.4621  val_acc 0.3565
+2026-04-08 19:34:38    epoch  33  loss 1.5553  acc 0.3550  val_loss 1.4815  val_acc 0.3565
+2026-04-08 19:34:39    epoch  34  loss 1.5679  acc 0.3489  val_loss 1.4561  val_acc 0.4000
+2026-04-08 19:34:40    epoch  35  loss 1.5641  acc 0.3492  val_loss 1.4984  val_acc 0.3246
+2026-04-08 19:34:40    epoch  36  loss 1.5832  acc 0.3499  val_loss 1.4715  val_acc 0.3826
+2026-04-08 19:34:41    epoch  37  loss 1.5603  acc 0.3560  val_loss 1.4703  val_acc 0.4058
+2026-04-08 19:34:42    epoch  38  loss 1.5512  acc 0.3634  val_loss 1.4789  val_acc 0.3333
+2026-04-08 19:34:43    epoch  39  loss 1.5644  acc 0.3672  val_loss 1.4586  val_acc 0.3507
+2026-04-08 19:34:44    epoch  40  loss 1.5588  acc 0.3537  val_loss 1.4525  val_acc 0.3681
+2026-04-08 19:34:45    epoch  41  loss 1.5682  acc 0.3647  val_loss 1.4587  val_acc 0.3681
+2026-04-08 19:34:45    epoch  42  loss 1.5471  acc 0.3614  val_loss 1.4526  val_acc 0.3826
+2026-04-08 19:34:46    epoch  43  loss 1.5345  acc 0.3692  val_loss 1.4396  val_acc 0.3710
+2026-04-08 19:34:47    epoch  44  loss 1.5341  acc 0.3676  val_loss 1.4460  val_acc 0.4116
+2026-04-08 19:34:48    epoch  45  loss 1.5339  acc 0.3640  val_loss 1.4560  val_acc 0.3594
+2026-04-08 19:34:49    epoch  46  loss 1.5592  acc 0.3518  val_loss 1.4424  val_acc 0.3797
+2026-04-08 19:34:50    epoch  47  loss 1.5318  acc 0.3679  val_loss 1.4653  val_acc 0.3478
+2026-04-08 19:34:50    epoch  48  loss 1.5091  acc 0.3766  val_loss 1.4450  val_acc 0.3710
+2026-04-08 19:34:51    epoch  49  loss 1.5365  acc 0.3708  val_loss 1.4419  val_acc 0.3855
+2026-04-08 19:34:52    epoch  50  loss 1.5455  acc 0.3643  val_loss 1.4821  val_acc 0.3333
+2026-04-08 19:34:53    epoch  51  loss 1.5377  acc 0.3682  val_loss 1.4412  val_acc 0.3768
+2026-04-08 19:34:53    Early stopping at epoch 51
+2026-04-08 19:34:53    User2 accuracy: 0.3750
+2026-04-08 19:34:53    ✓ New best model saved (User2 held out, acc=0.3750)
+2026-04-08 19:34:53  ────────────────────────────────────────────────────────────
+2026-04-08 19:34:53  LOSO fold — held-out: User3 (191 test windows, 3453 train windows)
+2026-04-08 19:34:54    epoch   1  loss 2.0234  acc 0.2252  val_loss 1.7501  val_acc 0.2667
+2026-04-08 19:34:55    epoch   2  loss 1.8244  acc 0.2593  val_loss 1.6662  val_acc 0.3159
+2026-04-08 19:34:56    epoch   3  loss 1.7698  acc 0.2767  val_loss 1.6456  val_acc 0.3130
+2026-04-08 19:34:57    epoch   4  loss 1.7352  acc 0.2790  val_loss 1.5955  val_acc 0.3304
+2026-04-08 19:34:57    epoch   5  loss 1.7026  acc 0.2938  val_loss 1.6057  val_acc 0.3275
+2026-04-08 19:34:58    epoch   6  loss 1.6708  acc 0.2989  val_loss 1.5704  val_acc 0.3391
+2026-04-08 19:34:59    epoch   7  loss 1.6620  acc 0.2995  val_loss 1.6502  val_acc 0.2957
+2026-04-08 19:35:00    epoch   8  loss 1.6484  acc 0.3105  val_loss 1.5841  val_acc 0.3246
+2026-04-08 19:35:01    epoch   9  loss 1.6501  acc 0.3163  val_loss 1.5686  val_acc 0.3478
+2026-04-08 19:35:01    epoch  10  loss 1.6190  acc 0.3198  val_loss 1.5553  val_acc 0.3275
+2026-04-08 19:35:02    epoch  11  loss 1.6224  acc 0.3131  val_loss 1.5254  val_acc 0.3333
+2026-04-08 19:35:03    epoch  12  loss 1.6214  acc 0.3179  val_loss 1.5437  val_acc 0.3507
+2026-04-08 19:35:04    epoch  13  loss 1.6318  acc 0.3115  val_loss 1.5312  val_acc 0.3507
+2026-04-08 19:35:05    epoch  14  loss 1.6045  acc 0.3134  val_loss 1.5257  val_acc 0.3304
+2026-04-08 19:35:05    epoch  15  loss 1.6261  acc 0.3124  val_loss 1.5150  val_acc 0.3478
+2026-04-08 19:35:06    epoch  16  loss 1.6113  acc 0.3288  val_loss 1.5254  val_acc 0.3594
+2026-04-08 19:35:07    epoch  17  loss 1.6189  acc 0.3150  val_loss 1.5027  val_acc 0.3681
+2026-04-08 19:35:08    epoch  18  loss 1.5868  acc 0.3292  val_loss 1.5508  val_acc 0.3362
+2026-04-08 19:35:09    epoch  19  loss 1.5952  acc 0.3349  val_loss 1.4951  val_acc 0.3565
+2026-04-08 19:35:09    epoch  20  loss 1.5834  acc 0.3301  val_loss 1.5024  val_acc 0.3681
+2026-04-08 19:35:10    epoch  21  loss 1.5924  acc 0.3337  val_loss 1.5011  val_acc 0.3797
+2026-04-08 19:35:11    epoch  22  loss 1.5886  acc 0.3472  val_loss 1.4912  val_acc 0.3768
+2026-04-08 19:35:12    epoch  23  loss 1.5933  acc 0.3311  val_loss 1.5025  val_acc 0.3594
+2026-04-08 19:35:13    epoch  24  loss 1.5654  acc 0.3485  val_loss 1.5011  val_acc 0.3768
+2026-04-08 19:35:13    epoch  25  loss 1.5793  acc 0.3459  val_loss 1.4825  val_acc 0.3681
+2026-04-08 19:35:14    epoch  26  loss 1.5590  acc 0.3404  val_loss 1.5324  val_acc 0.3420
+2026-04-08 19:35:15    epoch  27  loss 1.5703  acc 0.3394  val_loss 1.5162  val_acc 0.3826
+2026-04-08 19:35:16    epoch  28  loss 1.5675  acc 0.3446  val_loss 1.5427  val_acc 0.3739
+2026-04-08 19:35:17    epoch  29  loss 1.5812  acc 0.3327  val_loss 1.4808  val_acc 0.3971
+2026-04-08 19:35:18    epoch  30  loss 1.5614  acc 0.3520  val_loss 1.4760  val_acc 0.3855
+2026-04-08 19:35:18    epoch  31  loss 1.5702  acc 0.3433  val_loss 1.4725  val_acc 0.3913
+2026-04-08 19:35:19    epoch  32  loss 1.5715  acc 0.3382  val_loss 1.4829  val_acc 0.3536
+2026-04-08 19:35:20    epoch  33  loss 1.5618  acc 0.3411  val_loss 1.4721  val_acc 0.3913
+2026-04-08 19:35:21    epoch  34  loss 1.5556  acc 0.3523  val_loss 1.4652  val_acc 0.3971
+2026-04-08 19:35:22    epoch  35  loss 1.5503  acc 0.3443  val_loss 1.4679  val_acc 0.3855
+2026-04-08 19:35:22    epoch  36  loss 1.5573  acc 0.3468  val_loss 1.4833  val_acc 0.3739
+2026-04-08 19:35:23    epoch  37  loss 1.5669  acc 0.3481  val_loss 1.5321  val_acc 0.3478
+2026-04-08 19:35:24    epoch  38  loss 1.5594  acc 0.3526  val_loss 1.4677  val_acc 0.3942
+2026-04-08 19:35:25    epoch  39  loss 1.5686  acc 0.3391  val_loss 1.4641  val_acc 0.4174
+2026-04-08 19:35:26    epoch  40  loss 1.5504  acc 0.3549  val_loss 1.4552  val_acc 0.4087
+2026-04-08 19:35:27    epoch  41  loss 1.5518  acc 0.3517  val_loss 1.4549  val_acc 0.3855
+2026-04-08 19:35:27    epoch  42  loss 1.5531  acc 0.3607  val_loss 1.5076  val_acc 0.3942
+2026-04-08 19:35:28    epoch  43  loss 1.5608  acc 0.3340  val_loss 1.4490  val_acc 0.4261
+2026-04-08 19:35:29    epoch  44  loss 1.5468  acc 0.3504  val_loss 1.4577  val_acc 0.4290
+2026-04-08 19:35:30    epoch  45  loss 1.5357  acc 0.3530  val_loss 1.5275  val_acc 0.3739
+2026-04-08 19:35:31    epoch  46  loss 1.5580  acc 0.3523  val_loss 1.5974  val_acc 0.3304
+2026-04-08 19:35:31    epoch  47  loss 1.5278  acc 0.3578  val_loss 1.4597  val_acc 0.4145
+2026-04-08 19:35:32    epoch  48  loss 1.5530  acc 0.3420  val_loss 1.4545  val_acc 0.4203
+2026-04-08 19:35:33    epoch  49  loss 1.5213  acc 0.3687  val_loss 1.4607  val_acc 0.4464
+2026-04-08 19:35:34    epoch  50  loss 1.5155  acc 0.3626  val_loss 1.4652  val_acc 0.4058
+2026-04-08 19:35:35    epoch  51  loss 1.5206  acc 0.3594  val_loss 1.4467  val_acc 0.4145
+2026-04-08 19:35:35    epoch  52  loss 1.5225  acc 0.3707  val_loss 1.4764  val_acc 0.4493
+2026-04-08 19:35:36    epoch  53  loss 1.5168  acc 0.3639  val_loss 1.5255  val_acc 0.4116
+2026-04-08 19:35:37    epoch  54  loss 1.5246  acc 0.3568  val_loss 1.4883  val_acc 0.4435
+2026-04-08 19:35:38    epoch  55  loss 1.5272  acc 0.3681  val_loss 1.4509  val_acc 0.4377
+2026-04-08 19:35:39    epoch  56  loss 1.5282  acc 0.3546  val_loss 1.4498  val_acc 0.4058
+2026-04-08 19:35:39    epoch  57  loss 1.5007  acc 0.3790  val_loss 1.4348  val_acc 0.4261
+2026-04-08 19:35:40    epoch  58  loss 1.5016  acc 0.3700  val_loss 1.4419  val_acc 0.4522
+2026-04-08 19:35:41    epoch  59  loss 1.5020  acc 0.3723  val_loss 1.4437  val_acc 0.4174
+2026-04-08 19:35:42    epoch  60  loss 1.5134  acc 0.3719  val_loss 1.4537  val_acc 0.4377
+2026-04-08 19:35:43    epoch  61  loss 1.5139  acc 0.3665  val_loss 1.4422  val_acc 0.4406
+2026-04-08 19:35:43    epoch  62  loss 1.5080  acc 0.3671  val_loss 1.4514  val_acc 0.4116
+2026-04-08 19:35:44    epoch  63  loss 1.5022  acc 0.3678  val_loss 1.4390  val_acc 0.4261
+2026-04-08 19:35:45    epoch  64  loss 1.4997  acc 0.3736  val_loss 1.4313  val_acc 0.4145
+2026-04-08 19:35:46    epoch  65  loss 1.4949  acc 0.3777  val_loss 1.4326  val_acc 0.4435
+2026-04-08 19:35:47    epoch  66  loss 1.4941  acc 0.3764  val_loss 1.4361  val_acc 0.4435
+2026-04-08 19:35:48    epoch  67  loss 1.4961  acc 0.3681  val_loss 1.4267  val_acc 0.4493
+2026-04-08 19:35:48    epoch  68  loss 1.4802  acc 0.3813  val_loss 1.4248  val_acc 0.4435
+2026-04-08 19:35:49    epoch  69  loss 1.4928  acc 0.3800  val_loss 1.4402  val_acc 0.4174
+2026-04-08 19:35:50    epoch  70  loss 1.4999  acc 0.3681  val_loss 1.4348  val_acc 0.4522
+2026-04-08 19:35:51    epoch  71  loss 1.4961  acc 0.3713  val_loss 1.4353  val_acc 0.4290
+2026-04-08 19:35:52    epoch  72  loss 1.4951  acc 0.3655  val_loss 1.4559  val_acc 0.3971
+2026-04-08 19:35:52    epoch  73  loss 1.4726  acc 0.3877  val_loss 1.4281  val_acc 0.4464
+2026-04-08 19:35:53    epoch  74  loss 1.4912  acc 0.3797  val_loss 1.4348  val_acc 0.4435
+2026-04-08 19:35:54    epoch  75  loss 1.4979  acc 0.3719  val_loss 1.4248  val_acc 0.4290
+2026-04-08 19:35:55    epoch  76  loss 1.4859  acc 0.3687  val_loss 1.4310  val_acc 0.4377
+2026-04-08 19:35:56    epoch  77  loss 1.5065  acc 0.3674  val_loss 1.4306  val_acc 0.4377
+2026-04-08 19:35:56    epoch  78  loss 1.4790  acc 0.3861  val_loss 1.4269  val_acc 0.4319
+2026-04-08 19:35:57    epoch  79  loss 1.4837  acc 0.3848  val_loss 1.4334  val_acc 0.4348
+2026-04-08 19:35:58    epoch  80  loss 1.4912  acc 0.3790  val_loss 1.4274  val_acc 0.4319
+2026-04-08 19:35:59    epoch  81  loss 1.4902  acc 0.3784  val_loss 1.4293  val_acc 0.4377
+2026-04-08 19:36:00    epoch  82  loss 1.4979  acc 0.3655  val_loss 1.4287  val_acc 0.4319
+2026-04-08 19:36:00    epoch  83  loss 1.4972  acc 0.3700  val_loss 1.4286  val_acc 0.4435
+2026-04-08 19:36:00    Early stopping at epoch 83
+2026-04-08 19:36:00    User3 accuracy: 0.4503
+2026-04-08 19:36:00    ✓ New best model saved (User3 held out, acc=0.4503)
+2026-04-08 19:36:01  ────────────────────────────────────────────────────────────
+2026-04-08 19:36:01  LOSO fold — held-out: User4 (203 test windows, 3441 train windows)
+2026-04-08 19:36:02    epoch   1  loss 2.0319  acc 0.2147  val_loss 1.7931  val_acc 0.2733
+2026-04-08 19:36:02    epoch   2  loss 1.8062  acc 0.2615  val_loss 1.6859  val_acc 0.2878
+2026-04-08 19:36:03    epoch   3  loss 1.7570  acc 0.2880  val_loss 1.6900  val_acc 0.2936
+2026-04-08 19:36:04    epoch   4  loss 1.7239  acc 0.2890  val_loss 1.6354  val_acc 0.3140
+2026-04-08 19:36:05    epoch   5  loss 1.6824  acc 0.3051  val_loss 1.6677  val_acc 0.3198
+2026-04-08 19:36:06    epoch   6  loss 1.6716  acc 0.3019  val_loss 1.6713  val_acc 0.3140
+2026-04-08 19:36:06    epoch   7  loss 1.6406  acc 0.3232  val_loss 1.6427  val_acc 0.2965
+2026-04-08 19:36:07    epoch   8  loss 1.6303  acc 0.3129  val_loss 1.5615  val_acc 0.3372
+2026-04-08 19:36:08    epoch   9  loss 1.6318  acc 0.3200  val_loss 1.5660  val_acc 0.3256
+2026-04-08 19:36:09    epoch  10  loss 1.6336  acc 0.3229  val_loss 1.6254  val_acc 0.3169
+2026-04-08 19:36:10    epoch  11  loss 1.6256  acc 0.3184  val_loss 1.5503  val_acc 0.3285
+2026-04-08 19:36:10    epoch  12  loss 1.6433  acc 0.3171  val_loss 1.5563  val_acc 0.3372
+2026-04-08 19:36:11    epoch  13  loss 1.6073  acc 0.3300  val_loss 1.5841  val_acc 0.3634
+2026-04-08 19:36:12    epoch  14  loss 1.6089  acc 0.3335  val_loss 1.5938  val_acc 0.3605
+2026-04-08 19:36:13    epoch  15  loss 1.5951  acc 0.3277  val_loss 1.5315  val_acc 0.3401
+2026-04-08 19:36:14    epoch  16  loss 1.6091  acc 0.3339  val_loss 1.5869  val_acc 0.3343
+2026-04-08 19:36:14    epoch  17  loss 1.6133  acc 0.3368  val_loss 1.5482  val_acc 0.3430
+2026-04-08 19:36:15    epoch  18  loss 1.6097  acc 0.3407  val_loss 1.5957  val_acc 0.3401
+2026-04-08 19:36:16    epoch  19  loss 1.5864  acc 0.3400  val_loss 1.5749  val_acc 0.3401
+2026-04-08 19:36:17    epoch  20  loss 1.5955  acc 0.3371  val_loss 1.5287  val_acc 0.3634
+2026-04-08 19:36:18    epoch  21  loss 1.5934  acc 0.3381  val_loss 1.5362  val_acc 0.3634
+2026-04-08 19:36:18    epoch  22  loss 1.5752  acc 0.3471  val_loss 1.5205  val_acc 0.3721
+2026-04-08 19:36:19    epoch  23  loss 1.5925  acc 0.3465  val_loss 1.5150  val_acc 0.3721
+2026-04-08 19:36:20    epoch  24  loss 1.5728  acc 0.3455  val_loss 1.5100  val_acc 0.3692
+2026-04-08 19:36:21    epoch  25  loss 1.5666  acc 0.3403  val_loss 1.5919  val_acc 0.3285
+2026-04-08 19:36:22    epoch  26  loss 1.5675  acc 0.3591  val_loss 1.5191  val_acc 0.3721
+2026-04-08 19:36:22    epoch  27  loss 1.5792  acc 0.3478  val_loss 1.5208  val_acc 0.3692
+2026-04-08 19:36:23    epoch  28  loss 1.5750  acc 0.3539  val_loss 1.4980  val_acc 0.3692
+2026-04-08 19:36:24    epoch  29  loss 1.5571  acc 0.3526  val_loss 1.5211  val_acc 0.3721
+2026-04-08 19:36:25    epoch  30  loss 1.5839  acc 0.3455  val_loss 1.5236  val_acc 0.3750
+2026-04-08 19:36:26    epoch  31  loss 1.5548  acc 0.3591  val_loss 1.5264  val_acc 0.3576
+2026-04-08 19:36:27    epoch  32  loss 1.5740  acc 0.3591  val_loss 1.5068  val_acc 0.3808
+2026-04-08 19:36:27    epoch  33  loss 1.5597  acc 0.3478  val_loss 1.5359  val_acc 0.3750
+2026-04-08 19:36:28    epoch  34  loss 1.5571  acc 0.3523  val_loss 1.5156  val_acc 0.3837
+2026-04-08 19:36:29    epoch  35  loss 1.5514  acc 0.3591  val_loss 1.4901  val_acc 0.3517
+2026-04-08 19:36:30    epoch  36  loss 1.5384  acc 0.3549  val_loss 1.4979  val_acc 0.3547
+2026-04-08 19:36:31    epoch  37  loss 1.5494  acc 0.3620  val_loss 1.4847  val_acc 0.3430
+2026-04-08 19:36:31    epoch  38  loss 1.5413  acc 0.3649  val_loss 1.4952  val_acc 0.3808
+2026-04-08 19:36:32    epoch  39  loss 1.5334  acc 0.3726  val_loss 1.4959  val_acc 0.3924
+2026-04-08 19:36:33    epoch  40  loss 1.5213  acc 0.3771  val_loss 1.5002  val_acc 0.3837
+2026-04-08 19:36:34    epoch  41  loss 1.5467  acc 0.3691  val_loss 1.4878  val_acc 0.3547
+2026-04-08 19:36:35    epoch  42  loss 1.5541  acc 0.3739  val_loss 1.4828  val_acc 0.3605
+2026-04-08 19:36:35    epoch  43  loss 1.5265  acc 0.3642  val_loss 1.4896  val_acc 0.3808
+2026-04-08 19:36:36    epoch  44  loss 1.5102  acc 0.3649  val_loss 1.4890  val_acc 0.3808
+2026-04-08 19:36:37    epoch  45  loss 1.5424  acc 0.3594  val_loss 1.4916  val_acc 0.4012
+2026-04-08 19:36:38    epoch  46  loss 1.5244  acc 0.3768  val_loss 1.4873  val_acc 0.3866
+2026-04-08 19:36:39    epoch  47  loss 1.5023  acc 0.3800  val_loss 1.4867  val_acc 0.3605
+2026-04-08 19:36:39    epoch  48  loss 1.5142  acc 0.3678  val_loss 1.4862  val_acc 0.3692
+2026-04-08 19:36:40    epoch  49  loss 1.5107  acc 0.3755  val_loss 1.4820  val_acc 0.3837
+2026-04-08 19:36:41    epoch  50  loss 1.4954  acc 0.3826  val_loss 1.5260  val_acc 0.3721
+2026-04-08 19:36:42    epoch  51  loss 1.5019  acc 0.3891  val_loss 1.4732  val_acc 0.3576
+2026-04-08 19:36:43    epoch  52  loss 1.5265  acc 0.3700  val_loss 1.4989  val_acc 0.3779
+2026-04-08 19:36:43    epoch  53  loss 1.5156  acc 0.3791  val_loss 1.4878  val_acc 0.3547
+2026-04-08 19:36:44    epoch  54  loss 1.5282  acc 0.3788  val_loss 1.4809  val_acc 0.3576
+2026-04-08 19:36:45    epoch  55  loss 1.5059  acc 0.3901  val_loss 1.4776  val_acc 0.3750
+2026-04-08 19:36:46    epoch  56  loss 1.4961  acc 0.3910  val_loss 1.4839  val_acc 0.3459
+2026-04-08 19:36:46    epoch  57  loss 1.4878  acc 0.3875  val_loss 1.4903  val_acc 0.3692
+2026-04-08 19:36:47    epoch  58  loss 1.4869  acc 0.3752  val_loss 1.4854  val_acc 0.3605
+2026-04-08 19:36:48    epoch  59  loss 1.4995  acc 0.4014  val_loss 1.4731  val_acc 0.3459
+2026-04-08 19:36:49    epoch  60  loss 1.5063  acc 0.3746  val_loss 1.4807  val_acc 0.3517
+2026-04-08 19:36:50    epoch  61  loss 1.4914  acc 0.3891  val_loss 1.4857  val_acc 0.3488
+2026-04-08 19:36:50    epoch  62  loss 1.4965  acc 0.3813  val_loss 1.4827  val_acc 0.3605
+2026-04-08 19:36:51    epoch  63  loss 1.4919  acc 0.3981  val_loss 1.4748  val_acc 0.3430
+2026-04-08 19:36:52    epoch  64  loss 1.4969  acc 0.3797  val_loss 1.4744  val_acc 0.3721
+2026-04-08 19:36:53    epoch  65  loss 1.4901  acc 0.3936  val_loss 1.4866  val_acc 0.3721
+2026-04-08 19:36:54    epoch  66  loss 1.4841  acc 0.4007  val_loss 1.4707  val_acc 0.3430
+2026-04-08 19:36:54    epoch  67  loss 1.4959  acc 0.3797  val_loss 1.4734  val_acc 0.3459
+2026-04-08 19:36:55    epoch  68  loss 1.4787  acc 0.3981  val_loss 1.4684  val_acc 0.3605
+2026-04-08 19:36:56    epoch  69  loss 1.4905  acc 0.3839  val_loss 1.4769  val_acc 0.3517
+2026-04-08 19:36:57    epoch  70  loss 1.4794  acc 0.3881  val_loss 1.4780  val_acc 0.3488
+2026-04-08 19:36:58    epoch  71  loss 1.4992  acc 0.3917  val_loss 1.4786  val_acc 0.3517
+2026-04-08 19:36:58    epoch  72  loss 1.4857  acc 0.3933  val_loss 1.4683  val_acc 0.3663
+2026-04-08 19:36:59    epoch  73  loss 1.4972  acc 0.3800  val_loss 1.4752  val_acc 0.3488
+2026-04-08 19:37:00    epoch  74  loss 1.4851  acc 0.3933  val_loss 1.4701  val_acc 0.3576
+2026-04-08 19:37:01    epoch  75  loss 1.5120  acc 0.3771  val_loss 1.4769  val_acc 0.3750
+2026-04-08 19:37:02    epoch  76  loss 1.5135  acc 0.3852  val_loss 1.4983  val_acc 0.3692
+2026-04-08 19:37:02    epoch  77  loss 1.5007  acc 0.3894  val_loss 1.4734  val_acc 0.3372
+2026-04-08 19:37:03    epoch  78  loss 1.4867  acc 0.3765  val_loss 1.4752  val_acc 0.3605
+2026-04-08 19:37:04    epoch  79  loss 1.5009  acc 0.3894  val_loss 1.4908  val_acc 0.3663
+2026-04-08 19:37:05    epoch  80  loss 1.4845  acc 0.3955  val_loss 1.4755  val_acc 0.3605
+2026-04-08 19:37:05    Early stopping at epoch 80
+2026-04-08 19:37:05    User4 accuracy: 0.3448
+2026-04-08 19:37:05  ────────────────────────────────────────────────────────────
+2026-04-08 19:37:05  LOSO fold — held-out: User5 (201 test windows, 3443 train windows)
+2026-04-08 19:37:06    epoch   1  loss 2.0368  acc 0.2117  val_loss 1.7757  val_acc 0.2384
+2026-04-08 19:37:07    epoch   2  loss 1.7912  acc 0.2665  val_loss 1.6697  val_acc 0.3547
+2026-04-08 19:37:08    epoch   3  loss 1.7575  acc 0.2733  val_loss 1.6384  val_acc 0.3314
+2026-04-08 19:37:08    epoch   4  loss 1.7239  acc 0.2843  val_loss 1.6571  val_acc 0.3256
+2026-04-08 19:37:09    epoch   5  loss 1.7040  acc 0.2959  val_loss 1.5866  val_acc 0.3547
+2026-04-08 19:37:10    epoch   6  loss 1.6723  acc 0.2888  val_loss 1.5646  val_acc 0.3663
+2026-04-08 19:37:11    epoch   7  loss 1.6572  acc 0.3024  val_loss 1.5642  val_acc 0.3517
+2026-04-08 19:37:12    epoch   8  loss 1.6550  acc 0.3030  val_loss 1.6456  val_acc 0.3227
+2026-04-08 19:37:12    epoch   9  loss 1.6217  acc 0.3175  val_loss 1.6114  val_acc 0.3140
+2026-04-08 19:37:13    epoch  10  loss 1.6266  acc 0.3140  val_loss 1.5966  val_acc 0.3488
+2026-04-08 19:37:14    epoch  11  loss 1.6228  acc 0.3033  val_loss 1.6998  val_acc 0.2587
+2026-04-08 19:37:15    epoch  12  loss 1.6295  acc 0.3117  val_loss 1.6135  val_acc 0.3140
+2026-04-08 19:37:16    epoch  13  loss 1.5993  acc 0.3340  val_loss 1.5666  val_acc 0.3692
+2026-04-08 19:37:16    epoch  14  loss 1.5939  acc 0.3340  val_loss 1.5160  val_acc 0.3750
+2026-04-08 19:37:17    epoch  15  loss 1.5831  acc 0.3227  val_loss 1.5377  val_acc 0.3750
+2026-04-08 19:37:18    epoch  16  loss 1.5962  acc 0.3275  val_loss 1.5301  val_acc 0.3663
+2026-04-08 19:37:19    epoch  17  loss 1.5830  acc 0.3385  val_loss 1.5110  val_acc 0.3779
+2026-04-08 19:37:20    epoch  18  loss 1.5918  acc 0.3298  val_loss 1.5360  val_acc 0.3837
+2026-04-08 19:37:20    epoch  19  loss 1.5657  acc 0.3340  val_loss 1.5290  val_acc 0.3605
+2026-04-08 19:37:21    epoch  20  loss 1.5913  acc 0.3291  val_loss 1.5132  val_acc 0.3779
+2026-04-08 19:37:22    epoch  21  loss 1.5926  acc 0.3379  val_loss 1.5426  val_acc 0.3895
+2026-04-08 19:37:23    epoch  22  loss 1.5802  acc 0.3311  val_loss 1.5426  val_acc 0.3721
+2026-04-08 19:37:24    epoch  23  loss 1.5785  acc 0.3369  val_loss 1.5171  val_acc 0.3721
+2026-04-08 19:37:24    epoch  24  loss 1.5521  acc 0.3527  val_loss 1.5107  val_acc 0.3837
+2026-04-08 19:37:25    epoch  25  loss 1.5556  acc 0.3430  val_loss 1.5080  val_acc 0.3808
+2026-04-08 19:37:26    epoch  26  loss 1.5373  acc 0.3488  val_loss 1.5115  val_acc 0.3924
+2026-04-08 19:37:27    epoch  27  loss 1.5594  acc 0.3504  val_loss 1.5192  val_acc 0.3721
+2026-04-08 19:37:28    epoch  28  loss 1.5788  acc 0.3430  val_loss 1.5242  val_acc 0.3779
+2026-04-08 19:37:28    epoch  29  loss 1.5524  acc 0.3395  val_loss 1.5346  val_acc 0.3953
+2026-04-08 19:37:29    epoch  30  loss 1.5658  acc 0.3456  val_loss 1.5213  val_acc 0.3721
+2026-04-08 19:37:30    epoch  31  loss 1.5710  acc 0.3385  val_loss 1.5362  val_acc 0.3634
+2026-04-08 19:37:31    epoch  32  loss 1.5544  acc 0.3317  val_loss 1.5088  val_acc 0.3924
+2026-04-08 19:37:32    epoch  33  loss 1.5661  acc 0.3337  val_loss 1.5138  val_acc 0.3663
+2026-04-08 19:37:32    Early stopping at epoch 33
+2026-04-08 19:37:32    User5 accuracy: 0.3483
+2026-04-08 19:37:32  ────────────────────────────────────────────────────────────
+2026-04-08 19:37:32  LOSO fold — held-out: User6 (194 test windows, 3450 train windows)
+2026-04-08 19:37:33    epoch   1  loss 2.0205  acc 0.2071  val_loss 1.7837  val_acc 0.2609
+2026-04-08 19:37:34    epoch   2  loss 1.8107  acc 0.2622  val_loss 1.6709  val_acc 0.2464
+2026-04-08 19:37:34    epoch   3  loss 1.7558  acc 0.2779  val_loss 1.6383  val_acc 0.2725
+2026-04-08 19:37:35    epoch   4  loss 1.7220  acc 0.3021  val_loss 1.6754  val_acc 0.2261
+2026-04-08 19:37:36    epoch   5  loss 1.7146  acc 0.2924  val_loss 1.6036  val_acc 0.3159
+2026-04-08 19:37:37    epoch   6  loss 1.6722  acc 0.3063  val_loss 1.5963  val_acc 0.2812
+2026-04-08 19:37:38    epoch   7  loss 1.6698  acc 0.3047  val_loss 1.6548  val_acc 0.2667
+2026-04-08 19:37:38    epoch   8  loss 1.6758  acc 0.3024  val_loss 1.5931  val_acc 0.3217
+2026-04-08 19:37:39    epoch   9  loss 1.6513  acc 0.3114  val_loss 1.5782  val_acc 0.3072
+2026-04-08 19:37:40    epoch  10  loss 1.6672  acc 0.3047  val_loss 1.6145  val_acc 0.2493
+2026-04-08 19:37:41    epoch  11  loss 1.6452  acc 0.3021  val_loss 1.5820  val_acc 0.2928
+2026-04-08 19:37:42    epoch  12  loss 1.6219  acc 0.3134  val_loss 1.5764  val_acc 0.3275
+2026-04-08 19:37:43    epoch  13  loss 1.6169  acc 0.3163  val_loss 1.6326  val_acc 0.2493
+2026-04-08 19:37:43    epoch  14  loss 1.6239  acc 0.3201  val_loss 1.5294  val_acc 0.3130
+2026-04-08 19:37:44    epoch  15  loss 1.6079  acc 0.3246  val_loss 1.6273  val_acc 0.3159
+2026-04-08 19:37:45    epoch  16  loss 1.6090  acc 0.3333  val_loss 1.5372  val_acc 0.3362
+2026-04-08 19:37:46    epoch  17  loss 1.6056  acc 0.3349  val_loss 1.5360  val_acc 0.3362
+2026-04-08 19:37:47    epoch  18  loss 1.5964  acc 0.3272  val_loss 1.5280  val_acc 0.3594
+2026-04-08 19:37:47    epoch  19  loss 1.5638  acc 0.3382  val_loss 1.5656  val_acc 0.2899
+2026-04-08 19:37:48    epoch  20  loss 1.6000  acc 0.3272  val_loss 1.5267  val_acc 0.3826
+2026-04-08 19:37:49    epoch  21  loss 1.6022  acc 0.3366  val_loss 1.5507  val_acc 0.3043
+2026-04-08 19:37:50    epoch  22  loss 1.5717  acc 0.3417  val_loss 1.5193  val_acc 0.3391
+2026-04-08 19:37:51    epoch  23  loss 1.6061  acc 0.3298  val_loss 1.5218  val_acc 0.3159
+2026-04-08 19:37:51    epoch  24  loss 1.6002  acc 0.3317  val_loss 1.5330  val_acc 0.3652
+2026-04-08 19:37:52    epoch  25  loss 1.5862  acc 0.3375  val_loss 1.5370  val_acc 0.3043
+2026-04-08 19:37:53    epoch  26  loss 1.5834  acc 0.3382  val_loss 1.5281  val_acc 0.3478
+2026-04-08 19:37:54    epoch  27  loss 1.5796  acc 0.3401  val_loss 1.6030  val_acc 0.2783
+2026-04-08 19:37:55    epoch  28  loss 1.5607  acc 0.3459  val_loss 1.5200  val_acc 0.3246
+2026-04-08 19:37:55    epoch  29  loss 1.5478  acc 0.3472  val_loss 1.5241  val_acc 0.3420
+2026-04-08 19:37:56    epoch  30  loss 1.5612  acc 0.3462  val_loss 1.5214  val_acc 0.3449
+2026-04-08 19:37:56    Early stopping at epoch 30
+2026-04-08 19:37:56    User6 accuracy: 0.3918
+2026-04-08 19:37:57  ────────────────────────────────────────────────────────────
+2026-04-08 19:37:57  LOSO fold — held-out: User7 (423 test windows, 3221 train windows)
+2026-04-08 19:37:57    epoch   1  loss 2.0231  acc 0.2156  val_loss 1.7779  val_acc 0.2671
+2026-04-08 19:37:58    epoch   2  loss 1.8078  acc 0.2760  val_loss 1.6615  val_acc 0.3168
+2026-04-08 19:37:59    epoch   3  loss 1.7543  acc 0.2704  val_loss 1.6048  val_acc 0.3758
+2026-04-08 19:38:00    epoch   4  loss 1.7282  acc 0.2846  val_loss 1.5898  val_acc 0.3571
+2026-04-08 19:38:00    epoch   5  loss 1.6982  acc 0.2984  val_loss 1.5929  val_acc 0.3323
+2026-04-08 19:38:01    epoch   6  loss 1.6760  acc 0.3080  val_loss 1.5452  val_acc 0.3727
+2026-04-08 19:38:02    epoch   7  loss 1.6622  acc 0.3080  val_loss 1.5302  val_acc 0.3540
+2026-04-08 19:38:03    epoch   8  loss 1.6683  acc 0.3098  val_loss 1.5118  val_acc 0.3540
+2026-04-08 19:38:03    epoch   9  loss 1.6439  acc 0.3156  val_loss 1.5244  val_acc 0.3571
+2026-04-08 19:38:04    epoch  10  loss 1.6331  acc 0.3232  val_loss 1.5939  val_acc 0.3106
+2026-04-08 19:38:05    epoch  11  loss 1.6309  acc 0.3167  val_loss 1.4792  val_acc 0.3789
+2026-04-08 19:38:06    epoch  12  loss 1.6100  acc 0.3174  val_loss 1.6147  val_acc 0.3199
+2026-04-08 19:38:06    epoch  13  loss 1.6128  acc 0.3280  val_loss 1.4771  val_acc 0.3540
+2026-04-08 19:38:07    epoch  14  loss 1.6173  acc 0.3277  val_loss 1.4836  val_acc 0.3758
+2026-04-08 19:38:08    epoch  15  loss 1.6083  acc 0.3274  val_loss 1.5188  val_acc 0.3540
+2026-04-08 19:38:09    epoch  16  loss 1.6036  acc 0.3149  val_loss 1.5025  val_acc 0.3758
+2026-04-08 19:38:09    epoch  17  loss 1.6016  acc 0.3253  val_loss 1.4731  val_acc 0.3634
+2026-04-08 19:38:10    epoch  18  loss 1.5969  acc 0.3322  val_loss 1.4696  val_acc 0.3634
+2026-04-08 19:38:11    epoch  19  loss 1.5773  acc 0.3429  val_loss 1.4583  val_acc 0.3882
+2026-04-08 19:38:12    epoch  20  loss 1.5898  acc 0.3332  val_loss 1.4781  val_acc 0.3913
+2026-04-08 19:38:12    epoch  21  loss 1.5718  acc 0.3329  val_loss 1.5384  val_acc 0.3447
+2026-04-08 19:38:13    epoch  22  loss 1.6015  acc 0.3253  val_loss 1.5549  val_acc 0.3261
+2026-04-08 19:38:14    epoch  23  loss 1.5923  acc 0.3374  val_loss 1.5074  val_acc 0.3540
+2026-04-08 19:38:15    epoch  24  loss 1.6017  acc 0.3274  val_loss 1.4830  val_acc 0.3727
+2026-04-08 19:38:15    epoch  25  loss 1.5647  acc 0.3394  val_loss 1.4451  val_acc 0.4006
+2026-04-08 19:38:16    epoch  26  loss 1.5616  acc 0.3477  val_loss 1.4568  val_acc 0.3727
+2026-04-08 19:38:17    epoch  27  loss 1.5655  acc 0.3418  val_loss 1.4492  val_acc 0.3913
+2026-04-08 19:38:18    epoch  28  loss 1.5384  acc 0.3491  val_loss 1.4513  val_acc 0.3665
+2026-04-08 19:38:18    epoch  29  loss 1.5554  acc 0.3453  val_loss 1.4428  val_acc 0.3665
+2026-04-08 19:38:19    epoch  30  loss 1.5420  acc 0.3581  val_loss 1.4367  val_acc 0.4317
+2026-04-08 19:38:20    epoch  31  loss 1.5622  acc 0.3470  val_loss 1.4261  val_acc 0.3727
+2026-04-08 19:38:21    epoch  32  loss 1.5534  acc 0.3343  val_loss 1.4502  val_acc 0.3820
+2026-04-08 19:38:21    epoch  33  loss 1.5422  acc 0.3632  val_loss 1.4453  val_acc 0.3727
+2026-04-08 19:38:22    epoch  34  loss 1.5452  acc 0.3543  val_loss 1.4555  val_acc 0.3851
+2026-04-08 19:38:23    epoch  35  loss 1.5503  acc 0.3491  val_loss 1.4407  val_acc 0.3789
+2026-04-08 19:38:24    epoch  36  loss 1.5474  acc 0.3412  val_loss 1.4281  val_acc 0.4006
+2026-04-08 19:38:24    epoch  37  loss 1.5316  acc 0.3650  val_loss 1.4452  val_acc 0.3727
+2026-04-08 19:38:25    epoch  38  loss 1.5415  acc 0.3536  val_loss 1.4297  val_acc 0.4224
+2026-04-08 19:38:26    epoch  39  loss 1.5387  acc 0.3598  val_loss 1.4267  val_acc 0.4037
+2026-04-08 19:38:26    Early stopping at epoch 39
+2026-04-08 19:38:26    User7 accuracy: 0.3853
+2026-04-08 19:38:26  ────────────────────────────────────────────────────────────
+2026-04-08 19:38:26  LOSO fold — held-out: User8 (381 test windows, 3263 train windows)
+2026-04-08 19:38:27    epoch   1  loss 2.0735  acc 0.2026  val_loss 1.8040  val_acc 0.2853
+2026-04-08 19:38:28    epoch   2  loss 1.8313  acc 0.2486  val_loss 1.7181  val_acc 0.3313
+2026-04-08 19:38:29    epoch   3  loss 1.7602  acc 0.2724  val_loss 1.6984  val_acc 0.3252
+2026-04-08 19:38:29    epoch   4  loss 1.7340  acc 0.2809  val_loss 1.6424  val_acc 0.3344
+2026-04-08 19:38:30    epoch   5  loss 1.6964  acc 0.2959  val_loss 1.6478  val_acc 0.3221
+2026-04-08 19:38:31    epoch   6  loss 1.6986  acc 0.3058  val_loss 1.6118  val_acc 0.3436
+2026-04-08 19:38:32    epoch   7  loss 1.6720  acc 0.3098  val_loss 1.6020  val_acc 0.3589
+2026-04-08 19:38:32    epoch   8  loss 1.6503  acc 0.3109  val_loss 1.6251  val_acc 0.3221
+2026-04-08 19:38:33    epoch   9  loss 1.6446  acc 0.3098  val_loss 1.5937  val_acc 0.3129
+2026-04-08 19:38:34    epoch  10  loss 1.6533  acc 0.3115  val_loss 1.5984  val_acc 0.3589
+2026-04-08 19:38:35    epoch  11  loss 1.6333  acc 0.3282  val_loss 1.5645  val_acc 0.3773
+2026-04-08 19:38:35    epoch  12  loss 1.6295  acc 0.3221  val_loss 1.5501  val_acc 0.3804
+2026-04-08 19:38:36    epoch  13  loss 1.6279  acc 0.3201  val_loss 1.5653  val_acc 0.3436
+2026-04-08 19:38:37    epoch  14  loss 1.6218  acc 0.3153  val_loss 1.5688  val_acc 0.3282
+2026-04-08 19:38:38    epoch  15  loss 1.6264  acc 0.3238  val_loss 1.5666  val_acc 0.3282
+2026-04-08 19:38:38    epoch  16  loss 1.5971  acc 0.3204  val_loss 1.5527  val_acc 0.3589
+2026-04-08 19:38:39    epoch  17  loss 1.6234  acc 0.3323  val_loss 1.5633  val_acc 0.3558
+2026-04-08 19:38:40    epoch  18  loss 1.5927  acc 0.3453  val_loss 1.5412  val_acc 0.3804
+2026-04-08 19:38:41    epoch  19  loss 1.5778  acc 0.3350  val_loss 1.5374  val_acc 0.3926
+2026-04-08 19:38:41    epoch  20  loss 1.5609  acc 0.3453  val_loss 1.5242  val_acc 0.3742
+2026-04-08 19:38:42    epoch  21  loss 1.6085  acc 0.3323  val_loss 1.5431  val_acc 0.3528
+2026-04-08 19:38:43    epoch  22  loss 1.5610  acc 0.3514  val_loss 1.5300  val_acc 0.3650
+2026-04-08 19:38:44    epoch  23  loss 1.5760  acc 0.3514  val_loss 1.5303  val_acc 0.3896
+2026-04-08 19:38:44    epoch  24  loss 1.5902  acc 0.3347  val_loss 1.5361  val_acc 0.4049
+2026-04-08 19:38:45    epoch  25  loss 1.5549  acc 0.3476  val_loss 1.5353  val_acc 0.3926
+2026-04-08 19:38:46    epoch  26  loss 1.5802  acc 0.3435  val_loss 1.5207  val_acc 0.3834
+2026-04-08 19:38:47    epoch  27  loss 1.5672  acc 0.3521  val_loss 1.5253  val_acc 0.3650
+2026-04-08 19:38:47    epoch  28  loss 1.5570  acc 0.3483  val_loss 1.5220  val_acc 0.3466
+2026-04-08 19:38:48    epoch  29  loss 1.5689  acc 0.3405  val_loss 1.5127  val_acc 0.4325
+2026-04-08 19:38:49    epoch  30  loss 1.5521  acc 0.3555  val_loss 1.5089  val_acc 0.3834
+2026-04-08 19:38:50    epoch  31  loss 1.5638  acc 0.3463  val_loss 1.5104  val_acc 0.3988
+2026-04-08 19:38:51    epoch  32  loss 1.5636  acc 0.3555  val_loss 1.5186  val_acc 0.4172
+2026-04-08 19:38:51    epoch  33  loss 1.5767  acc 0.3432  val_loss 1.5054  val_acc 0.3804
+2026-04-08 19:38:52    epoch  34  loss 1.5688  acc 0.3483  val_loss 1.5175  val_acc 0.4233
+2026-04-08 19:38:53    epoch  35  loss 1.5412  acc 0.3589  val_loss 1.5051  val_acc 0.4049
+2026-04-08 19:38:54    epoch  36  loss 1.5549  acc 0.3606  val_loss 1.4955  val_acc 0.3926
+2026-04-08 19:38:54    epoch  37  loss 1.5609  acc 0.3609  val_loss 1.5080  val_acc 0.4018
+2026-04-08 19:38:55    epoch  38  loss 1.5576  acc 0.3630  val_loss 1.4923  val_acc 0.3865
+2026-04-08 19:38:56    epoch  39  loss 1.5424  acc 0.3640  val_loss 1.5292  val_acc 0.3865
+2026-04-08 19:38:57    epoch  40  loss 1.5578  acc 0.3616  val_loss 1.5002  val_acc 0.3896
+2026-04-08 19:38:57    epoch  41  loss 1.5447  acc 0.3606  val_loss 1.5048  val_acc 0.3742
+2026-04-08 19:38:58    epoch  42  loss 1.5611  acc 0.3531  val_loss 1.4912  val_acc 0.4233
+2026-04-08 19:38:59    epoch  43  loss 1.5486  acc 0.3606  val_loss 1.4994  val_acc 0.4080
+2026-04-08 19:39:00    epoch  44  loss 1.5567  acc 0.3596  val_loss 1.4879  val_acc 0.4264
+2026-04-08 19:39:00    epoch  45  loss 1.5589  acc 0.3568  val_loss 1.5296  val_acc 0.3896
+2026-04-08 19:39:01    epoch  46  loss 1.5488  acc 0.3466  val_loss 1.5387  val_acc 0.4141
+2026-04-08 19:39:02    epoch  47  loss 1.5341  acc 0.3606  val_loss 1.4916  val_acc 0.4018
+2026-04-08 19:39:03    epoch  48  loss 1.5429  acc 0.3592  val_loss 1.4981  val_acc 0.3558
+2026-04-08 19:39:03    epoch  49  loss 1.5493  acc 0.3592  val_loss 1.4952  val_acc 0.4264
+2026-04-08 19:39:04    epoch  50  loss 1.5209  acc 0.3844  val_loss 1.4843  val_acc 0.3926
+2026-04-08 19:39:05    epoch  51  loss 1.5317  acc 0.3643  val_loss 1.5085  val_acc 0.3834
+2026-04-08 19:39:06    epoch  52  loss 1.5215  acc 0.3773  val_loss 1.4860  val_acc 0.4233
+2026-04-08 19:39:07    epoch  53  loss 1.5069  acc 0.3704  val_loss 1.4974  val_acc 0.4202
+2026-04-08 19:39:07    epoch  54  loss 1.5354  acc 0.3677  val_loss 1.5017  val_acc 0.4233
+2026-04-08 19:39:08    epoch  55  loss 1.5510  acc 0.3684  val_loss 1.4840  val_acc 0.4264
+2026-04-08 19:39:09    epoch  56  loss 1.5686  acc 0.3500  val_loss 1.4876  val_acc 0.3957
+2026-04-08 19:39:10    epoch  57  loss 1.5243  acc 0.3691  val_loss 1.4963  val_acc 0.4049
+2026-04-08 19:39:10    epoch  58  loss 1.5317  acc 0.3623  val_loss 1.4833  val_acc 0.3865
+2026-04-08 19:39:11    epoch  59  loss 1.5229  acc 0.3650  val_loss 1.4855  val_acc 0.4110
+2026-04-08 19:39:12    epoch  60  loss 1.5299  acc 0.3664  val_loss 1.4999  val_acc 0.4172
+2026-04-08 19:39:13    epoch  61  loss 1.5210  acc 0.3684  val_loss 1.4832  val_acc 0.4018
+2026-04-08 19:39:13    epoch  62  loss 1.5304  acc 0.3630  val_loss 1.4896  val_acc 0.4141
+2026-04-08 19:39:14    epoch  63  loss 1.5319  acc 0.3568  val_loss 1.4926  val_acc 0.4049
+2026-04-08 19:39:15    epoch  64  loss 1.5388  acc 0.3674  val_loss 1.4857  val_acc 0.4110
+2026-04-08 19:39:16    epoch  65  loss 1.5047  acc 0.3807  val_loss 1.4883  val_acc 0.4049
+2026-04-08 19:39:16    epoch  66  loss 1.5339  acc 0.3674  val_loss 1.4797  val_acc 0.4018
+2026-04-08 19:39:17    epoch  67  loss 1.5253  acc 0.3677  val_loss 1.4915  val_acc 0.4172
+2026-04-08 19:39:18    epoch  68  loss 1.5348  acc 0.3687  val_loss 1.4780  val_acc 0.3988
+2026-04-08 19:39:19    epoch  69  loss 1.5414  acc 0.3796  val_loss 1.4871  val_acc 0.3957
+2026-04-08 19:39:19    epoch  70  loss 1.5250  acc 0.3681  val_loss 1.4847  val_acc 0.4110
+2026-04-08 19:39:20    epoch  71  loss 1.5348  acc 0.3568  val_loss 1.4851  val_acc 0.4049
+2026-04-08 19:39:21    epoch  72  loss 1.5204  acc 0.3745  val_loss 1.4774  val_acc 0.4233
+2026-04-08 19:39:22    epoch  73  loss 1.5361  acc 0.3739  val_loss 1.4959  val_acc 0.3804
+2026-04-08 19:39:22    epoch  74  loss 1.5203  acc 0.3565  val_loss 1.4779  val_acc 0.4264
+2026-04-08 19:39:23    epoch  75  loss 1.5400  acc 0.3613  val_loss 1.4766  val_acc 0.4141
+2026-04-08 19:39:24    epoch  76  loss 1.5385  acc 0.3660  val_loss 1.4974  val_acc 0.3834
+2026-04-08 19:39:25    epoch  77  loss 1.5334  acc 0.3670  val_loss 1.4758  val_acc 0.4080
+2026-04-08 19:39:25    epoch  78  loss 1.5545  acc 0.3619  val_loss 1.5000  val_acc 0.4110
+2026-04-08 19:39:26    epoch  79  loss 1.5228  acc 0.3684  val_loss 1.4803  val_acc 0.4356
+2026-04-08 19:39:27    epoch  80  loss 1.5419  acc 0.3718  val_loss 1.4869  val_acc 0.4356
+2026-04-08 19:39:28    epoch  81  loss 1.5204  acc 0.3745  val_loss 1.4876  val_acc 0.4294
+2026-04-08 19:39:28    epoch  82  loss 1.5387  acc 0.3582  val_loss 1.4799  val_acc 0.4172
+2026-04-08 19:39:29    epoch  83  loss 1.5125  acc 0.3684  val_loss 1.4822  val_acc 0.3865
+2026-04-08 19:39:30    epoch  84  loss 1.5352  acc 0.3531  val_loss 1.4812  val_acc 0.4110
+2026-04-08 19:39:31    epoch  85  loss 1.5437  acc 0.3691  val_loss 1.4787  val_acc 0.3988
+2026-04-08 19:39:31    Early stopping at epoch 85
+2026-04-08 19:39:31    User8 accuracy: 0.3963
+2026-04-08 19:39:31  ────────────────────────────────────────────────────────────
+2026-04-08 19:39:31  LOSO fold — held-out: User9 (422 test windows, 3222 train windows)
+2026-04-08 19:39:32    epoch   1  loss 2.0407  acc 0.2272  val_loss 1.8404  val_acc 0.2578
+2026-04-08 19:39:33    epoch   2  loss 1.8045  acc 0.2603  val_loss 1.7146  val_acc 0.2857
+2026-04-08 19:39:33    epoch   3  loss 1.7438  acc 0.2866  val_loss 1.7263  val_acc 0.3168
+2026-04-08 19:39:34    epoch   4  loss 1.7202  acc 0.2900  val_loss 1.6865  val_acc 0.3137
+2026-04-08 19:39:35    epoch   5  loss 1.6889  acc 0.2938  val_loss 1.6366  val_acc 0.3385
+2026-04-08 19:39:36    epoch   6  loss 1.6706  acc 0.3048  val_loss 1.6189  val_acc 0.3571
+2026-04-08 19:39:36    epoch   7  loss 1.6417  acc 0.3138  val_loss 1.7301  val_acc 0.2733
+2026-04-08 19:39:37    epoch   8  loss 1.6516  acc 0.3066  val_loss 1.7112  val_acc 0.2764
+2026-04-08 19:39:38    epoch   9  loss 1.6363  acc 0.3114  val_loss 1.5882  val_acc 0.3602
+2026-04-08 19:39:39    epoch  10  loss 1.6325  acc 0.3224  val_loss 1.5552  val_acc 0.3913
+2026-04-08 19:39:39    epoch  11  loss 1.6029  acc 0.3228  val_loss 1.5653  val_acc 0.3571
+2026-04-08 19:39:40    epoch  12  loss 1.6048  acc 0.3200  val_loss 1.5980  val_acc 0.3665
+2026-04-08 19:39:41    epoch  13  loss 1.6093  acc 0.3276  val_loss 1.7160  val_acc 0.2702
+2026-04-08 19:39:41    epoch  14  loss 1.6119  acc 0.3190  val_loss 1.6293  val_acc 0.3106
+2026-04-08 19:39:42    epoch  15  loss 1.6062  acc 0.3317  val_loss 1.5973  val_acc 0.3509
+2026-04-08 19:39:43    epoch  16  loss 1.5738  acc 0.3397  val_loss 1.5348  val_acc 0.3602
+2026-04-08 19:39:44    epoch  17  loss 1.5815  acc 0.3476  val_loss 1.5502  val_acc 0.3758
+2026-04-08 19:39:44    epoch  18  loss 1.5907  acc 0.3283  val_loss 1.5693  val_acc 0.3416
+2026-04-08 19:39:45    epoch  19  loss 1.5767  acc 0.3431  val_loss 1.5297  val_acc 0.3789
+2026-04-08 19:39:46    epoch  20  loss 1.5649  acc 0.3403  val_loss 1.5281  val_acc 0.3882
+2026-04-08 19:39:47    epoch  21  loss 1.5825  acc 0.3483  val_loss 1.6416  val_acc 0.3075
+2026-04-08 19:39:47    epoch  22  loss 1.5860  acc 0.3431  val_loss 1.5601  val_acc 0.3602
+2026-04-08 19:39:48    epoch  23  loss 1.5840  acc 0.3469  val_loss 1.5881  val_acc 0.3696
+2026-04-08 19:39:49    epoch  24  loss 1.5855  acc 0.3548  val_loss 1.5259  val_acc 0.3882
+2026-04-08 19:39:50    epoch  25  loss 1.5582  acc 0.3493  val_loss 1.5742  val_acc 0.3385
+2026-04-08 19:39:50    epoch  26  loss 1.5949  acc 0.3369  val_loss 1.5486  val_acc 0.3634
+2026-04-08 19:39:51    epoch  27  loss 1.5466  acc 0.3566  val_loss 1.5266  val_acc 0.3602
+2026-04-08 19:39:52    epoch  28  loss 1.5470  acc 0.3421  val_loss 1.5673  val_acc 0.3665
+2026-04-08 19:39:53    epoch  29  loss 1.5611  acc 0.3486  val_loss 1.5407  val_acc 0.3540
+2026-04-08 19:39:53    epoch  30  loss 1.5357  acc 0.3538  val_loss 1.5386  val_acc 0.3820
+2026-04-08 19:39:54    epoch  31  loss 1.5470  acc 0.3514  val_loss 1.5314  val_acc 0.3913
+2026-04-08 19:39:55    epoch  32  loss 1.5343  acc 0.3545  val_loss 1.5305  val_acc 0.3789
+2026-04-08 19:39:55    Early stopping at epoch 32
+2026-04-08 19:39:55    User9 accuracy: 0.2630
+2026-04-08 19:39:55  ────────────────────────────────────────────────────────────
+2026-04-08 19:39:55  LOSO fold — held-out: User10 (419 test windows, 3225 train windows)
+2026-04-08 19:39:56    epoch   1  loss 2.0238  acc 0.2218  val_loss 1.7367  val_acc 0.3261
+2026-04-08 19:39:57    epoch   2  loss 1.8024  acc 0.2604  val_loss 1.6406  val_acc 0.3602
+2026-04-08 19:39:57    epoch   3  loss 1.7325  acc 0.2814  val_loss 1.6025  val_acc 0.3602
+2026-04-08 19:39:58    epoch   4  loss 1.7036  acc 0.2942  val_loss 1.5803  val_acc 0.3540
+2026-04-08 19:39:59    epoch   5  loss 1.6767  acc 0.2969  val_loss 1.5686  val_acc 0.3602
+2026-04-08 19:40:00    epoch   6  loss 1.6679  acc 0.3052  val_loss 1.5270  val_acc 0.3882
+2026-04-08 19:40:01    epoch   7  loss 1.6593  acc 0.3114  val_loss 1.5505  val_acc 0.3447
+2026-04-08 19:40:01    epoch   8  loss 1.6532  acc 0.3052  val_loss 1.5178  val_acc 0.3634
+2026-04-08 19:40:02    epoch   9  loss 1.6461  acc 0.3135  val_loss 1.5222  val_acc 0.3665
+2026-04-08 19:40:03    epoch  10  loss 1.6173  acc 0.3303  val_loss 1.5373  val_acc 0.3696
+2026-04-08 19:40:04    epoch  11  loss 1.6150  acc 0.3238  val_loss 1.5085  val_acc 0.3727
+2026-04-08 19:40:04    epoch  12  loss 1.6037  acc 0.3228  val_loss 1.4886  val_acc 0.3634
+2026-04-08 19:40:05    epoch  13  loss 1.6252  acc 0.3200  val_loss 1.5342  val_acc 0.3323
+2026-04-08 19:40:06    epoch  14  loss 1.6011  acc 0.3276  val_loss 1.5090  val_acc 0.3851
+2026-04-08 19:40:07    epoch  15  loss 1.6057  acc 0.3290  val_loss 1.4901  val_acc 0.3385
+2026-04-08 19:40:07    epoch  16  loss 1.5892  acc 0.3324  val_loss 1.4841  val_acc 0.3820
+2026-04-08 19:40:08    epoch  17  loss 1.6021  acc 0.3269  val_loss 1.5335  val_acc 0.3758
+2026-04-08 19:40:09    epoch  18  loss 1.6230  acc 0.3362  val_loss 1.5913  val_acc 0.3540
+2026-04-08 19:40:10    epoch  19  loss 1.5931  acc 0.3403  val_loss 1.4770  val_acc 0.4099
+2026-04-08 19:40:10    epoch  20  loss 1.5685  acc 0.3455  val_loss 1.6002  val_acc 0.3416
+2026-04-08 19:40:11    epoch  21  loss 1.5898  acc 0.3476  val_loss 1.4915  val_acc 0.3820
+2026-04-08 19:40:12    epoch  22  loss 1.5787  acc 0.3455  val_loss 1.4719  val_acc 0.4037
+2026-04-08 19:40:13    epoch  23  loss 1.5951  acc 0.3500  val_loss 1.4924  val_acc 0.3789
+2026-04-08 19:40:13    epoch  24  loss 1.5785  acc 0.3400  val_loss 1.4846  val_acc 0.3820
+2026-04-08 19:40:14    epoch  25  loss 1.6035  acc 0.3403  val_loss 1.4855  val_acc 0.3820
+2026-04-08 19:40:15    epoch  26  loss 1.5913  acc 0.3410  val_loss 1.4615  val_acc 0.4006
+2026-04-08 19:40:16    epoch  27  loss 1.5843  acc 0.3400  val_loss 1.4776  val_acc 0.3882
+2026-04-08 19:40:16    epoch  28  loss 1.5785  acc 0.3441  val_loss 1.4667  val_acc 0.3851
+2026-04-08 19:40:17    epoch  29  loss 1.5692  acc 0.3410  val_loss 1.4730  val_acc 0.3944
+2026-04-08 19:40:18    epoch  30  loss 1.5908  acc 0.3503  val_loss 1.5136  val_acc 0.3851
+2026-04-08 19:40:19    epoch  31  loss 1.5411  acc 0.3558  val_loss 1.4585  val_acc 0.3944
+2026-04-08 19:40:19    epoch  32  loss 1.5726  acc 0.3520  val_loss 1.4801  val_acc 0.3913
+2026-04-08 19:40:20    epoch  33  loss 1.5770  acc 0.3414  val_loss 1.4615  val_acc 0.4255
+2026-04-08 19:40:21    epoch  34  loss 1.5495  acc 0.3548  val_loss 1.4554  val_acc 0.3820
+2026-04-08 19:40:22    epoch  35  loss 1.5485  acc 0.3514  val_loss 1.4796  val_acc 0.3851
+2026-04-08 19:40:22    epoch  36  loss 1.5545  acc 0.3662  val_loss 1.4550  val_acc 0.4006
+2026-04-08 19:40:23    epoch  37  loss 1.5842  acc 0.3465  val_loss 1.4690  val_acc 0.4068
+2026-04-08 19:40:24    epoch  38  loss 1.5373  acc 0.3627  val_loss 1.4501  val_acc 0.3665
+2026-04-08 19:40:25    epoch  39  loss 1.5689  acc 0.3414  val_loss 1.5003  val_acc 0.3727
+2026-04-08 19:40:25    epoch  40  loss 1.5611  acc 0.3396  val_loss 1.4641  val_acc 0.4068
+2026-04-08 19:40:26    epoch  41  loss 1.5588  acc 0.3703  val_loss 1.4407  val_acc 0.4099
+2026-04-08 19:40:27    epoch  42  loss 1.5513  acc 0.3693  val_loss 1.4375  val_acc 0.4379
+2026-04-08 19:40:28    epoch  43  loss 1.5310  acc 0.3679  val_loss 1.4371  val_acc 0.4317
+2026-04-08 19:40:28    epoch  44  loss 1.5336  acc 0.3651  val_loss 1.4359  val_acc 0.4161
+2026-04-08 19:40:29    epoch  45  loss 1.5576  acc 0.3596  val_loss 1.4443  val_acc 0.3975
+2026-04-08 19:40:30    epoch  46  loss 1.5416  acc 0.3658  val_loss 1.4783  val_acc 0.3882
+2026-04-08 19:40:31    epoch  47  loss 1.5631  acc 0.3600  val_loss 1.4418  val_acc 0.4161
+2026-04-08 19:40:31    epoch  48  loss 1.5419  acc 0.3541  val_loss 1.4404  val_acc 0.4224
+2026-04-08 19:40:32    epoch  49  loss 1.5625  acc 0.3703  val_loss 1.4410  val_acc 0.4224
+2026-04-08 19:40:33    epoch  50  loss 1.5316  acc 0.3658  val_loss 1.4497  val_acc 0.4161
+2026-04-08 19:40:34    epoch  51  loss 1.5360  acc 0.3679  val_loss 1.4495  val_acc 0.4099
+2026-04-08 19:40:34    epoch  52  loss 1.5200  acc 0.3738  val_loss 1.4078  val_acc 0.4379
+2026-04-08 19:40:35    epoch  53  loss 1.5386  acc 0.3731  val_loss 1.4292  val_acc 0.4224
+2026-04-08 19:40:36    epoch  54  loss 1.5310  acc 0.3682  val_loss 1.4267  val_acc 0.4193
+2026-04-08 19:40:37    epoch  55  loss 1.5369  acc 0.3713  val_loss 1.4275  val_acc 0.4286
+2026-04-08 19:40:37    epoch  56  loss 1.5220  acc 0.3589  val_loss 1.4279  val_acc 0.4193
+2026-04-08 19:40:38    epoch  57  loss 1.5287  acc 0.3717  val_loss 1.4238  val_acc 0.4286
+2026-04-08 19:40:39    epoch  58  loss 1.5080  acc 0.3827  val_loss 1.4090  val_acc 0.4379
+2026-04-08 19:40:40    epoch  59  loss 1.4976  acc 0.3875  val_loss 1.4097  val_acc 0.4348
+2026-04-08 19:40:40    epoch  60  loss 1.4986  acc 0.3800  val_loss 1.4198  val_acc 0.4286
+2026-04-08 19:40:40    Early stopping at epoch 60
+2026-04-08 19:40:40    User10 accuracy: 0.3365
+2026-04-08 19:40:41  ────────────────────────────────────────────────────────────
+2026-04-08 19:40:41  LOSO fold — held-out: User11 (441 test windows, 3203 train windows)
+2026-04-08 19:40:41    epoch   1  loss 2.0519  acc 0.2099  val_loss 1.7605  val_acc 0.2875
+2026-04-08 19:40:42    epoch   2  loss 1.8214  acc 0.2629  val_loss 1.6649  val_acc 0.3094
+2026-04-08 19:40:43    epoch   3  loss 1.7514  acc 0.2758  val_loss 1.6289  val_acc 0.3344
+2026-04-08 19:40:44    epoch   4  loss 1.7028  acc 0.2934  val_loss 1.6129  val_acc 0.3531
+2026-04-08 19:40:44    epoch   5  loss 1.6938  acc 0.3035  val_loss 1.5911  val_acc 0.3438
+2026-04-08 19:40:45    epoch   6  loss 1.6668  acc 0.3101  val_loss 1.6593  val_acc 0.3219
+2026-04-08 19:40:46    epoch   7  loss 1.6929  acc 0.2931  val_loss 1.6109  val_acc 0.3125
+2026-04-08 19:40:47    epoch   8  loss 1.6765  acc 0.3021  val_loss 1.5885  val_acc 0.3500
+2026-04-08 19:40:47    epoch   9  loss 1.6487  acc 0.2948  val_loss 1.5617  val_acc 0.3719
+2026-04-08 19:40:48    epoch  10  loss 1.6329  acc 0.2928  val_loss 1.5729  val_acc 0.3438
+2026-04-08 19:40:49    epoch  11  loss 1.6318  acc 0.3049  val_loss 1.5418  val_acc 0.4000
+2026-04-08 19:40:50    epoch  12  loss 1.6100  acc 0.3184  val_loss 1.5840  val_acc 0.3781
+2026-04-08 19:40:50    epoch  13  loss 1.6035  acc 0.3274  val_loss 1.5221  val_acc 0.3781
+2026-04-08 19:40:51    epoch  14  loss 1.6296  acc 0.3084  val_loss 1.5824  val_acc 0.3531
+2026-04-08 19:40:52    epoch  15  loss 1.5995  acc 0.3118  val_loss 1.7176  val_acc 0.2812
+2026-04-08 19:40:53    epoch  16  loss 1.6014  acc 0.3125  val_loss 1.5404  val_acc 0.3812
+2026-04-08 19:40:53    epoch  17  loss 1.6084  acc 0.3229  val_loss 1.5152  val_acc 0.3656
+2026-04-08 19:40:54    epoch  18  loss 1.6183  acc 0.3184  val_loss 1.6089  val_acc 0.3344
+2026-04-08 19:40:55    epoch  19  loss 1.6260  acc 0.3170  val_loss 1.5040  val_acc 0.3719
+2026-04-08 19:40:56    epoch  20  loss 1.6178  acc 0.3229  val_loss 1.5038  val_acc 0.3969
+2026-04-08 19:40:56    epoch  21  loss 1.6027  acc 0.3195  val_loss 1.5892  val_acc 0.3281
+2026-04-08 19:40:57    epoch  22  loss 1.5978  acc 0.3326  val_loss 1.5092  val_acc 0.3906
+2026-04-08 19:40:58    epoch  23  loss 1.5993  acc 0.3184  val_loss 1.5307  val_acc 0.3500
+2026-04-08 19:40:59    epoch  24  loss 1.5789  acc 0.3417  val_loss 1.4900  val_acc 0.4188
+2026-04-08 19:41:00    epoch  25  loss 1.5663  acc 0.3309  val_loss 1.5145  val_acc 0.3812
+2026-04-08 19:41:00    epoch  26  loss 1.5997  acc 0.3371  val_loss 1.4917  val_acc 0.4125
+2026-04-08 19:41:01    epoch  27  loss 1.5897  acc 0.3427  val_loss 1.5316  val_acc 0.4125
+2026-04-08 19:41:02    epoch  28  loss 1.5825  acc 0.3344  val_loss 1.5706  val_acc 0.3406
+2026-04-08 19:41:02    epoch  29  loss 1.5827  acc 0.3465  val_loss 1.4793  val_acc 0.3844
+2026-04-08 19:41:03    epoch  30  loss 1.5622  acc 0.3458  val_loss 1.4753  val_acc 0.4000
+2026-04-08 19:41:04    epoch  31  loss 1.5612  acc 0.3406  val_loss 1.4817  val_acc 0.3969
+2026-04-08 19:41:05    epoch  32  loss 1.5773  acc 0.3382  val_loss 1.4845  val_acc 0.3906
+2026-04-08 19:41:05    epoch  33  loss 1.5893  acc 0.3351  val_loss 1.4705  val_acc 0.3844
+2026-04-08 19:41:06    epoch  34  loss 1.5710  acc 0.3555  val_loss 1.5619  val_acc 0.3875
+2026-04-08 19:41:07    epoch  35  loss 1.5805  acc 0.3313  val_loss 1.4950  val_acc 0.4000
+2026-04-08 19:41:08    epoch  36  loss 1.5634  acc 0.3406  val_loss 1.5245  val_acc 0.4062
+2026-04-08 19:41:08    epoch  37  loss 1.5659  acc 0.3541  val_loss 1.5371  val_acc 0.3969
+2026-04-08 19:41:09    epoch  38  loss 1.5652  acc 0.3514  val_loss 1.5145  val_acc 0.4031
+2026-04-08 19:41:10    epoch  39  loss 1.5502  acc 0.3479  val_loss 1.4621  val_acc 0.4469
+2026-04-08 19:41:11    epoch  40  loss 1.5596  acc 0.3517  val_loss 1.4900  val_acc 0.4094
+2026-04-08 19:41:11    epoch  41  loss 1.5437  acc 0.3600  val_loss 1.4981  val_acc 0.4188
+2026-04-08 19:41:12    epoch  42  loss 1.5453  acc 0.3420  val_loss 1.4731  val_acc 0.3906
+2026-04-08 19:41:13    epoch  43  loss 1.5473  acc 0.3573  val_loss 1.4593  val_acc 0.4250
+2026-04-08 19:41:14    epoch  44  loss 1.5316  acc 0.3448  val_loss 1.4743  val_acc 0.4062
+2026-04-08 19:41:14    epoch  45  loss 1.5454  acc 0.3562  val_loss 1.4858  val_acc 0.4094
+2026-04-08 19:41:15    epoch  46  loss 1.5421  acc 0.3646  val_loss 1.4592  val_acc 0.4406
+2026-04-08 19:41:16    epoch  47  loss 1.5212  acc 0.3659  val_loss 1.5124  val_acc 0.4000
+2026-04-08 19:41:17    epoch  48  loss 1.5330  acc 0.3659  val_loss 1.4743  val_acc 0.4000
+2026-04-08 19:41:17    epoch  49  loss 1.5153  acc 0.3569  val_loss 1.4778  val_acc 0.3906
+2026-04-08 19:41:18    epoch  50  loss 1.5226  acc 0.3663  val_loss 1.4461  val_acc 0.4344
+2026-04-08 19:41:19    epoch  51  loss 1.5145  acc 0.3642  val_loss 1.4814  val_acc 0.4188
+2026-04-08 19:41:20    epoch  52  loss 1.5396  acc 0.3639  val_loss 1.4598  val_acc 0.4000
+2026-04-08 19:41:20    epoch  53  loss 1.5403  acc 0.3659  val_loss 1.4627  val_acc 0.4125
+2026-04-08 19:41:21    epoch  54  loss 1.5652  acc 0.3649  val_loss 1.5003  val_acc 0.3875
+2026-04-08 19:41:22    epoch  55  loss 1.5198  acc 0.3704  val_loss 1.4482  val_acc 0.4313
+2026-04-08 19:41:23    epoch  56  loss 1.5267  acc 0.3704  val_loss 1.4509  val_acc 0.4250
+2026-04-08 19:41:23    epoch  57  loss 1.5119  acc 0.3718  val_loss 1.4450  val_acc 0.4437
+2026-04-08 19:41:24    epoch  58  loss 1.5248  acc 0.3611  val_loss 1.4631  val_acc 0.4313
+2026-04-08 19:41:25    epoch  59  loss 1.5091  acc 0.3753  val_loss 1.4591  val_acc 0.4375
+2026-04-08 19:41:26    epoch  60  loss 1.5054  acc 0.3649  val_loss 1.4580  val_acc 0.3906
+2026-04-08 19:41:26    epoch  61  loss 1.5118  acc 0.3698  val_loss 1.4494  val_acc 0.4406
+2026-04-08 19:41:27    epoch  62  loss 1.5058  acc 0.3642  val_loss 1.4495  val_acc 0.4469
+2026-04-08 19:41:28    epoch  63  loss 1.5035  acc 0.3684  val_loss 1.4483  val_acc 0.4313
+2026-04-08 19:41:29    epoch  64  loss 1.4986  acc 0.3767  val_loss 1.4587  val_acc 0.4344
+2026-04-08 19:41:29    epoch  65  loss 1.5127  acc 0.3725  val_loss 1.4417  val_acc 0.4469
+2026-04-08 19:41:30    epoch  66  loss 1.4936  acc 0.3725  val_loss 1.4430  val_acc 0.4375
+2026-04-08 19:41:31    epoch  67  loss 1.4967  acc 0.3763  val_loss 1.4432  val_acc 0.4250
+2026-04-08 19:41:32    epoch  68  loss 1.5239  acc 0.3670  val_loss 1.4856  val_acc 0.4094
+2026-04-08 19:41:32    epoch  69  loss 1.4877  acc 0.3850  val_loss 1.4468  val_acc 0.4188
+2026-04-08 19:41:33    epoch  70  loss 1.4993  acc 0.3652  val_loss 1.4532  val_acc 0.4375
+2026-04-08 19:41:34    epoch  71  loss 1.5253  acc 0.3684  val_loss 1.4606  val_acc 0.4281
+2026-04-08 19:41:35    epoch  72  loss 1.5040  acc 0.3625  val_loss 1.4470  val_acc 0.4437
+2026-04-08 19:41:35    epoch  73  loss 1.4901  acc 0.3729  val_loss 1.4428  val_acc 0.4437
+2026-04-08 19:41:35    Early stopping at epoch 73
+2026-04-08 19:41:35    User11 accuracy: 0.3810
+2026-04-08 19:41:36  ────────────────────────────────────────────────────────────
+2026-04-08 19:41:36  LOSO fold — held-out: User12 (367 test windows, 3277 train windows)
+2026-04-08 19:41:37    epoch   1  loss 2.0376  acc 0.2149  val_loss 1.8046  val_acc 0.2171
+2026-04-08 19:41:37    epoch   2  loss 1.8081  acc 0.2637  val_loss 1.6965  val_acc 0.3303
+2026-04-08 19:41:38    epoch   3  loss 1.7470  acc 0.2793  val_loss 1.6423  val_acc 0.3180
+2026-04-08 19:41:39    epoch   4  loss 1.7182  acc 0.2953  val_loss 1.6032  val_acc 0.3119
+2026-04-08 19:41:40    epoch   5  loss 1.6663  acc 0.3085  val_loss 1.5682  val_acc 0.3242
+2026-04-08 19:41:40    epoch   6  loss 1.6555  acc 0.3024  val_loss 1.5823  val_acc 0.3211
+2026-04-08 19:41:41    epoch   7  loss 1.6642  acc 0.3193  val_loss 1.5911  val_acc 0.3028
+2026-04-08 19:41:42    epoch   8  loss 1.6557  acc 0.3186  val_loss 1.5612  val_acc 0.3242
+2026-04-08 19:41:43    epoch   9  loss 1.6222  acc 0.3139  val_loss 1.5151  val_acc 0.3303
+2026-04-08 19:41:44    epoch  10  loss 1.6215  acc 0.3173  val_loss 1.5612  val_acc 0.3180
+2026-04-08 19:41:44    epoch  11  loss 1.6100  acc 0.3254  val_loss 1.5544  val_acc 0.3119
+2026-04-08 19:41:45    epoch  12  loss 1.6046  acc 0.3288  val_loss 1.5274  val_acc 0.3119
+2026-04-08 19:41:46    epoch  13  loss 1.5985  acc 0.3268  val_loss 1.5682  val_acc 0.3394
+2026-04-08 19:41:47    epoch  14  loss 1.5876  acc 0.3315  val_loss 1.5035  val_acc 0.3792
+2026-04-08 19:41:47    epoch  15  loss 1.5652  acc 0.3393  val_loss 1.5585  val_acc 0.3211
+2026-04-08 19:41:48    epoch  16  loss 1.5689  acc 0.3302  val_loss 1.6090  val_acc 0.3333
+2026-04-08 19:41:49    epoch  17  loss 1.5664  acc 0.3390  val_loss 1.5126  val_acc 0.3364
+2026-04-08 19:41:50    epoch  18  loss 1.5983  acc 0.3227  val_loss 1.5164  val_acc 0.3547
+2026-04-08 19:41:50    epoch  19  loss 1.5695  acc 0.3356  val_loss 1.5201  val_acc 0.3211
+2026-04-08 19:41:51    epoch  20  loss 1.5560  acc 0.3451  val_loss 1.4958  val_acc 0.3761
+2026-04-08 19:41:52    epoch  21  loss 1.5500  acc 0.3386  val_loss 1.5175  val_acc 0.3578
+2026-04-08 19:41:53    epoch  22  loss 1.5507  acc 0.3441  val_loss 1.5355  val_acc 0.3364
+2026-04-08 19:41:54    epoch  23  loss 1.5503  acc 0.3349  val_loss 1.4900  val_acc 0.3761
+2026-04-08 19:41:54    epoch  24  loss 1.5655  acc 0.3508  val_loss 1.5061  val_acc 0.3394
+2026-04-08 19:41:55    epoch  25  loss 1.5492  acc 0.3471  val_loss 1.5229  val_acc 0.3211
+2026-04-08 19:41:56    epoch  26  loss 1.5636  acc 0.3441  val_loss 1.5049  val_acc 0.3425
+2026-04-08 19:41:57    epoch  27  loss 1.5733  acc 0.3492  val_loss 1.5040  val_acc 0.3792
+2026-04-08 19:41:57    epoch  28  loss 1.5455  acc 0.3444  val_loss 1.5232  val_acc 0.3578
+2026-04-08 19:41:58    epoch  29  loss 1.5319  acc 0.3525  val_loss 1.5247  val_acc 0.3731
+2026-04-08 19:41:59    epoch  30  loss 1.5288  acc 0.3610  val_loss 1.4868  val_acc 0.3670
+2026-04-08 19:42:00    epoch  31  loss 1.5438  acc 0.3603  val_loss 1.4941  val_acc 0.3394
+2026-04-08 19:42:00    epoch  32  loss 1.5357  acc 0.3607  val_loss 1.4941  val_acc 0.3945
+2026-04-08 19:42:01    epoch  33  loss 1.5396  acc 0.3542  val_loss 1.5338  val_acc 0.3792
+2026-04-08 19:42:02    epoch  34  loss 1.5283  acc 0.3539  val_loss 1.4866  val_acc 0.3547
+2026-04-08 19:42:03    epoch  35  loss 1.5344  acc 0.3549  val_loss 1.4896  val_acc 0.3578
+2026-04-08 19:42:04    epoch  36  loss 1.5270  acc 0.3454  val_loss 1.5067  val_acc 0.3884
+2026-04-08 19:42:04    epoch  37  loss 1.5268  acc 0.3600  val_loss 1.4777  val_acc 0.3731
+2026-04-08 19:42:05    epoch  38  loss 1.5285  acc 0.3627  val_loss 1.4816  val_acc 0.3639
+2026-04-08 19:42:06    epoch  39  loss 1.5334  acc 0.3556  val_loss 1.5203  val_acc 0.3731
+2026-04-08 19:42:07    epoch  40  loss 1.5169  acc 0.3746  val_loss 1.4800  val_acc 0.3853
+2026-04-08 19:42:07    epoch  41  loss 1.5361  acc 0.3614  val_loss 1.5046  val_acc 0.3394
+2026-04-08 19:42:08    epoch  42  loss 1.5252  acc 0.3529  val_loss 1.4857  val_acc 0.3853
+2026-04-08 19:42:09    epoch  43  loss 1.5113  acc 0.3631  val_loss 1.4800  val_acc 0.3670
+2026-04-08 19:42:10    epoch  44  loss 1.5020  acc 0.3695  val_loss 1.4844  val_acc 0.3884
+2026-04-08 19:42:10    epoch  45  loss 1.5028  acc 0.3641  val_loss 1.4792  val_acc 0.3853
+2026-04-08 19:42:10    Early stopping at epoch 45
+2026-04-08 19:42:10    User12 accuracy: 0.3188
+2026-04-08 19:42:10  Best model: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/cnn_best_W400_S400.pth  (acc=0.4503)
+2026-04-08 19:42:10  ============================================================
+2026-04-08 19:42:10  LOSO SUMMARY
+2026-04-08 19:42:10  ============================================================
+2026-04-08 19:42:10    User1: 0.3048
+2026-04-08 19:42:10    User2: 0.3750
+2026-04-08 19:42:10    User3: 0.4503
+2026-04-08 19:42:10    User4: 0.3448
+2026-04-08 19:42:10    User5: 0.3483
+2026-04-08 19:42:10    User6: 0.3918
+2026-04-08 19:42:10    User7: 0.3853
+2026-04-08 19:42:10    User8: 0.3963
+2026-04-08 19:42:10    User9: 0.2630
+2026-04-08 19:42:10    User10: 0.3365
+2026-04-08 19:42:10    User11: 0.3810
+2026-04-08 19:42:10    User12: 0.3188
+2026-04-08 19:42:10    Mean accuracy : 0.3580
+2026-04-08 19:42:10    Std  accuracy : 0.0473
+2026-04-08 19:42:10  ============================================================
+2026-04-08 19:42:10  CLASSIFICATION REPORT (all folds combined)
+2026-04-08 19:42:10  ============================================================
+2026-04-08 19:42:10  
+                            precision    recall  f1-score   support
+
+         Sitting – Reading       0.19      0.12      0.14       346
+         Sitting – Writing       0.26      0.32      0.28       384
+         Computer – Typing       0.29      0.17      0.22       384
+       Computer – Browsing       0.32      0.50      0.39       391
+Sitting – Moving head/body       0.25      0.28      0.27       337
+    Sitting – Moving chair       0.32      0.18      0.23       383
+     Stand up from sitting       0.35      0.52      0.42       454
+                  Standing       0.15      0.03      0.05       256
+                   Walking       0.50      0.68      0.57       302
+                   Running       0.65      0.86      0.74       294
+             Taking stairs       0.00      0.00      0.00       113
+
+                  accuracy                           0.35      3644
+                 macro avg       0.30      0.33      0.30      3644
+              weighted avg       0.31      0.35      0.32      3644
+
+2026-04-08 19:42:11  Confusion matrix saved to: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures/cnn_confusion_matrix_W400_S400.png
+2026-04-08 19:42:11  Per-subject accuracy chart saved to: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures/cnn_per_subject_accuracy_W400_S400.png
+2026-04-08 19:42:11  ============================================================
+2026-04-08 19:42:11  cnn training complete
+2026-04-08 19:42:11  ============================================================
