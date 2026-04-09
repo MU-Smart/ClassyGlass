@@ -1,0 +1,46 @@
+2026-04-08 21:42:15  
+2026-04-08 21:42:15  ==============================================================================================================
+2026-04-08 21:42:15    DeepConvLSTM  —  Mobile Runtime Simulator  (Roofline Model)
+2026-04-08 21:42:15  ==============================================================================================================
+2026-04-08 21:42:15    Checkpoint   : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/deep_conv_lstm_best_W300_S150.pth
+2026-04-08 21:42:15    Input shape  : (1, 300, 6)  [batch=1, time=300, channels=6]
+2026-04-08 21:42:15    Device       : Snapdragon 778G / Apple A14 Bionic  [mid_range]
+2026-04-08 21:42:15    CPU (1 core) : 6.0 GFLOPS FP32 | BW 34.1 GB/s | η=0.4
+2026-04-08 21:42:15    MACs         : 87,822,208  (87.82M)
+2026-04-08 21:42:15    Model bytes  : 1,570,392  (1.57 MB, weights+activations)
+2026-04-08 21:42:15    Roofline est : 73.19 ms  [compute-bound]
+2026-04-08 21:42:15    Benchmark    : 200 runs  warmup=20
+2026-04-08 21:42:15    Export dir   : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/mobile_exports
+2026-04-08 21:42:15    Log          : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/mobile_sim_20260408_214215.log
+2026-04-08 21:42:15  ==============================================================================================================
+2026-04-08 21:42:15  
+2026-04-08 21:42:15    Runtime                       mean         p50         p95         p99         size          projected (roofline)
+2026-04-08 21:42:15    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-04-08 21:42:16    PyTorch CPU (1 thread)  mean=  6.50ms  p50=  6.24ms  p95=  6.54ms  p99= 16.31ms  size=  1.14 MB  projected=  73.19 ms [compute-bound]
+2026-04-08 21:42:16                            → mobile projected 73.2 ms  |  window=6000 ms @ 50 Hz  [FEASIBLE]
+2026-04-08 21:42:16    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-04-08 21:42:18    TorchScript+MobileOpt   mean=  6.45ms  p50=  6.42ms  p95=  6.63ms  p99=  6.81ms  size=  1.15 MB  projected=  73.19 ms [compute-bound]
+2026-04-08 21:42:18                            → mobile projected 73.2 ms  [FEASIBLE]  saved → /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/mobile_exports/deep_conv_lstm_mobile.ptl
+2026-04-08 21:42:18    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-04-08 21:42:43    CoreML (CPU+NE)         mean=  0.95ms  p50=  0.98ms  p95=  1.01ms  p99=  1.04ms  size=  1.02 MB  projected=   0.95 ms [measured on-device-bound]
+2026-04-08 21:42:43                            → measured 0.9 ms  [FEASIBLE]  saved → /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/mobile_exports/deep_conv_lstm.mlpackage
+2026-04-08 21:42:43    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-04-08 21:42:46    ONNX (FP32, 1 thread)   mean=  3.00ms  p50=  2.99ms  p95=  3.10ms  p99=  3.15ms  size=  1.14 MB  projected=  73.19 ms [compute-bound]
+2026-04-08 21:42:46                            → mobile projected 73.2 ms  [FEASIBLE]  saved → /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/mobile_exports/deep_conv_lstm.onnx
+2026-04-08 21:42:46    ONNX (INT8 quant)       mean=  1.92ms  p50=  2.00ms  p95=  2.05ms  p99=  2.16ms  size=  0.30 MB  projected=  36.59 ms [compute-bound]
+2026-04-08 21:42:46                            → mobile projected 36.6 ms  [FEASIBLE]  saved → /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/models/mobile_exports/deep_conv_lstm_int8.onnx
+2026-04-08 21:42:46    ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+2026-04-08 21:42:46  
+2026-04-08 21:42:46    Methodology
+2026-04-08 21:42:46    ───────────
+2026-04-08 21:42:46    • Projected latency uses the Roofline Model, not a Mac CPU scaling factor.
+2026-04-08 21:42:46      compute_time = MACs×2 / (peak_GFLOPS × η),  memory_time = bytes / (peak_BW × η)
+2026-04-08 21:42:46      projected = max(compute_time, memory_time)  → bottleneck: compute-bound
+2026-04-08 21:42:46    • Device: Snapdragon 778G / Apple A14 Bionic
+2026-04-08 21:42:46      Peak CPU: 6.0 GFLOPS FP32  | BW: 34.1 GB/s  | η=0.4
+2026-04-08 21:42:46    • Model MACs: 87.82M  |  Memory footprint: 1.57 MB
+2026-04-08 21:42:46    • Real-time threshold: 6000 ms  (window=300 samples @ 50.0 Hz)
+2026-04-08 21:42:46    • CoreML on Apple Silicon: benchmark IS the Neural Engine measurement.
+2026-04-08 21:42:46    • ONNX INT8: weight bytes halved, INT8 throughput modelled as 2× FP32 SIMD.
+2026-04-08 21:42:46    • For Android: export ONNX → ONNX Runtime Mobile or TFLite (onnx-tf).
+2026-04-08 21:42:46  

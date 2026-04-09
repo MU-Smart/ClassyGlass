@@ -76,16 +76,17 @@ ACTIVITY_NAMES = {
     11: "Taking stairs",
 }
 
-N_CHANNELS  = 6
-N_CLASSES   = 11
-BATCH_SIZE  = 32
-EPOCHS      = 100
-RANDOM_SEED = 42
-VAL_SPLIT   = 0.1
-LR          = 1e-3
-LR_FACTOR   = 0.5
-LR_PATIENCE = 4
-ES_PATIENCE = 8
+N_CHANNELS   = 6
+N_CLASSES    = 11
+BATCH_SIZE   = 256        # 1080 Ti has 11 GB; 256 fills it well without OOM
+NUM_WORKERS  = 4          # parallel CPU data-loading threads
+EPOCHS       = 100
+RANDOM_SEED  = 42
+VAL_SPLIT    = 0.1
+LR           = 1e-3
+LR_FACTOR    = 0.5
+LR_PATIENCE  = 4
+ES_PATIENCE  = 8
 
 
 # ─── 1. Data loading ──────────────────────────────────────────────────────────
@@ -229,8 +230,15 @@ def _fit(model, X_train: np.ndarray, y_train: np.ndarray,
         dataset, [trn_len, val_len],
         generator=torch.Generator().manual_seed(RANDOM_SEED),
     )
-    trn_loader = DataLoader(trn_set, batch_size=BATCH_SIZE, shuffle=True)
-    val_loader = DataLoader(val_set, batch_size=BATCH_SIZE)
+    pin = device.type == "cuda"
+    trn_loader = DataLoader(
+        trn_set, batch_size=BATCH_SIZE, shuffle=True,
+        num_workers=NUM_WORKERS, pin_memory=pin, persistent_workers=NUM_WORKERS > 0,
+    )
+    val_loader = DataLoader(
+        val_set, batch_size=BATCH_SIZE,
+        num_workers=NUM_WORKERS, pin_memory=pin, persistent_workers=NUM_WORKERS > 0,
+    )
 
     criterion = nn.CrossEntropyLoss(reduction="mean")
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
