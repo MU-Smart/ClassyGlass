@@ -39,7 +39,7 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 
 WINDOWS       = [100, 200, 300, 400, 500]
 OVERLAP_PCTS  = [0, 25, 50, 60]           # percent
-ALL_MODELS    = ["cnn", "deep_conv_lstm", "lstm"]
+ALL_MODELS    = ["deep_conv_lstm", "lstm"]
 
 # ─── Logger ───────────────────────────────────────────────────────────────────
 
