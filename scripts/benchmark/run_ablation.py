@@ -37,8 +37,8 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 
 # ─── Sweep grid ───────────────────────────────────────────────────────────────
 
-WINDOWS       = [100, 200, 300, 400, 500]
-OVERLAP_PCTS  = [0, 25, 50, 60]           # percent
+WINDOWS       = [200, 300, 500]
+OVERLAP_PCTS  = [0, 25, 50]           # percent
 ALL_MODELS    = ["deep_conv_lstm", "lstm"]
 
 # ─── Logger ───────────────────────────────────────────────────────────────────
