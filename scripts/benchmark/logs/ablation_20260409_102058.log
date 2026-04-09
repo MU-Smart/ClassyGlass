@@ -1,0 +1,1017 @@
+2026-04-09 10:20:58  Master log: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/ablation_20260409_102058.log
+2026-04-09 10:20:58  Found 4 CUDA GPU(s):
+2026-04-09 10:20:58    GPU 0: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:20:58    GPU 1: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:20:58    GPU 2: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:20:58    GPU 3: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:20:58  ============================================================
+2026-04-09 10:20:58  Ablation sweep: 40 experiments
+2026-04-09 10:20:58    Models   : ['deep_conv_lstm', 'lstm']
+2026-04-09 10:20:58    Windows  : [100, 200, 300, 400, 500]
+2026-04-09 10:20:58    Overlaps : [0, 25, 50, 60]%
+2026-04-09 10:20:58    GPUs     : [0, 1, 2, 3]  →  4 parallel worker(s)
+2026-04-09 10:20:58  ============================================================
+2026-04-09 10:20:58  [START]  deep_conv_lstm_W100_O0            gpu=0  step=100
+2026-04-09 10:20:58  [START]  deep_conv_lstm_W100_O25           gpu=1  step=75
+2026-04-09 10:20:58  [START]  deep_conv_lstm_W100_O50           gpu=2  step=50
+2026-04-09 10:20:58  [START]  deep_conv_lstm_W100_O60           gpu=3  step=40
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60: Traceback (most recent call last):
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from .fixes import parse_version
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:02  [DONE]   deep_conv_lstm_W100_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:02  [START]  deep_conv_lstm_W200_O0            gpu=3  step=200
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25: Traceback (most recent call last):
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from .fixes import parse_version
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:02  [DONE]   deep_conv_lstm_W100_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:02  [START]  deep_conv_lstm_W200_O25           gpu=1  step=150
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0: Traceback (most recent call last):
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from .fixes import parse_version
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:02  [DONE]   deep_conv_lstm_W100_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:21:02  [START]  deep_conv_lstm_W200_O50           gpu=0  step=100
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50: Traceback (most recent call last):
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from .fixes import parse_version
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:02  [STDERR] deep_conv_lstm_W100_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:02  [DONE]   deep_conv_lstm_W100_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:02  [START]  deep_conv_lstm_W200_O60           gpu=2  step=80
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25: Traceback (most recent call last):
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from .fixes import parse_version
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:05  [STDERR] deep_conv_lstm_W200_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:05  [DONE]   deep_conv_lstm_W200_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:05  [START]  deep_conv_lstm_W300_O0            gpu=1  step=300
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60: Traceback (most recent call last):
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from .fixes import parse_version
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:06  [DONE]   deep_conv_lstm_W200_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:06  [START]  deep_conv_lstm_W300_O25           gpu=2  step=225
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50: Traceback (most recent call last):
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from .fixes import parse_version
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:06  [DONE]   deep_conv_lstm_W200_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:06  [START]  deep_conv_lstm_W300_O50           gpu=0  step=150
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0: Traceback (most recent call last):
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from .fixes import parse_version
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:06  [STDERR] deep_conv_lstm_W200_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:06  [DONE]   deep_conv_lstm_W200_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:21:06  [START]  deep_conv_lstm_W300_O60           gpu=3  step=120
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25: Traceback (most recent call last):
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from .fixes import parse_version
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:09  [DONE]   deep_conv_lstm_W300_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:09  [START]  deep_conv_lstm_W400_O0            gpu=2  step=400
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0: Traceback (most recent call last):
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from .fixes import parse_version
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:09  [DONE]   deep_conv_lstm_W300_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:21:09  [START]  deep_conv_lstm_W400_O25           gpu=1  step=300
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60: Traceback (most recent call last):
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from .fixes import parse_version
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:09  [DONE]   deep_conv_lstm_W300_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:09  [START]  deep_conv_lstm_W400_O50           gpu=3  step=200
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50: Traceback (most recent call last):
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from .fixes import parse_version
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:09  [STDERR] deep_conv_lstm_W300_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:09  [DONE]   deep_conv_lstm_W300_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:09  [START]  deep_conv_lstm_W400_O60           gpu=0  step=160
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0: Traceback (most recent call last):
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from .fixes import parse_version
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:13  [DONE]   deep_conv_lstm_W400_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:21:13  [START]  deep_conv_lstm_W500_O0            gpu=2  step=500
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50: Traceback (most recent call last):
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from .fixes import parse_version
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:13  [DONE]   deep_conv_lstm_W400_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:13  [START]  deep_conv_lstm_W500_O25           gpu=3  step=375
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25: Traceback (most recent call last):
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from .fixes import parse_version
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:13  [DONE]   deep_conv_lstm_W400_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:13  [START]  deep_conv_lstm_W500_O50           gpu=1  step=250
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60: Traceback (most recent call last):
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from .fixes import parse_version
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:13  [STDERR] deep_conv_lstm_W400_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:13  [DONE]   deep_conv_lstm_W400_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:13  [START]  deep_conv_lstm_W500_O60           gpu=0  step=200
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50: Traceback (most recent call last):
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from .fixes import parse_version
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:17  [DONE]   deep_conv_lstm_W500_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:17  [START]  lstm_W100_O0                      gpu=1  step=100
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25: Traceback (most recent call last):
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from .fixes import parse_version
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:17  [DONE]   deep_conv_lstm_W500_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:17  [START]  lstm_W100_O25                     gpu=3  step=75
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0: Traceback (most recent call last):
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from .fixes import parse_version
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:17  [DONE]   deep_conv_lstm_W500_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:21:17  [START]  lstm_W100_O50                     gpu=2  step=50
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60: Traceback (most recent call last):
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from .fixes import parse_version
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:17  [STDERR] deep_conv_lstm_W500_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:17  [DONE]   deep_conv_lstm_W500_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:21:17  [START]  lstm_W100_O60                     gpu=0  step=40
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0: Traceback (most recent call last):
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from .fixes import parse_version
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:20  [STDERR] lstm_W100_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:20  [DONE]   lstm_W100_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:21:20  [START]  lstm_W200_O0                      gpu=1  step=200
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50: Traceback (most recent call last):
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from .fixes import parse_version
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:21  [STDERR] lstm_W100_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:21  [DONE]   lstm_W100_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:21  [START]  lstm_W200_O25                     gpu=2  step=150
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60: Traceback (most recent call last):
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from .fixes import parse_version
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:21  [STDERR] lstm_W100_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:21  [DONE]   lstm_W100_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:21  [START]  lstm_W200_O50                     gpu=0  step=100
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25: Traceback (most recent call last):
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from .fixes import parse_version
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:21  [STDERR] lstm_W100_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:21  [DONE]   lstm_W100_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:21  [START]  lstm_W200_O60                     gpu=3  step=80
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0: Traceback (most recent call last):
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from .fixes import parse_version
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:24  [STDERR] lstm_W200_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:24  [DONE]   lstm_W200_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:21:24  [START]  lstm_W300_O0                      gpu=1  step=300
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25: Traceback (most recent call last):
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from .fixes import parse_version
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:24  [STDERR] lstm_W200_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:24  [DONE]   lstm_W200_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:24  [START]  lstm_W300_O25                     gpu=2  step=225
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50: Traceback (most recent call last):
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from .fixes import parse_version
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:24  [STDERR] lstm_W200_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:24  [DONE]   lstm_W200_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:24  [START]  lstm_W300_O50                     gpu=0  step=150
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60: Traceback (most recent call last):
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from .fixes import parse_version
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:25  [STDERR] lstm_W200_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:25  [DONE]   lstm_W200_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:25  [START]  lstm_W300_O60                     gpu=3  step=120
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25: Traceback (most recent call last):
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from .fixes import parse_version
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:28  [STDERR] lstm_W300_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:28  [DONE]   lstm_W300_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:28  [START]  lstm_W400_O0                      gpu=2  step=400
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50: Traceback (most recent call last):
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from .fixes import parse_version
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:28  [STDERR] lstm_W300_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:28  [DONE]   lstm_W300_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:28  [START]  lstm_W400_O25                     gpu=0  step=300
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0: Traceback (most recent call last):
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from .fixes import parse_version
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:28  [STDERR] lstm_W300_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:28  [DONE]   lstm_W300_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:21:28  [START]  lstm_W400_O50                     gpu=1  step=200
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60: Traceback (most recent call last):
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from .fixes import parse_version
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:29  [STDERR] lstm_W300_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:29  [DONE]   lstm_W300_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:29  [START]  lstm_W400_O60                     gpu=3  step=160
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25: Traceback (most recent call last):
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from .fixes import parse_version
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:32  [STDERR] lstm_W400_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:32  [DONE]   lstm_W400_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:32  [START]  lstm_W500_O0                      gpu=0  step=500
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0: Traceback (most recent call last):
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from .fixes import parse_version
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:32  [STDERR] lstm_W400_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:32  [DONE]   lstm_W400_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:21:32  [START]  lstm_W500_O25                     gpu=2  step=375
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50: Traceback (most recent call last):
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from .fixes import parse_version
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:32  [STDERR] lstm_W400_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:32  [DONE]   lstm_W400_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:32  [START]  lstm_W500_O50                     gpu=1  step=250
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60: Traceback (most recent call last):
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from .fixes import parse_version
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:32  [STDERR] lstm_W400_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:32  [DONE]   lstm_W400_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:32  [START]  lstm_W500_O60                     gpu=3  step=200
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25: Traceback (most recent call last):
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from .fixes import parse_version
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:35  [STDERR] lstm_W500_O25: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:35  [DONE]   lstm_W500_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0: Traceback (most recent call last):
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from .fixes import parse_version
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:36  [STDERR] lstm_W500_O0: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:36  [DONE]   lstm_W500_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60: Traceback (most recent call last):
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from .fixes import parse_version
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:36  [STDERR] lstm_W500_O60: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:36  [DONE]   lstm_W500_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50: Traceback (most recent call last):
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from ._chunking import gen_batches, gen_even_slices
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from ._param_validation import Interval, validate_params
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from .validation import _is_arraylike_not_scalar
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/validation.py", line 21, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from ..utils._array_api import _asarray_with_order, _is_numpy_namespace, get_namespace
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 17, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from .fixes import parse_version
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 25, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from .parallel import _get_threadpool_controller
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/parallel.py", line 13, in <module>
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50:     from threadpoolctl import ThreadpoolController
+2026-04-09 10:21:36  [STDERR] lstm_W500_O50: ModuleNotFoundError: No module named 'threadpoolctl'
+2026-04-09 10:21:36  [DONE]   lstm_W500_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:21:36  ============================================================
+2026-04-09 10:21:36  Sweep complete in 0.6 min — 0/40 succeeded
+2026-04-09 10:21:36  40 failed experiment(s):
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W100_O0
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W100_O25
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W100_O50
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W100_O60
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W200_O0
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W200_O25
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W200_O50
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W200_O60
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W300_O0
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W300_O25
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W300_O50
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W300_O60
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W400_O0
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W400_O25
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W400_O50
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W400_O60
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W500_O0
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W500_O25
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W500_O50
+2026-04-09 10:21:36    FAILED  deep_conv_lstm_W500_O60
+2026-04-09 10:21:36    FAILED  lstm_W100_O0
+2026-04-09 10:21:36    FAILED  lstm_W100_O25
+2026-04-09 10:21:36    FAILED  lstm_W100_O50
+2026-04-09 10:21:36    FAILED  lstm_W100_O60
+2026-04-09 10:21:36    FAILED  lstm_W200_O0
+2026-04-09 10:21:36    FAILED  lstm_W200_O25
+2026-04-09 10:21:36    FAILED  lstm_W200_O50
+2026-04-09 10:21:36    FAILED  lstm_W200_O60
+2026-04-09 10:21:36    FAILED  lstm_W300_O0
+2026-04-09 10:21:36    FAILED  lstm_W300_O25
+2026-04-09 10:21:36    FAILED  lstm_W300_O50
+2026-04-09 10:21:36    FAILED  lstm_W300_O60
+2026-04-09 10:21:36    FAILED  lstm_W400_O0
+2026-04-09 10:21:36    FAILED  lstm_W400_O25
+2026-04-09 10:21:36    FAILED  lstm_W400_O50
+2026-04-09 10:21:36    FAILED  lstm_W400_O60
+2026-04-09 10:21:36    FAILED  lstm_W500_O0
+2026-04-09 10:21:36    FAILED  lstm_W500_O25
+2026-04-09 10:21:36    FAILED  lstm_W500_O50
+2026-04-09 10:21:36    FAILED  lstm_W500_O60
+2026-04-09 10:21:36  ============================================================

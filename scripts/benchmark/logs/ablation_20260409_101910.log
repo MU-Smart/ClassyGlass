@@ -1,0 +1,617 @@
+2026-04-09 10:19:10  Master log: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/ablation_20260409_101910.log
+2026-04-09 10:19:11  Found 4 CUDA GPU(s):
+2026-04-09 10:19:11    GPU 0: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:19:11    GPU 1: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:19:11    GPU 2: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:19:11    GPU 3: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:19:11  ============================================================
+2026-04-09 10:19:11  Ablation sweep: 40 experiments
+2026-04-09 10:19:11    Models   : ['deep_conv_lstm', 'lstm']
+2026-04-09 10:19:11    Windows  : [100, 200, 300, 400, 500]
+2026-04-09 10:19:11    Overlaps : [0, 25, 50, 60]%
+2026-04-09 10:19:11    GPUs     : [0, 1, 2, 3]  →  4 parallel worker(s)
+2026-04-09 10:19:11  ============================================================
+2026-04-09 10:19:11  [START]  deep_conv_lstm_W100_O0            gpu=0  step=100
+2026-04-09 10:19:11  [START]  deep_conv_lstm_W100_O25           gpu=1  step=75
+2026-04-09 10:19:11  [START]  deep_conv_lstm_W100_O50           gpu=2  step=50
+2026-04-09 10:19:11  [START]  deep_conv_lstm_W100_O60           gpu=3  step=40
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25: Traceback (most recent call last):
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25:     import joblib
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:14  [DONE]   deep_conv_lstm_W100_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:14  [START]  deep_conv_lstm_W200_O0            gpu=1  step=200
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50: Traceback (most recent call last):
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50:     import joblib
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:14  [DONE]   deep_conv_lstm_W100_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:14  [START]  deep_conv_lstm_W200_O25           gpu=2  step=150
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60: Traceback (most recent call last):
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60:     import joblib
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:14  [DONE]   deep_conv_lstm_W100_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:14  [START]  deep_conv_lstm_W200_O50           gpu=3  step=100
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0: Traceback (most recent call last):
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0:     import joblib
+2026-04-09 10:19:14  [STDERR] deep_conv_lstm_W100_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:14  [DONE]   deep_conv_lstm_W100_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:19:14  [START]  deep_conv_lstm_W200_O60           gpu=0  step=80
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25: Traceback (most recent call last):
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25:     import joblib
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:18  [DONE]   deep_conv_lstm_W200_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50: Traceback (most recent call last):
+2026-04-09 10:19:18  [START]  deep_conv_lstm_W300_O0            gpu=2  step=300
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50:     import joblib
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:18  [DONE]   deep_conv_lstm_W200_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:18  [START]  deep_conv_lstm_W300_O25           gpu=3  step=225
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60: Traceback (most recent call last):
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60:     import joblib
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:18  [DONE]   deep_conv_lstm_W200_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:18  [START]  deep_conv_lstm_W300_O50           gpu=0  step=150
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0: Traceback (most recent call last):
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0:     import joblib
+2026-04-09 10:19:18  [STDERR] deep_conv_lstm_W200_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:18  [DONE]   deep_conv_lstm_W200_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:19:18  [START]  deep_conv_lstm_W300_O60           gpu=1  step=120
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50: Traceback (most recent call last):
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50:     import joblib
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:22  [DONE]   deep_conv_lstm_W300_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:22  [START]  deep_conv_lstm_W400_O0            gpu=0  step=400
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60: Traceback (most recent call last):
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0: Traceback (most recent call last):
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60:     import joblib
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:22  [DONE]   deep_conv_lstm_W300_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:22  [START]  deep_conv_lstm_W400_O25           gpu=1  step=300
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0:     import joblib
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:22  [DONE]   deep_conv_lstm_W300_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:19:22  [START]  deep_conv_lstm_W400_O50           gpu=2  step=200
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25: Traceback (most recent call last):
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25:     import joblib
+2026-04-09 10:19:22  [STDERR] deep_conv_lstm_W300_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:22  [DONE]   deep_conv_lstm_W300_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:22  [START]  deep_conv_lstm_W400_O60           gpu=3  step=160
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60: Traceback (most recent call last):
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60:     import joblib
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:25  [DONE]   deep_conv_lstm_W400_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:25  [START]  deep_conv_lstm_W500_O0            gpu=3  step=500
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0: Traceback (most recent call last):
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0:     import joblib
+2026-04-09 10:19:25  [STDERR] deep_conv_lstm_W400_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:25  [DONE]   deep_conv_lstm_W400_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:19:25  [START]  deep_conv_lstm_W500_O25           gpu=0  step=375
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50: Traceback (most recent call last):
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50:     import joblib
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:26  [DONE]   deep_conv_lstm_W400_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:26  [START]  deep_conv_lstm_W500_O50           gpu=2  step=250
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25: Traceback (most recent call last):
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25:     import joblib
+2026-04-09 10:19:26  [STDERR] deep_conv_lstm_W400_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:26  [DONE]   deep_conv_lstm_W400_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:26  [START]  deep_conv_lstm_W500_O60           gpu=1  step=200
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0: Traceback (most recent call last):
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0:     import joblib
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:29  [DONE]   deep_conv_lstm_W500_O0            FAILED rc=1  (0.1 min)
+2026-04-09 10:19:29  [START]  lstm_W100_O0                      gpu=3  step=100
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25: Traceback (most recent call last):
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25:     import joblib
+2026-04-09 10:19:29  [STDERR] deep_conv_lstm_W500_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:29  [DONE]   deep_conv_lstm_W500_O25           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:29  [START]  lstm_W100_O25                     gpu=0  step=75
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50: Traceback (most recent call last):
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50:     import joblib
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:30  [DONE]   deep_conv_lstm_W500_O50           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:30  [START]  lstm_W100_O50                     gpu=2  step=50
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60: Traceback (most recent call last):
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60:     import joblib
+2026-04-09 10:19:30  [STDERR] deep_conv_lstm_W500_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:30  [DONE]   deep_conv_lstm_W500_O60           FAILED rc=1  (0.1 min)
+2026-04-09 10:19:30  [START]  lstm_W100_O60                     gpu=1  step=40
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0: Traceback (most recent call last):
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0:     import joblib
+2026-04-09 10:19:32  [STDERR] lstm_W100_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:32  [DONE]   lstm_W100_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:19:32  [START]  lstm_W200_O0                      gpu=3  step=200
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25: Traceback (most recent call last):
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25:     import joblib
+2026-04-09 10:19:33  [STDERR] lstm_W100_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:33  [DONE]   lstm_W100_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:33  [START]  lstm_W200_O25                     gpu=0  step=150
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50: Traceback (most recent call last):
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50:     import joblib
+2026-04-09 10:19:33  [STDERR] lstm_W100_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:33  [DONE]   lstm_W100_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:33  [START]  lstm_W200_O50                     gpu=2  step=100
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60: Traceback (most recent call last):
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60:     import joblib
+2026-04-09 10:19:33  [STDERR] lstm_W100_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:33  [DONE]   lstm_W100_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:33  [START]  lstm_W200_O60                     gpu=1  step=80
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25: Traceback (most recent call last):
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25:     import joblib
+2026-04-09 10:19:36  [STDERR] lstm_W200_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:36  [DONE]   lstm_W200_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:36  [START]  lstm_W300_O0                      gpu=0  step=300
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0: Traceback (most recent call last):
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0:     import joblib
+2026-04-09 10:19:36  [STDERR] lstm_W200_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:36  [DONE]   lstm_W200_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:19:36  [START]  lstm_W300_O25                     gpu=3  step=225
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50: Traceback (most recent call last):
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50:     import joblib
+2026-04-09 10:19:37  [STDERR] lstm_W200_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:37  [DONE]   lstm_W200_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:37  [START]  lstm_W300_O50                     gpu=2  step=150
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60: Traceback (most recent call last):
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60:     import joblib
+2026-04-09 10:19:38  [STDERR] lstm_W200_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:38  [DONE]   lstm_W200_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:38  [START]  lstm_W300_O60                     gpu=1  step=120
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0: Traceback (most recent call last):
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0:     import joblib
+2026-04-09 10:19:40  [STDERR] lstm_W300_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:40  [DONE]   lstm_W300_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:19:40  [START]  lstm_W400_O0                      gpu=0  step=400
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25: Traceback (most recent call last):
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25:     import joblib
+2026-04-09 10:19:40  [STDERR] lstm_W300_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:40  [DONE]   lstm_W300_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:40  [START]  lstm_W400_O25                     gpu=3  step=300
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60: Traceback (most recent call last):
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60:     import joblib
+2026-04-09 10:19:41  [STDERR] lstm_W300_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:41  [DONE]   lstm_W300_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:41  [START]  lstm_W400_O50                     gpu=1  step=200
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50: Traceback (most recent call last):
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50:     import joblib
+2026-04-09 10:19:41  [STDERR] lstm_W300_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:41  [DONE]   lstm_W300_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:41  [START]  lstm_W400_O60                     gpu=2  step=160
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0: Traceback (most recent call last):
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0:     import joblib
+2026-04-09 10:19:44  [STDERR] lstm_W400_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:44  [DONE]   lstm_W400_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:19:44  [START]  lstm_W500_O0                      gpu=0  step=500
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25: Traceback (most recent call last):
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25:     import joblib
+2026-04-09 10:19:44  [STDERR] lstm_W400_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:44  [DONE]   lstm_W400_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:44  [START]  lstm_W500_O25                     gpu=3  step=375
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60: Traceback (most recent call last):
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60:     import joblib
+2026-04-09 10:19:45  [STDERR] lstm_W400_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:45  [DONE]   lstm_W400_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:45  [START]  lstm_W500_O50                     gpu=2  step=250
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50: Traceback (most recent call last):
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50:     import joblib
+2026-04-09 10:19:45  [STDERR] lstm_W400_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:45  [DONE]   lstm_W400_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:45  [START]  lstm_W500_O60                     gpu=1  step=200
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0: Traceback (most recent call last):
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:     from .base import clone  # noqa: E402
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:     from . import _joblib, metadata_routing
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0:     import joblib
+2026-04-09 10:19:48  [STDERR] lstm_W500_O0: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:48  [DONE]   lstm_W500_O0                      FAILED rc=1  (0.1 min)
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25: Traceback (most recent call last):
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:     from .base import clone  # noqa: E402
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:     from . import _joblib, metadata_routing
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25:     import joblib
+2026-04-09 10:19:48  [STDERR] lstm_W500_O25: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:48  [DONE]   lstm_W500_O25                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50: Traceback (most recent call last):
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:     from .base import clone  # noqa: E402
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:     from . import _joblib, metadata_routing
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50:     import joblib
+2026-04-09 10:19:48  [STDERR] lstm_W500_O50: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:48  [DONE]   lstm_W500_O50                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60: Traceback (most recent call last):
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 31, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/__init__.py", line 73, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:     from .base import clone  # noqa: E402
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/base.py", line 19, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:     from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 13, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:     from . import _joblib, metadata_routing
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/sklearn/utils/_joblib.py", line 12, in <module>
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60:     import joblib
+2026-04-09 10:19:48  [STDERR] lstm_W500_O60: ModuleNotFoundError: No module named 'joblib'
+2026-04-09 10:19:48  [DONE]   lstm_W500_O60                     FAILED rc=1  (0.1 min)
+2026-04-09 10:19:48  ============================================================
+2026-04-09 10:19:48  Sweep complete in 0.6 min — 0/40 succeeded
+2026-04-09 10:19:48  40 failed experiment(s):
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W100_O0
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W100_O25
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W100_O50
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W100_O60
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W200_O0
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W200_O25
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W200_O50
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W200_O60
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W300_O0
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W300_O25
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W300_O50
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W300_O60
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W400_O0
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W400_O25
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W400_O50
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W400_O60
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W500_O0
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W500_O25
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W500_O50
+2026-04-09 10:19:48    FAILED  deep_conv_lstm_W500_O60
+2026-04-09 10:19:48    FAILED  lstm_W100_O0
+2026-04-09 10:19:48    FAILED  lstm_W100_O25
+2026-04-09 10:19:48    FAILED  lstm_W100_O50
+2026-04-09 10:19:48    FAILED  lstm_W100_O60
+2026-04-09 10:19:48    FAILED  lstm_W200_O0
+2026-04-09 10:19:48    FAILED  lstm_W200_O25
+2026-04-09 10:19:48    FAILED  lstm_W200_O50
+2026-04-09 10:19:48    FAILED  lstm_W200_O60
+2026-04-09 10:19:48    FAILED  lstm_W300_O0
+2026-04-09 10:19:48    FAILED  lstm_W300_O25
+2026-04-09 10:19:48    FAILED  lstm_W300_O50
+2026-04-09 10:19:48    FAILED  lstm_W300_O60
+2026-04-09 10:19:48    FAILED  lstm_W400_O0
+2026-04-09 10:19:48    FAILED  lstm_W400_O25
+2026-04-09 10:19:48    FAILED  lstm_W400_O50
+2026-04-09 10:19:48    FAILED  lstm_W400_O60
+2026-04-09 10:19:48    FAILED  lstm_W500_O0
+2026-04-09 10:19:48    FAILED  lstm_W500_O25
+2026-04-09 10:19:48    FAILED  lstm_W500_O50
+2026-04-09 10:19:48    FAILED  lstm_W500_O60
+2026-04-09 10:19:48  ============================================================

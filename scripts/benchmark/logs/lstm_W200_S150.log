@@ -1,0 +1,11 @@
+2026-04-09 10:54:05  ============================================================
+2026-04-09 10:54:05  lstm  |  window=200  step=150
+2026-04-09 10:54:05  Device  : cuda:1
+2026-04-09 10:54:05  Flatten : False
+2026-04-09 10:54:05  Log     : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/lstm_W200_S150.log
+2026-04-09 10:54:05  Model   : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/models/lstm_best_W200_S150.pth
+2026-04-09 10:54:05  Figures : /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/figures
+2026-04-09 10:54:05  ============================================================
+2026-04-09 10:54:08  Loaded 9790 windows | window=200  step=150 | 129 experiments | 12 subjects | 0 experiments skipped
+2026-04-09 10:54:09  ────────────────────────────────────────────────────────────
+2026-04-09 10:54:09  LOSO fold — held-out: User1 (563 test windows, 9227 train windows)

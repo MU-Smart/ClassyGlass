@@ -1,0 +1,168 @@
+2026-04-09 10:30:22  Master log: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/ablation_20260409_103022.log
+2026-04-09 10:30:22  Found 4 CUDA GPU(s):
+2026-04-09 10:30:22    GPU 0: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:30:22    GPU 1: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:30:22    GPU 2: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:30:22    GPU 3: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 10:30:22  ============================================================
+2026-04-09 10:30:22  Ablation sweep: 40 experiments
+2026-04-09 10:30:22    Models   : ['deep_conv_lstm', 'lstm']
+2026-04-09 10:30:22    Windows  : [100, 200, 300, 400, 500]
+2026-04-09 10:30:22    Overlaps : [0, 25, 50, 60]%
+2026-04-09 10:30:22    GPUs     : [0, 1, 2, 3]  →  4 parallel worker(s)
+2026-04-09 10:30:22  ============================================================
+2026-04-09 10:30:22  [START]  deep_conv_lstm_W100_O0            gpu=0  step=100
+2026-04-09 10:30:22  [START]  deep_conv_lstm_W100_O25           gpu=1  step=75
+2026-04-09 10:30:22  [START]  deep_conv_lstm_W100_O50           gpu=2  step=50
+2026-04-09 10:30:22  [START]  deep_conv_lstm_W100_O60           gpu=3  step=40
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0: Traceback (most recent call last):
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 484, in <module>
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:     main()
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 468, in main
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:     fold_accuracies, y_true, y_pred, le = run_loso(
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 318, in run_loso
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:     _fit(model, X_train_sc, y_train, flatten, device, model_path)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 253, in _fit
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:     trn_loss, trn_acc = _train_one_epoch(model, trn_loader, criterion, optimizer, device)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 204, in _train_one_epoch
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0:     total_loss += loss.item() * len(y_batch)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O0: KeyboardInterrupt
+2026-04-09 10:38:51  [DONE]   deep_conv_lstm_W100_O0            FAILED rc=-2  (8.5 min)
+2026-04-09 10:38:51  [START]  deep_conv_lstm_W200_O0            gpu=0  step=200
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60: Traceback (most recent call last):
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 484, in <module>
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:     main()
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 468, in main
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:     fold_accuracies, y_true, y_pred, le = run_loso(
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 318, in run_loso
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:     _fit(model, X_train_sc, y_train, flatten, device, model_path)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 253, in _fit
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:     trn_loss, trn_acc = _train_one_epoch(model, trn_loader, criterion, optimizer, device)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 204, in _train_one_epoch
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60:     total_loss += loss.item() * len(y_batch)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O60: KeyboardInterrupt
+2026-04-09 10:38:51  [DONE]   deep_conv_lstm_W100_O60           FAILED rc=-2  (8.5 min)
+2026-04-09 10:38:51  [START]  deep_conv_lstm_W200_O25           gpu=3  step=150
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25: Traceback (most recent call last):
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 484, in <module>
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:     main()
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 468, in main
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:     fold_accuracies, y_true, y_pred, le = run_loso(
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 318, in run_loso
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:     _fit(model, X_train_sc, y_train, flatten, device, model_path)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 253, in _fit
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:     trn_loss, trn_acc = _train_one_epoch(model, trn_loader, criterion, optimizer, device)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 204, in _train_one_epoch
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25:     total_loss += loss.item() * len(y_batch)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O25: KeyboardInterrupt
+2026-04-09 10:38:51  [DONE]   deep_conv_lstm_W100_O25           FAILED rc=-2  (8.5 min)
+2026-04-09 10:38:51  [START]  deep_conv_lstm_W200_O50           gpu=1  step=100
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py:273: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   model.load_state_dict(torch.load(model_path + ".tmp", map_location=device))
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50: Traceback (most recent call last):
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 484, in <module>
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:     main()
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 468, in main
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:     fold_accuracies, y_true, y_pred, le = run_loso(
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 318, in run_loso
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:     _fit(model, X_train_sc, y_train, flatten, device, model_path)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 253, in _fit
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:     trn_loss, trn_acc = _train_one_epoch(model, trn_loader, criterion, optimizer, device)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 204, in _train_one_epoch
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50:     total_loss += loss.item() * len(y_batch)
+2026-04-09 10:38:51  [STDERR] deep_conv_lstm_W100_O50: KeyboardInterrupt
+2026-04-09 10:38:51  [DONE]   deep_conv_lstm_W100_O50           FAILED rc=-2  (8.5 min)
+2026-04-09 10:38:51  [START]  deep_conv_lstm_W200_O60           gpu=2  step=80
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60: Traceback (most recent call last):
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 27, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:     import pandas as pd
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/__init__.py", line 49, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:     from pandas.core.api import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/api.py", line 23, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:     from pandas.core.algorithms import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/algorithms.py", line 83, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:     from pandas.core.indexers import validate_indices
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap_external>", line 957, in get_code
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60:   File "<frozen importlib._bootstrap_external>", line 548, in _check_name_wrapper
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O60: KeyboardInterrupt
+2026-04-09 10:38:52  [DONE]   deep_conv_lstm_W200_O60           FAILED rc=-2  (0.0 min)
+2026-04-09 10:38:52  [START]  deep_conv_lstm_W300_O0            gpu=2  step=300
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50: Traceback (most recent call last):
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 27, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     import pandas as pd
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/__init__.py", line 49, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.api import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/api.py", line 47, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.groupby import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.groupby.generic import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/groupby/generic.py", line 68, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.frame import DataFrame
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/frame.py", line 153, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.generic import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/generic.py", line 187, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.core.methods.describe import describe_ndframe
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/core/methods/describe.py", line 41, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:     from pandas.io.formats.format import format_percentiles
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50:   File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O50: KeyboardInterrupt
+2026-04-09 10:38:52  [DONE]   deep_conv_lstm_W200_O50           FAILED rc=-2  (0.0 min)
+2026-04-09 10:38:52  [START]  deep_conv_lstm_W300_O25           gpu=1  step=225
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25: Traceback (most recent call last):
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 27, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     import pandas as pd
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/__init__.py", line 138, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas import api, arrays, errors, io, plotting, tseries
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/api/__init__.py", line 2, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas.api import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/api/typing/__init__.py", line 31, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas.io.json._json import JsonReader
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/io/json/__init__.py", line 1, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas.io.json._json import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/io/json/_json.py", line 71, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas.io.parsers.readers import validate_integer
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/io/parsers/__init__.py", line 1, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     from pandas.io.parsers.readers import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 880, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     def read_csv(
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/util/_decorators.py", line 488, in __call__
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     func.__doc__ = dedent(self.join.join(docitems))
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/textwrap.py", line 439, in dedent
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25:     indents = _leading_whitespace_re.findall(text)
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O25: KeyboardInterrupt
+2026-04-09 10:38:52  [DONE]   deep_conv_lstm_W200_O25           FAILED rc=-2  (0.0 min)
+2026-04-09 10:38:52  [START]  deep_conv_lstm_W300_O50           gpu=3  step=150
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0: Traceback (most recent call last):
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/run.py", line 27, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:     import pandas as pd
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/__init__.py", line 142, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:     from pandas.io.api import (
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "/home/mahmudm2/.conda/envs/classyglass/lib/python3.10/site-packages/pandas/io/api.py", line 13, in <module>
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:     from pandas.io.html import read_html
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0:   File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+2026-04-09 10:38:52  [STDERR] deep_conv_lstm_W200_O0: KeyboardInterrupt
+2026-04-09 10:38:52  [DONE]   deep_conv_lstm_W200_O0            FAILED rc=-2  (0.0 min)
+2026-04-09 10:38:52  [START]  deep_conv_lstm_W300_O60           gpu=0  step=120
