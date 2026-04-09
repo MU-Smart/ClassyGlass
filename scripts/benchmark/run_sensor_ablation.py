@@ -81,7 +81,7 @@ OVERLAP_PCTS = [0, 50]
 
 N_CLASSES   = 11
 BATCH_SIZE  = 256
-NUM_WORKERS = 4
+NUM_WORKERS = 0   # experiments run in parallel already; per-loader workers cause "too many open files"
 EPOCHS      = 100
 RANDOM_SEED = 42
 VAL_SPLIT   = 0.1
