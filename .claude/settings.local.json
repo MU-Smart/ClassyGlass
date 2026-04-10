@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Read(//Users/nadim/MyFiles/Datasets/Dataset_2/**)",
-      "Read(//Users/nadim/**)"
+      "Read(//Users/nadim/**)",
+      "Bash(xargs -I{} head -2 {})",
+      "Read(//opt/**)",
+      "Bash(ls ~/miniforge*/bin/python*)",
+      "Bash(ls ~/mambaforge*/bin/python*)",
+      "Bash(python -c \"import xgboost; print\\(xgboost.__version__\\)\")",
+      "Bash(python -c \"import torch; print\\('cuda:', torch.cuda.is_available\\(\\)\\); print\\('mps:', torch.backends.mps.is_available\\(\\)\\)\")"
     ]
   }
 }

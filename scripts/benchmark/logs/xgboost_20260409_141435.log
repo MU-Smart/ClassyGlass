@@ -1,0 +1,88 @@
+2026-04-09 14:14:35  MPS detected but XGBoost does not support Apple MPS — using CPU.
+2026-04-09 14:14:35  ============================================================
+2026-04-09 14:14:35  XGBoost LOSO — Dataset_1A  300_150
+2026-04-09 14:14:35  Data    : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/../../DatasetsFeatureExtracted/Dataset_1A/300_150
+2026-04-09 14:14:35  Params  : {'n_estimators': 300, 'max_depth': 6, 'learning_rate': 0.1, 'subsample': 0.8, 'colsample_bytree': 0.8, 'eval_metric': 'mlogloss', 'random_state': 42, 'device': 'cpu', 'n_jobs': -1}
+2026-04-09 14:14:35  Log     : /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/logs/xgboost_20260409_141435.log
+2026-04-09 14:14:35  ============================================================
+2026-04-09 14:14:35  Loaded 8314 windows | 12 subjects | 11 classes | 22 features
+2026-04-09 14:14:35  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:35  LOSO fold — held-out: User1 (512 test windows, 7802 train windows)
+2026-04-09 14:14:38    User1 accuracy: 0.4199
+2026-04-09 14:14:38  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:38  LOSO fold — held-out: User2 (386 test windows, 7928 train windows)
+2026-04-09 14:14:40    User2 accuracy: 0.4663
+2026-04-09 14:14:40  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:40  LOSO fold — held-out: User3 (419 test windows, 7895 train windows)
+2026-04-09 14:14:43    User3 accuracy: 0.5800
+2026-04-09 14:14:43  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:43  LOSO fold — held-out: User4 (449 test windows, 7865 train windows)
+2026-04-09 14:14:45    User4 accuracy: 0.5056
+2026-04-09 14:14:45  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:45  LOSO fold — held-out: User5 (446 test windows, 7868 train windows)
+2026-04-09 14:14:48    User5 accuracy: 0.5583
+2026-04-09 14:14:48  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:48  LOSO fold — held-out: User6 (445 test windows, 7869 train windows)
+2026-04-09 14:14:50    User6 accuracy: 0.5371
+2026-04-09 14:14:50  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:50  LOSO fold — held-out: User7 (1007 test windows, 7307 train windows)
+2026-04-09 14:14:53    User7 accuracy: 0.2651
+2026-04-09 14:14:53  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:53  LOSO fold — held-out: User8 (891 test windows, 7423 train windows)
+2026-04-09 14:14:56    User8 accuracy: 0.3513
+2026-04-09 14:14:56  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:56  LOSO fold — held-out: User9 (920 test windows, 7394 train windows)
+2026-04-09 14:14:58    User9 accuracy: 0.5598
+2026-04-09 14:14:58  ────────────────────────────────────────────────────────────
+2026-04-09 14:14:58  LOSO fold — held-out: User10 (916 test windows, 7398 train windows)
+2026-04-09 14:15:00    User10 accuracy: 0.6376
+2026-04-09 14:15:00  ────────────────────────────────────────────────────────────
+2026-04-09 14:15:00  LOSO fold — held-out: User11 (973 test windows, 7341 train windows)
+2026-04-09 14:15:03    User11 accuracy: 0.3690
+2026-04-09 14:15:03  ────────────────────────────────────────────────────────────
+2026-04-09 14:15:03  LOSO fold — held-out: User12 (950 test windows, 7364 train windows)
+2026-04-09 14:15:05    User12 accuracy: 0.4989
+2026-04-09 14:15:05  ============================================================
+2026-04-09 14:15:05  LOSO SUMMARY
+2026-04-09 14:15:05  ============================================================
+2026-04-09 14:15:05    User1: 0.4199
+2026-04-09 14:15:05    User2: 0.4663
+2026-04-09 14:15:05    User3: 0.5800
+2026-04-09 14:15:05    User4: 0.5056
+2026-04-09 14:15:05    User5: 0.5583
+2026-04-09 14:15:05    User6: 0.5371
+2026-04-09 14:15:05    User7: 0.2651
+2026-04-09 14:15:05    User8: 0.3513
+2026-04-09 14:15:05    User9: 0.5598
+2026-04-09 14:15:05    User10: 0.6376
+2026-04-09 14:15:05    User11: 0.3690
+2026-04-09 14:15:05    User12: 0.4989
+2026-04-09 14:15:05    Mean accuracy : 0.4791
+2026-04-09 14:15:05    Std  accuracy : 0.1043
+2026-04-09 14:15:05  ============================================================
+2026-04-09 14:15:05  CLASSIFICATION REPORT (all folds combined)
+2026-04-09 14:15:05  ============================================================
+2026-04-09 14:15:05  
+                            precision    recall  f1-score   support
+
+         Sitting – Reading       0.34      0.52      0.41       883
+         Sitting – Writing       0.39      0.31      0.35       856
+         Computer – Typing       0.39      0.16      0.23       859
+       Computer – Browsing       0.55      0.58      0.57       870
+Sitting – Moving head/body       0.50      0.55      0.52       849
+    Sitting – Moving chair       0.40      0.46      0.43       857
+     Stand up from sitting       0.46      0.49      0.48      1006
+                  Standing       0.20      0.18      0.19       551
+                   Walking       0.58      0.54      0.56       675
+                   Running       0.91      0.90      0.91       667
+             Taking stairs       0.34      0.35      0.34       241
+
+                  accuracy                           0.46      8314
+                 macro avg       0.46      0.46      0.45      8314
+              weighted avg       0.47      0.46      0.46      8314
+
+2026-04-09 14:15:07  Confusion matrix saved to: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/figures/xgboost_confusion_matrix_xgb_n300_d6_lr0.1.png
+2026-04-09 14:15:07  Per-subject accuracy chart saved to: /Users/nadim/MyFiles/vscode/ClassyGlass/scripts/benchmark/figures/xgboost_per_subject_accuracy_xgb_n300_d6_lr0.1.png
+2026-04-09 14:15:07  ============================================================
+2026-04-09 14:15:07  XGBoost LOSO complete  |  mean acc = 0.4791
+2026-04-09 14:15:07  ============================================================
