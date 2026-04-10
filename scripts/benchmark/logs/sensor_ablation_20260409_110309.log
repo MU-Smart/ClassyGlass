@@ -1,0 +1,44 @@
+2026-04-09 11:03:09  Master log: /home/mahmudm2/codebase/ClassyGlass/scripts/benchmark/logs/sensor_ablation_20260409_110309.log
+2026-04-09 11:03:09  Found 4 CUDA GPU(s):
+2026-04-09 11:03:09    GPU 0: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 11:03:09    GPU 1: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 11:03:09    GPU 2: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 11:03:09    GPU 3: NVIDIA GeForce GTX 1080 Ti  (10.9 GiB)
+2026-04-09 11:03:09  ============================================================
+2026-04-09 11:03:09  Sensor ablation: 16 experiments
+2026-04-09 11:03:09    Modalities : ['acc', 'gyro', 'mag', 'baro']
+2026-04-09 11:03:09    Windows    : [300, 500]
+2026-04-09 11:03:09    Overlaps   : [0, 50]%
+2026-04-09 11:03:09    GPUs       : [0, 1, 2, 3]  →  4 parallel worker(s)
+2026-04-09 11:03:09  ============================================================
+2026-04-09 11:03:09  [START]  sensor_acc_W300_S300                 gpu=0
+2026-04-09 11:03:09  [START]  sensor_acc_W300_S150                 gpu=1
+2026-04-09 11:03:09  [START]  sensor_acc_W500_S500                 gpu=2
+2026-04-09 11:03:09  [START]  sensor_acc_W500_S250                 gpu=3
+2026-04-09 11:13:09  [DONE]   sensor_acc_W500_S500                 acc=0.3674  (10.0 min)
+2026-04-09 11:13:09  [START]  sensor_gyro_W300_S300                gpu=2
+2026-04-09 11:13:59  [DONE]   sensor_acc_W300_S300                 acc=0.3938  (10.8 min)
+2026-04-09 11:13:59  [START]  sensor_gyro_W300_S150                gpu=0
+2026-04-09 11:21:19  [ERROR]  sensor_gyro_W300_S300                [Errno 24] Too many open files  (8.2 min)
+2026-04-09 11:21:19  [START]  sensor_gyro_W500_S500                gpu=2
+2026-04-09 11:21:22  [ERROR]  sensor_gyro_W500_S500                [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:22  [START]  sensor_gyro_W500_S250                gpu=2
+2026-04-09 11:21:24  [ERROR]  sensor_acc_W300_S150                 Pin memory thread exited unexpectedly  (18.3 min)
+2026-04-09 11:21:24  [ERROR]  sensor_gyro_W500_S250                [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:24  [START]  sensor_mag_W300_S300                 gpu=2
+2026-04-09 11:21:24  [START]  sensor_mag_W300_S150                 gpu=1
+2026-04-09 11:21:26  [ERROR]  sensor_mag_W300_S300                 [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:26  [ERROR]  sensor_gyro_W300_S150                Pin memory thread exited unexpectedly  (7.5 min)
+2026-04-09 11:21:26  [START]  sensor_mag_W500_S500                 gpu=2
+2026-04-09 11:21:26  [START]  sensor_mag_W500_S250                 gpu=0
+2026-04-09 11:21:28  [ERROR]  sensor_mag_W500_S250                 [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:28  [ERROR]  sensor_mag_W500_S500                 [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:28  [START]  sensor_baro_W300_S300                gpu=0
+2026-04-09 11:21:28  [START]  sensor_baro_W300_S150                gpu=2
+2026-04-09 11:21:28  [ERROR]  sensor_baro_W300_S300                [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:28  [START]  sensor_baro_W500_S500                gpu=0
+2026-04-09 11:21:29  [ERROR]  sensor_acc_W500_S250                 Pin memory thread exited unexpectedly  (18.3 min)
+2026-04-09 11:21:29  [ERROR]  sensor_baro_W300_S150                [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:29  [START]  sensor_baro_W500_S250                gpu=2
+2026-04-09 11:21:30  [ERROR]  sensor_baro_W500_S500                [Errno 24] Too many open files  (0.0 min)
+2026-04-09 11:21:30  [ERROR]  sensor_baro_W500_S250                [Errno 24] Too many open files  (0.0 min)
